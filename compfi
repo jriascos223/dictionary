@@ -1,0 +1,14 @@
+#!/bin/bash
+
+dir=$(pwd -P)
+cd util
+unzip -n javafx-sdk-11.0.2.zip
+jfxpath='util/javafx-sdk-11.0.2/lib'
+cd ..
+
+
+javac -d bin --module-path $jfxpath --add-modules javafx.controls src/tech/jriascos/*/*.java
+
+java -classpath $dir/bin --module-path $jfxpath --add-modules javafx.controls tech.jriascos.application.Window
+
+rm -rf util/javafx-sdk-11.0.2
