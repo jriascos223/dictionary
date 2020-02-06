@@ -2,7 +2,13 @@
 
 dir=$(pwd -P)
 cd util
-unzip -nq javafx-sdk-11.0.2.zip
+if [ $OSTYPE == "msys" ]
+then
+    unzip -nq openjfx-11.0.2_windows-x64_bin-sdk
+else
+    unzip -nq javafx-sdk-11.0.2.zip
+fi
+
 echo "Unzipped JavaFX"
 jfxpath='util/javafx-sdk-11.0.2/lib'
 cd ..
