@@ -1,8 +1,8 @@
 package tech.jriascos.application;
  
-import javafx.animation.FillTransition; 
-import javafx.application.Application; 
-import javafx.scene.Group; 
+import javafx.animation.FillTransition;
+import javafx.application.Application;
+import javafx.scene.Group;
 import javafx.scene.Scene; 
 import javafx.scene.paint.Color; 
 import javafx.scene.shape.Rectangle; 
@@ -31,7 +31,7 @@ public class Window extends Application {
         translate.setToY(390); 
  
         FillTransition fill = new FillTransition(Duration.millis(750)); 
-        fill.setToValue(Color.RED); 
+        fill.setToValue(Color.RED);
  
         RotateTransition rotate = new RotateTransition(Duration.millis(750)); 
         rotate.setToAngle(360); 
@@ -47,7 +47,7 @@ public class Window extends Application {
         transition.play(); 
  
         stage.setTitle("JavaFX Scene Graph Demo"); 
-        stage.setScene(scene); 
+        stage.setScene(scene);
         stage.show(); 
    }
  
