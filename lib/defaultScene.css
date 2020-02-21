@@ -13,16 +13,21 @@
 
 #buttonHousing {
     -fx-spacing: 3px;
-    -fx-background-color: #C95D63;
 }
 
 #leftColumn {
-    -fx-background-color: orange;
     -fx-padding: 7 7 7 3;
     -fx-spacing:7px;
+    -fx-background-color: #FCFCFC;
 }
 
 #searchbar {
     
+}
+
+#checkboxHousing {
+    -fx-padding: 0 0 3 0;
+    -fx-border-width: 2px;
+    -fx-border-color: transparent transparent black transparent;
 }
 
