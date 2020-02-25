@@ -33,10 +33,10 @@ public class SceneBuilder {
         grid.setVgap(10);
 
         Scene defaultScene = new Scene(grid, 300, 275);
-        defaultScene.getStylesheets().add(Window.class.getResource("/defaultScene.css").toExternalForm());
+        defaultScene.getStylesheets().add(Window.class.getResource("/styles/defaultScene.css").toExternalForm());
 
         VBox leftColumn = new VBox();
-        leftColumn = buildLeftColumn(leftColumn, grid, words);
+        leftColumn = buildLeftColumn(leftColumn, grid, words, defaultScene);
         leftColumn.setId("leftColumn");
         grid.add(leftColumn, 0, 0);
 
@@ -55,7 +55,7 @@ public class SceneBuilder {
         return definitionHousing;
     }
 
-    private static VBox buildLeftColumn(VBox leftColumn, GridPane grid, Words[] words) {
+    private static VBox buildLeftColumn(VBox leftColumn, GridPane grid, Words[] words, Scene scene) {
         HBox buttonHousing = new HBox();
         buttonHousing.setId("buttonHousing");
         
@@ -72,7 +72,9 @@ public class SceneBuilder {
         searchbar.setPromptText("Search");
 
         CheckBox asc = new CheckBox("Asc");
+        asc.setId("asc");
         CheckBox desc = new CheckBox("Desc");
+        desc.setId("desc");
         
 
         HBox checkboxHousing = new HBox();
@@ -105,14 +107,34 @@ public class SceneBuilder {
 
         VBox.setVgrow(wordHousing, Priority.ALWAYS);
         wordHousing.setMaxHeight(Double.MAX_VALUE);
+        return leftColumn;
+    }
 
+    public static Scene buildAddScene(Words[] words) {
+        GridPane grid = new GridPane();
+        grid.setId("addGrid");
+        grid.setVgap(10);
+
+        Scene addScene = new Scene(grid, 300, 275);
+        addScene.getStylesheets().add(Window.class.getResource("/styles/addScene.css").toExternalForm());
+
+        VBox leftColumn = new VBox();
+        leftColumn = buildLeftColumn(leftColumn, grid, words, addScene);
+
+
+        return null;
+    }
+
+    public static void leftColumnListeners(Scene scene, Words[] words) {
+        CheckBox asc = (CheckBox) scene.lookup("#asc");
+        CheckBox desc = (CheckBox) scene.lookup("#desc");
+        TextField searchbar = (TextField) scene.lookup("#searchbar");
+        ListView<String> wordHousing = (ListView<String>) scene.lookup("#wordHousing");
         List<String> wordStrings = new ArrayList<String>();
         for (int i = 0; i < words.length; i++) {
             wordStrings.add(words[i].getWord());
         }
         ObservableList<String> wordObserv = FXCollections.observableArrayList(wordStrings);
-
-        //Event Listeners
 
         asc.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
             if (isNowSelected) {
@@ -125,7 +147,6 @@ public class SceneBuilder {
                 asc.setSelected(false);
             }
         });
-
         FilteredList<String> filteredWords = new FilteredList<String>(wordObserv, s -> true);
 
         searchbar.textProperty().addListener(obs->{
@@ -139,8 +160,5 @@ public class SceneBuilder {
         });
 
         wordHousing.setItems(filteredWords);
-
-
-        return leftColumn;
     }
 }

@@ -35,6 +35,9 @@ public class Window extends Application {
 
         primaryStage.setScene(defaultScene);
         primaryStage.show();
+        //Event listeners are after stage.show() since it depends on looking up elements with ids, which only works
+        //after the stage has been built and shown
+        SceneBuilder.leftColumnListeners(defaultScene, words);
     }
 
     public static void main(String[] args) {
