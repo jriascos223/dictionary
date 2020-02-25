@@ -7,6 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -27,8 +28,19 @@ public class SceneBuilder {
         leftColumn = buildLeftColumn(leftColumn, grid);
         leftColumn.setId("leftColumn");
         grid.add(leftColumn, 0, 0);
+
+        ScrollPane definitionHousing = new ScrollPane();
+        definitionHousing = buildDefinitionHousing();
+        grid.add(definitionHousing, 1, 0);
+        GridPane.setMargin(definitionHousing, new Insets(8, 8, 8, 8));
+        definitionHousing.setId("definitionHousing");
         
         return defaultScene;
+    }
+
+    private static ScrollPane buildDefinitionHousing() {
+        ScrollPane definitionHousing = new ScrollPane();
+        return definitionHousing;
     }
 
     private static VBox buildLeftColumn(VBox leftColumn, GridPane grid) {

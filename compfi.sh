@@ -12,7 +12,7 @@ fi
 echo "Unzipped JavaFX."
 jfxpath='lib/javafx-sdk-11.0.2/lib'
 cd ..
-javac -d bin --module-path $jfxpath --add-modules javafx.controls --add-modules javafx.fxml src/tech/jriascos/*/*.java
+javac -d bin -classpath $dir/lib/gson-2.8.2.jar --module-path $jfxpath --add-modules javafx.control src/tech/jriascos/*/*.java
 echo "Compiled project."
 echo "Running main function found in tech.jriascos.application.Window."
-java -classpath $dir/bin:$dir/lib/gson-2.8.2.jar:$dir/lib/ --module-path $jfxpath --add-modules javafx.controls --add-modules javafx.fxml tech.jriascos.application.Window
+java -classpath $dir/bin:$dir/lib/gson-2.8.2.jar:$dir/lib/ --module-path $jfxpath --add-modules javafx.controls tech.jriascos.application.Window

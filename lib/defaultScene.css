@@ -31,3 +31,9 @@
     -fx-border-color: transparent transparent black transparent;
 }
 
+#definitionHousing {
+    -fx-background-color: #FCFCFC;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+
