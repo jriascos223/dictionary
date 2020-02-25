@@ -7,13 +7,29 @@ public class Tools {
      */
     public static String getClasspathDir() {
         String classpath = System.getProperty("java.class.path", ".");
-        String[] splitClasspathDir = classpath.split(":");
-        String classpathDirectory = "";
-        for (String s : splitClasspathDir) {
-            if (s.matches(".*lib/.*")) {
-                classpathDirectory = s;
-            }
+        boolean windows = false;
+        if (classpath.matches(".*\\\\.*")) {
+            windows = true;
         }
-        return classpathDirectory;
+        if (windows) {
+            String[] splitClasspathDir = classpath.split(";");
+            String classpathDirectory = "";
+            for (String s : splitClasspathDir) {
+                if (s.matches(".*lib\\\\.*")) {
+                    classpathDirectory = s;
+                }
+            }
+            return classpathDirectory;
+        }else {
+            String[] splitClasspathDir = classpath.split(":");
+            String classpathDirectory = "";
+            for (String s : splitClasspathDir) {
+                if (s.matches(".*lib/.*")) {
+                    classpathDirectory = s;
+                }
+            }
+            return classpathDirectory;
+        }
+        
     }    
 }
