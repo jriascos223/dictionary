@@ -1,6 +1,10 @@
 package tech.jriascos.utilities;
 
 public class Tools {
+    /**
+     * Needed to obtain resources (such as words.json) from the classpath's directory
+     * @return string that returns the directory in the classpath with required resources
+     */
     public static String getClasspathDir() {
         String classpath = System.getProperty("java.class.path", ".");
         String[] splitClasspathDir = classpath.split(":");
@@ -10,7 +14,6 @@ public class Tools {
                 classpathDirectory = s;
             }
         }
-    }
-
-    return classpathDirectory;
+        return classpathDirectory;
+    }    
 }

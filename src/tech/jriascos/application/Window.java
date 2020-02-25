@@ -1,6 +1,7 @@
 package tech.jriascos.application;
 
 import tech.jriascos.utilities.Tools;
+import tech.jriascos.model.Words;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -15,29 +16,28 @@ import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Window extends Application {
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws FileNotFoundException {
+        Gson gson = new Gson();
+        String classpathDirectory = Tools.getClasspathDir();
+        BufferedReader br = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
+        Words[] words = gson.fromJson(br, Words[].class);
 
         primaryStage.setTitle("Dictionary Application");
         primaryStage.setMaximized(true);
 
-        Scene defaultScene = SceneBuilder.buildDefaultScene();
+        Scene defaultScene = SceneBuilder.buildDefaultScene(words);
 
         primaryStage.setScene(defaultScene);
         primaryStage.show();
     }
 
-    public static void main(String[] args) throws JsonSyntaxException, JsonIOException, FileNotFoundException {
-        Gson gson = new Gson();
-        String classpathDirectory = Tools.getClasspathDir();
-        BufferedReader br = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
-        Words[] words = gson.fromJson(br, Words[].class);
+    public static void main(String[] args) {
         launch(args);
     }
 

@@ -1,12 +1,22 @@
 package tech.jriascos.application;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Predicate;
+
 import javafx.beans.binding.Bindings;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.ListView;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
@@ -14,9 +24,10 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.layout.VBox;
+import tech.jriascos.model.Words;
 
 public class SceneBuilder {
-    public static Scene buildDefaultScene() {
+    public static Scene buildDefaultScene(Words[] words) {
         GridPane grid = new GridPane();
         grid.setId("rootGrid");
         grid.setVgap(10);
@@ -25,12 +36,12 @@ public class SceneBuilder {
         defaultScene.getStylesheets().add(Window.class.getResource("/defaultScene.css").toExternalForm());
 
         VBox leftColumn = new VBox();
-        leftColumn = buildLeftColumn(leftColumn, grid);
+        leftColumn = buildLeftColumn(leftColumn, grid, words);
         leftColumn.setId("leftColumn");
         grid.add(leftColumn, 0, 0);
 
-        ScrollPane definitionHousing = new ScrollPane();
-        definitionHousing = buildDefinitionHousing();
+        ListView<String> definitionHousing = new ListView<String>();
+        definitionHousing = buildDefinitionHousing(words);
         grid.add(definitionHousing, 1, 0);
         GridPane.setMargin(definitionHousing, new Insets(8, 8, 8, 8));
         definitionHousing.setId("definitionHousing");
@@ -38,12 +49,13 @@ public class SceneBuilder {
         return defaultScene;
     }
 
-    private static ScrollPane buildDefinitionHousing() {
-        ScrollPane definitionHousing = new ScrollPane();
+    private static ListView<String> buildDefinitionHousing(Words[] words) {
+        ListView<String> definitionHousing = new ListView<String>();
+
         return definitionHousing;
     }
 
-    private static VBox buildLeftColumn(VBox leftColumn, GridPane grid) {
+    private static VBox buildLeftColumn(VBox leftColumn, GridPane grid, Words[] words) {
         HBox buttonHousing = new HBox();
         buttonHousing.setId("buttonHousing");
         
@@ -67,7 +79,7 @@ public class SceneBuilder {
         checkboxHousing.setId("checkboxHousing");
         checkboxHousing.getChildren().addAll(asc, desc);
 
-        ScrollPane wordHousing = new ScrollPane();
+        ListView<String> wordHousing = new ListView<String>();
         wordHousing.setId("wordHousing");
         
         leftColumn.getChildren().add(buttonHousing);
@@ -88,9 +100,19 @@ public class SceneBuilder {
         removeButton.prefWidthProperty().bind(Bindings.divide(buttonHousing.widthProperty(), 2.0));
         asc.prefWidthProperty().bind(Bindings.divide(checkboxHousing.widthProperty(), 2.0));
         desc.prefWidthProperty().bind(Bindings.divide(checkboxHousing.widthProperty(), 2.0));
+        asc.setPadding(new Insets(0, 0, 0, 30));
+        desc.setPadding(new Insets(0, 0, 0, 30));
 
         VBox.setVgrow(wordHousing, Priority.ALWAYS);
         wordHousing.setMaxHeight(Double.MAX_VALUE);
+
+        List<String> wordStrings = new ArrayList<String>();
+        for (int i = 0; i < words.length; i++) {
+            wordStrings.add(words[i].getWord());
+        }
+        ObservableList<String> wordObserv = FXCollections.observableArrayList(wordStrings);
+
+        //Event Listeners
 
         asc.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
             if (isNowSelected) {
@@ -104,9 +126,20 @@ public class SceneBuilder {
             }
         });
 
+        FilteredList<String> filteredWords = new FilteredList<String>(wordObserv, s -> true);
 
-        asc.setPadding(new Insets(0, 0, 0, 30));
-        desc.setPadding(new Insets(0, 0, 0, 30));
+        searchbar.textProperty().addListener(obs->{
+            String filter = searchbar.getText(); 
+            if(filter == null || filter.length() == 0) {
+                filteredWords.setPredicate(s -> true);
+            }
+            else {
+                filteredWords.setPredicate(s -> s.contains(filter));
+            }
+        });
+
+        wordHousing.setItems(filteredWords);
+
 
         return leftColumn;
     }

@@ -21,8 +21,8 @@
     -fx-background-color: #FCFCFC;
 }
 
-#searchbar {
-    
+#wordHousing {
+    -fx-focus-color: transparent;
 }
 
 #checkboxHousing {

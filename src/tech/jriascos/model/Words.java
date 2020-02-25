@@ -1,7 +1,7 @@
-package tech.jriascos.application;
+package tech.jriascos.model;
 
 import java.lang.reflect.Array;
-import tech.jriascos.application.Definitions;
+import tech.jriascos.model.Definitions;
 
 public class Words {
     private String word;

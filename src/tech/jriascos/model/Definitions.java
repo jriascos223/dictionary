@@ -1,4 +1,4 @@
-package tech.jriascos.application;
+package tech.jriascos.model;
 
 public class Definitions {
     private String definition;
