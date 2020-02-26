@@ -27,6 +27,12 @@ import javafx.scene.layout.VBox;
 import tech.jriascos.model.Words;
 
 public class SceneBuilder {
+    /**
+     * Builds the default scene of showing words that are clicked from the ListView on the left, alongside
+     * its definitions
+     * @param words array of words in the dictionary
+     * @return constructed scene JavaFX has to show
+     */
     public static Scene buildDefaultScene(Words[] words) {
         GridPane grid = new GridPane();
         grid.setId("rootGrid");
@@ -36,7 +42,7 @@ public class SceneBuilder {
         defaultScene.getStylesheets().add(Window.class.getResource("/styles/defaultScene.css").toExternalForm());
 
         VBox leftColumn = new VBox();
-        leftColumn = buildLeftColumn(leftColumn, grid, words, defaultScene);
+        leftColumn = buildLeftColumn(leftColumn, grid, words);
         leftColumn.setId("leftColumn");
         grid.add(leftColumn, 0, 0);
 
@@ -55,7 +61,15 @@ public class SceneBuilder {
         return definitionHousing;
     }
 
-    private static VBox buildLeftColumn(VBox leftColumn, GridPane grid, Words[] words, Scene scene) {
+    /**
+     * Builds the left hand side of the GUI, this being the buttons, checkboxes, searchbar, and 
+     * word list the dictionary requires.
+     * @param leftColumn VBox that will house the contents
+     * @param grid GridPane that is the root node of the scene
+     * @param words array of words in the dictionary
+     * @return leftColumn VBox populated with new elements
+     */
+    private static VBox buildLeftColumn(VBox leftColumn, GridPane grid, Words[] words) {
         HBox buttonHousing = new HBox();
         buttonHousing.setId("buttonHousing");
         
@@ -119,10 +133,11 @@ public class SceneBuilder {
         addScene.getStylesheets().add(Window.class.getResource("/styles/addScene.css").toExternalForm());
 
         VBox leftColumn = new VBox();
-        leftColumn = buildLeftColumn(leftColumn, grid, words, addScene);
+        leftColumn = buildLeftColumn(leftColumn, grid, words);
 
 
-        return null;
+
+        return addScene;
     }
 
     public static void leftColumnListeners(Scene scene, Words[] words) {
@@ -130,6 +145,8 @@ public class SceneBuilder {
         CheckBox desc = (CheckBox) scene.lookup("#desc");
         TextField searchbar = (TextField) scene.lookup("#searchbar");
         ListView<String> wordHousing = (ListView<String>) scene.lookup("#wordHousing");
+        Button addButton = (Button) scene.lookup("addButton");
+        Button removeButton = (Button) scene.lookup("removeButton");
         List<String> wordStrings = new ArrayList<String>();
         for (int i = 0; i < words.length; i++) {
             wordStrings.add(words[i].getWord());
@@ -150,7 +167,7 @@ public class SceneBuilder {
         FilteredList<String> filteredWords = new FilteredList<String>(wordObserv, s -> true);
 
         searchbar.textProperty().addListener(obs->{
-            String filter = searchbar.getText(); 
+            String filter = searchbar.getText().toLowerCase();
             if(filter == null || filter.length() == 0) {
                 filteredWords.setPredicate(s -> true);
             }
@@ -158,7 +175,6 @@ public class SceneBuilder {
                 filteredWords.setPredicate(s -> s.contains(filter));
             }
         });
-
         wordHousing.setItems(filteredWords);
     }
 }
