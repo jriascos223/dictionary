@@ -8,6 +8,7 @@ import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -24,6 +25,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 import tech.jriascos.model.Words;
 
 public class SceneBuilder {
@@ -39,7 +41,15 @@ public class SceneBuilder {
         grid.setVgap(10);
 
         Scene defaultScene = new Scene(grid, 300, 275);
-        defaultScene.getStylesheets().add(Window.class.getResource("/styles/defaultScene.css").toExternalForm());
+        defaultScene.getStylesheets().add(Window.class.getResource("/styles/style.css").toExternalForm());
+        ColumnConstraints col1 = new ColumnConstraints();
+        col1.setPercentWidth(15);
+        ColumnConstraints col2 = new ColumnConstraints();
+        col2.setPercentWidth(85);
+        grid.getColumnConstraints().addAll(col1,col2);
+        RowConstraints row1 = new RowConstraints();
+        row1.setPercentHeight(100);
+        grid.getRowConstraints().addAll(row1);
 
         VBox leftColumn = new VBox();
         leftColumn = buildLeftColumn(leftColumn, grid, words);
@@ -103,15 +113,6 @@ public class SceneBuilder {
         leftColumn.getChildren().add(checkboxHousing);
         leftColumn.getChildren().add(wordHousing);
 
-        ColumnConstraints col1 = new ColumnConstraints();
-        col1.setPercentWidth(15);
-        ColumnConstraints col2 = new ColumnConstraints();
-        col2.setPercentWidth(85);
-        grid.getColumnConstraints().addAll(col1,col2);
-        RowConstraints row1 = new RowConstraints();
-        row1.setPercentHeight(100);
-        grid.getRowConstraints().addAll(row1);
-
         addButton.prefWidthProperty().bind(Bindings.divide(buttonHousing.widthProperty(), 2.0));
         removeButton.prefWidthProperty().bind(Bindings.divide(buttonHousing.widthProperty(), 2.0));
         asc.prefWidthProperty().bind(Bindings.divide(checkboxHousing.widthProperty(), 2.0));
@@ -121,32 +122,58 @@ public class SceneBuilder {
 
         VBox.setVgrow(wordHousing, Priority.ALWAYS);
         wordHousing.setMaxHeight(Double.MAX_VALUE);
+
         return leftColumn;
     }
 
-    public static Scene buildAddScene(Words[] words) {
+    public static GridPane buildAddGrid(Words[] words) {
         GridPane grid = new GridPane();
         grid.setId("addGrid");
         grid.setVgap(10);
-
-        Scene addScene = new Scene(grid, 300, 275);
-        addScene.getStylesheets().add(Window.class.getResource("/styles/addScene.css").toExternalForm());
-
+        ColumnConstraints col1 = new ColumnConstraints();
+        col1.setPercentWidth(15);
+        ColumnConstraints col2 = new ColumnConstraints();
+        col2.setPercentWidth(85);
+        grid.getColumnConstraints().addAll(col1,col2);
+        RowConstraints row1 = new RowConstraints();
+        row1.setPercentHeight(100);
+        grid.getRowConstraints().addAll(row1);
         VBox leftColumn = new VBox();
         leftColumn = buildLeftColumn(leftColumn, grid, words);
+        leftColumn.setId("leftColumn");
+        grid.add(leftColumn, 0, 0);
 
-
-
-        return addScene;
+        return grid;
     }
 
-    public static void leftColumnListeners(Scene scene, Words[] words) {
+    public static GridPane buildDeleteGrid(Words[] words) {
+        GridPane grid = new GridPane();
+        grid.setId("deleteGrid");
+        grid.setVgap(10);
+        ColumnConstraints col1 = new ColumnConstraints();
+        col1.setPercentWidth(15);
+        ColumnConstraints col2 = new ColumnConstraints();
+        col2.setPercentWidth(85);
+        grid.getColumnConstraints().addAll(col1,col2);
+        RowConstraints row1 = new RowConstraints();
+        row1.setPercentHeight(100);
+        grid.getRowConstraints().addAll(row1);
+        VBox leftColumn = new VBox();
+        leftColumn = buildLeftColumn(leftColumn, grid, words);
+        leftColumn.setId("leftColumn");
+        grid.add(leftColumn, 0, 0);
+
+        
+        return grid;
+    }
+
+    public static void leftColumnListeners(Scene scene, Words[] words, Stage stage) {
         CheckBox asc = (CheckBox) scene.lookup("#asc");
         CheckBox desc = (CheckBox) scene.lookup("#desc");
         TextField searchbar = (TextField) scene.lookup("#searchbar");
         ListView<String> wordHousing = (ListView<String>) scene.lookup("#wordHousing");
-        Button addButton = (Button) scene.lookup("addButton");
-        Button removeButton = (Button) scene.lookup("removeButton");
+        Button addButton = (Button) scene.lookup("#addButton");
+        Button removeButton = (Button) scene.lookup("#removeButton");
         List<String> wordStrings = new ArrayList<String>();
         for (int i = 0; i < words.length; i++) {
             wordStrings.add(words[i].getWord());
@@ -175,6 +202,23 @@ public class SceneBuilder {
                 filteredWords.setPredicate(s -> s.contains(filter));
             }
         });
+
+        EventHandler<ActionEvent> showAddScreen = new EventHandler<ActionEvent>() { 
+            public void handle(ActionEvent e) 
+            { 
+                stage.getScene().setRoot(buildAddGrid(words));
+                SceneBuilder.leftColumnListeners(scene, words, stage);
+            } 
+        }; 
+        addButton.setOnAction(showAddScreen);
+
+        EventHandler<ActionEvent> showDeleteScreen = new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent e) {
+                stage.getScene().setRoot(buildDeleteGrid(words));
+                SceneBuilder.leftColumnListeners(scene, words, stage);
+            }
+        };
+        removeButton.setOnAction(showDeleteScreen);
         wordHousing.setItems(filteredWords);
     }
 }

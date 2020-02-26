@@ -8,8 +8,16 @@
 
 #rootGrid {
     -fx-background-color: #6D8A96;
-
 }
+
+#addGrid {
+    -fx-background-color: orange;
+}
+
+#deleteGrid {
+    -fx-background-color: white;
+}
+
 
 #buttonHousing {
     -fx-spacing: 3px;
@@ -26,7 +34,7 @@
 }
 
 #checkboxHousing {
-    -fx-padding: 0 0 3 0;
+    -fx-padding: 0 0 5 0;
     -fx-border-width: 2px;
     -fx-border-color: transparent transparent black transparent;
 }
