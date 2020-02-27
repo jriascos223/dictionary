@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.function.Predicate;
 
 import javafx.beans.binding.Bindings;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
@@ -14,6 +16,7 @@ import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
@@ -25,13 +28,16 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import tech.jriascos.model.Definitions;
 import tech.jriascos.model.Words;
 
 public class SceneBuilder {
     /**
-     * Builds the default scene of showing words that are clicked from the ListView on the left, alongside
-     * its definitions
+     * Builds the default scene of showing words that are clicked from the ListView
+     * on the left, alongside its definitions
+     * 
      * @param words array of words in the dictionary
      * @return constructed scene JavaFX has to show
      */
@@ -46,7 +52,7 @@ public class SceneBuilder {
         col1.setPercentWidth(15);
         ColumnConstraints col2 = new ColumnConstraints();
         col2.setPercentWidth(85);
-        grid.getColumnConstraints().addAll(col1,col2);
+        grid.getColumnConstraints().addAll(col1, col2);
         RowConstraints row1 = new RowConstraints();
         row1.setPercentHeight(100);
         grid.getRowConstraints().addAll(row1);
@@ -56,37 +62,78 @@ public class SceneBuilder {
         leftColumn.setId("leftColumn");
         grid.add(leftColumn, 0, 0);
 
-        ListView<String> definitionHousing = new ListView<String>();
-        definitionHousing = buildDefinitionHousing(words);
-        grid.add(definitionHousing, 1, 0);
-        GridPane.setMargin(definitionHousing, new Insets(8, 8, 8, 8));
+        // Will probably have to be a VBox with dynamically added labels
+        VBox definitionHousing = new VBox();
+        ScrollPane definitionScroll = new ScrollPane();
+        definitionScroll.setContent(definitionHousing);
+        grid.add(definitionScroll, 1, 0);
+        GridPane.setMargin(definitionScroll, new Insets(8, 8, 8, 8));
         definitionHousing.setId("definitionHousing");
-        
+        definitionScroll.setId("definitionScroll");
+
         return defaultScene;
     }
 
-    private static ListView<String> buildDefinitionHousing(Words[] words) {
-        ListView<String> definitionHousing = new ListView<String>();
+    private static void buildDefinitionHousing(Words[] words, int index, Scene scene) {
+        if (index == -1) {
+            return;
+        }
+        VBox definitionHousing = (VBox) scene.lookup("#definitionHousing");
+        ListView<String> wordHousing = (ListView<String>) scene.lookup("#wordHousing");
+        definitionHousing.getChildren().clear();
+        TextField searchbar = (TextField) scene.lookup("#searchbar");
+        List<String> filteredStrings = wordHousing.getItems();
+        Words[] filteredWords = new Words[filteredStrings.size()];
 
-        return definitionHousing;
+        if (searchbar.getText() != null || searchbar.getText().length() != 0) {
+            for (int i = 0; i < words.length; i++) {
+                for (int j = 0; j < filteredStrings.size(); j++) {
+                    if (words[i].getWord().equals(filteredStrings.get(j))) {
+                        filteredWords[j] = words[i];
+                    }
+                }
+            }   
+        }
+        Text word = new Text(filteredWords[index].getWord());
+        word.setId("word");
+        definitionHousing.getChildren().addAll(word);
+
+        HBox heading = new HBox(new Text("Definitions"));
+        heading.setId("definitionHeading");
+        definitionHousing.getChildren().addAll(heading);
+
+        for (int i = 0; i < filteredWords[index].getDefinitions().length; i++) {
+            HBox definitionString = new HBox(new Text(filteredWords[index].getDefinitions()[i].getDefinition()));
+            HBox partOfSpeech = new HBox(new Text(((Integer) (i+1)).toString() + ". " + filteredWords[index].getWord() + " (" + filteredWords[index].getDefinitions()[i].getPartOfSpeech() + ")"));
+            
+            definitionString.getStyleClass().add("definitions");
+            partOfSpeech.getStyleClass().add("partOfSpeech");
+            definitionHousing.getChildren().addAll(partOfSpeech);
+            definitionHousing.getChildren().addAll(definitionString);
+        }
+
+
+        
+
     }
 
     /**
-     * Builds the left hand side of the GUI, this being the buttons, checkboxes, searchbar, and 
-     * word list the dictionary requires.
+     * Builds the left hand side of the GUI, this being the buttons, checkboxes,
+     * searchbar, and word list the dictionary requires.
+     * 
      * @param leftColumn VBox that will house the contents
-     * @param grid GridPane that is the root node of the scene
-     * @param words array of words in the dictionary
+     * @param grid       GridPane that is the root node of the scene
+     * @param words      array of words in the dictionary
      * @return leftColumn VBox populated with new elements
      */
     private static VBox buildLeftColumn(VBox leftColumn, GridPane grid, Words[] words) {
         HBox buttonHousing = new HBox();
         buttonHousing.setId("buttonHousing");
-        
+
         Button addButton = new Button("Add");
         addButton.setId("addButton");
         buttonHousing.getChildren().add(addButton);
-        
+
         Button removeButton = new Button("Remove");
         removeButton.setId("removeButton");
         buttonHousing.getChildren().add(removeButton);
@@ -99,7 +146,6 @@ public class SceneBuilder {
         asc.setId("asc");
         CheckBox desc = new CheckBox("Desc");
         desc.setId("desc");
-        
 
         HBox checkboxHousing = new HBox();
         checkboxHousing.setId("checkboxHousing");
@@ -107,7 +153,7 @@ public class SceneBuilder {
 
         ListView<String> wordHousing = new ListView<String>();
         wordHousing.setId("wordHousing");
-        
+
         leftColumn.getChildren().add(buttonHousing);
         leftColumn.getChildren().add(searchbar);
         leftColumn.getChildren().add(checkboxHousing);
@@ -134,7 +180,7 @@ public class SceneBuilder {
         col1.setPercentWidth(15);
         ColumnConstraints col2 = new ColumnConstraints();
         col2.setPercentWidth(85);
-        grid.getColumnConstraints().addAll(col1,col2);
+        grid.getColumnConstraints().addAll(col1, col2);
         RowConstraints row1 = new RowConstraints();
         row1.setPercentHeight(100);
         grid.getRowConstraints().addAll(row1);
@@ -154,7 +200,7 @@ public class SceneBuilder {
         col1.setPercentWidth(15);
         ColumnConstraints col2 = new ColumnConstraints();
         col2.setPercentWidth(85);
-        grid.getColumnConstraints().addAll(col1,col2);
+        grid.getColumnConstraints().addAll(col1, col2);
         RowConstraints row1 = new RowConstraints();
         row1.setPercentHeight(100);
         grid.getRowConstraints().addAll(row1);
@@ -163,7 +209,6 @@ public class SceneBuilder {
         leftColumn.setId("leftColumn");
         grid.add(leftColumn, 0, 0);
 
-        
         return grid;
     }
 
@@ -174,6 +219,7 @@ public class SceneBuilder {
         ListView<String> wordHousing = (ListView<String>) scene.lookup("#wordHousing");
         Button addButton = (Button) scene.lookup("#addButton");
         Button removeButton = (Button) scene.lookup("#removeButton");
+        GridPane rootGrid = (GridPane) scene.lookup("#rootGrid");
         List<String> wordStrings = new ArrayList<String>();
         for (int i = 0; i < words.length; i++) {
             wordStrings.add(words[i].getWord());
@@ -193,23 +239,21 @@ public class SceneBuilder {
         });
         FilteredList<String> filteredWords = new FilteredList<String>(wordObserv, s -> true);
 
-        searchbar.textProperty().addListener(obs->{
+        searchbar.textProperty().addListener(obs -> {
             String filter = searchbar.getText().toLowerCase();
-            if(filter == null || filter.length() == 0) {
+            if (filter == null || filter.length() == 0 || filter.matches("\\s*")) {
                 filteredWords.setPredicate(s -> true);
-            }
-            else {
-                filteredWords.setPredicate(s -> s.contains(filter));
+            } else {
+                filteredWords.setPredicate(s -> s.matches(filter + ".*"));
             }
         });
 
-        EventHandler<ActionEvent> showAddScreen = new EventHandler<ActionEvent>() { 
-            public void handle(ActionEvent e) 
-            { 
+        EventHandler<ActionEvent> showAddScreen = new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent e) {
                 stage.getScene().setRoot(buildAddGrid(words));
                 SceneBuilder.leftColumnListeners(scene, words, stage);
-            } 
-        }; 
+            }
+        };
         addButton.setOnAction(showAddScreen);
 
         EventHandler<ActionEvent> showDeleteScreen = new EventHandler<ActionEvent>() {
@@ -220,5 +264,13 @@ public class SceneBuilder {
         };
         removeButton.setOnAction(showDeleteScreen);
         wordHousing.setItems(filteredWords);
+
+        wordHousing.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> arg0, Number arg1, Number index) {
+                buildDefinitionHousing(words, (Integer) index, scene);
+            }
+          
+        });
     }
 }

@@ -11,13 +11,31 @@
 }
 
 #addGrid {
-    -fx-background-color: orange;
+    -fx-background-color: #9C9C4F;
 }
 
 #deleteGrid {
-    -fx-background-color: white;
+    -fx-background-color: #C14953;
 }
 
+#word {
+    -fx-font: 45px Tahoma;
+}
+
+#definitionHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
+}
+
+.definitions {
+    -fx-font: 15px Tahoma;
+    -fx-padding: 5 5 5 50;
+}
+
+.partOfSpeech {
+    -fx-font: 20px Tahoma;
+    -fx-padding: 5 5 5 35;
+}
 
 #buttonHousing {
     -fx-spacing: 3px;
@@ -39,8 +57,10 @@
     -fx-border-color: transparent transparent black transparent;
 }
 
-#definitionHousing {
+
+#definitionScroll {
     -fx-background-color: #FCFCFC;
+    -fx-padding: 3 3 3 3;
     -fx-border-width: 2px;
     -fx-border-color: black;
 }
