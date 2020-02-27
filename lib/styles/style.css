@@ -19,11 +19,22 @@
 }
 
 #word {
-    -fx-font: 100px Tahoma;
+    -fx-font: 45px Tahoma;
 }
 
 #definitionHeading {
-    -fx-margin: 5 5 5 5;
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
+}
+
+.definitions {
+    -fx-font: 15px Tahoma;
+    -fx-padding: 5 5 5 50;
+}
+
+.partOfSpeech {
+    -fx-font: 20px Tahoma;
+    -fx-padding: 5 5 5 35;
 }
 
 #buttonHousing {
@@ -46,8 +57,10 @@
     -fx-border-color: transparent transparent black transparent;
 }
 
-#definitionHousing {
+
+#definitionScroll {
     -fx-background-color: #FCFCFC;
+    -fx-padding: 3 3 3 3;
     -fx-border-width: 2px;
     -fx-border-color: black;
 }

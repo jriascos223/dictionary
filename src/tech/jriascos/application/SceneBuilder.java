@@ -64,9 +64,12 @@ public class SceneBuilder {
 
         // Will probably have to be a VBox with dynamically added labels
         VBox definitionHousing = new VBox();
-        grid.add(definitionHousing, 1, 0);
-        GridPane.setMargin(definitionHousing, new Insets(8, 8, 8, 8));
+        ScrollPane definitionScroll = new ScrollPane();
+        definitionScroll.setContent(definitionHousing);
+        grid.add(definitionScroll, 1, 0);
+        GridPane.setMargin(definitionScroll, new Insets(8, 8, 8, 8));
         definitionHousing.setId("definitionHousing");
+        definitionScroll.setId("definitionScroll");
 
         return defaultScene;
     }
@@ -95,13 +98,21 @@ public class SceneBuilder {
         word.setId("word");
         definitionHousing.getChildren().addAll(word);
 
-        Text heading = new Text("Definitions");
+        HBox heading = new HBox(new Text("Definitions"));
         heading.setId("definitionHeading");
         definitionHousing.getChildren().addAll(heading);
 
-        for (Definitions def : filteredWords[index].getDefinitions()) {
-            definitionHousing.getChildren().addAll(new Text(def.getDefinition()));
+        for (int i = 0; i < filteredWords[index].getDefinitions().length; i++) {
+            HBox definitionString = new HBox(new Text(filteredWords[index].getDefinitions()[i].getDefinition()));
+            HBox partOfSpeech = new HBox(new Text(((Integer) (i+1)).toString() + ". " + filteredWords[index].getWord() + " (" + filteredWords[index].getDefinitions()[i].getPartOfSpeech() + ")"));
+            
+            definitionString.getStyleClass().add("definitions");
+            partOfSpeech.getStyleClass().add("partOfSpeech");
+            definitionHousing.getChildren().addAll(partOfSpeech);
+            definitionHousing.getChildren().addAll(definitionString);
         }
+
+
         
 
     }
@@ -230,10 +241,10 @@ public class SceneBuilder {
 
         searchbar.textProperty().addListener(obs -> {
             String filter = searchbar.getText().toLowerCase();
-            if (filter == null || filter.length() == 0) {
+            if (filter == null || filter.length() == 0 || filter.matches("\\s*")) {
                 filteredWords.setPredicate(s -> true);
             } else {
-                filteredWords.setPredicate(s -> s.contains(filter));
+                filteredWords.setPredicate(s -> s.matches(filter + ".*"));
             }
         });
 
