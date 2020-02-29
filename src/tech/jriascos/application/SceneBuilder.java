@@ -117,6 +117,29 @@ public class SceneBuilder {
 
     }
 
+    private static void sortWordsAscending(Words[] words) {
+        ArrayList<String> wordStrings = new ArrayList<String>();
+        ArrayList<byte[]> asciiArray = new ArrayList<byte[]>();
+        for (Words word : words) {
+            wordStrings.add((word.getWord()));
+        }
+        System.out.println(wordStrings);
+
+        for (String s : wordStrings) {
+            byte[] asciiWord = new byte[s.length()];
+            for(int i = 0; i < s.length(); i++) {
+                asciiWord[i] = (byte) s.charAt(i);
+            }
+            asciiArray.add(asciiWord);
+        }
+
+        for (int i = 0; i < asciiArray.size(); i++) {
+            for (byte b : asciiArray.get(i)) {
+                System.out.println(b);
+            }
+        }
+    }
+
     /**
      * Builds the left hand side of the GUI, this being the buttons, checkboxes,
      * searchbar, and word list the dictionary requires.
@@ -229,6 +252,7 @@ public class SceneBuilder {
         asc.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
             if (isNowSelected) {
                 desc.setSelected(false);
+                sortWordsAscending(words);
             }
         });
 
