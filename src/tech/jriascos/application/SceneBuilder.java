@@ -49,9 +49,9 @@ public class SceneBuilder {
         Scene defaultScene = new Scene(grid, 300, 275);
         defaultScene.getStylesheets().add(Window.class.getResource("/styles/style.css").toExternalForm());
         ColumnConstraints col1 = new ColumnConstraints();
-        col1.setPercentWidth(15);
+        col1.setPercentWidth(20);
         ColumnConstraints col2 = new ColumnConstraints();
-        col2.setPercentWidth(85);
+        col2.setPercentWidth(80);
         grid.getColumnConstraints().addAll(col1, col2);
         RowConstraints row1 = new RowConstraints();
         row1.setPercentHeight(100);
@@ -85,15 +85,13 @@ public class SceneBuilder {
         List<String> filteredStrings = wordHousing.getItems();
         Words[] filteredWords = new Words[filteredStrings.size()];
 
-        if (searchbar.getText() != null || searchbar.getText().length() != 0) {
-            for (int i = 0; i < words.length; i++) {
-                for (int j = 0; j < filteredStrings.size(); j++) {
-                    if (words[i].getWord().equals(filteredStrings.get(j))) {
-                        filteredWords[j] = words[i];
-                    }
+        for (int i = 0; i < words.length; i++) {
+            for (int j = 0; j < filteredStrings.size(); j++) {
+                if (words[i].getWord().equals(filteredStrings.get(j))) {
+                    filteredWords[j] = words[i];
                 }
-            }   
-        }
+            }
+        }   
         Text word = new Text(filteredWords[index].getWord());
         word.setId("word");
         definitionHousing.getChildren().addAll(word);
@@ -105,16 +103,33 @@ public class SceneBuilder {
         for (int i = 0; i < filteredWords[index].getDefinitions().length; i++) {
             HBox definitionString = new HBox(new Text(filteredWords[index].getDefinitions()[i].getDefinition()));
             HBox partOfSpeech = new HBox(new Text(((Integer) (i+1)).toString() + ". " + filteredWords[index].getWord() + " (" + filteredWords[index].getDefinitions()[i].getPartOfSpeech() + ")"));
-            
             definitionString.getStyleClass().add("definitions");
             partOfSpeech.getStyleClass().add("partOfSpeech");
             definitionHousing.getChildren().addAll(partOfSpeech);
             definitionHousing.getChildren().addAll(definitionString);
         }
 
+        for (int i = 0; i < filteredWords[index].getSynonyms().length; i++) {
+            if (i == 0) {
+                HBox synonymHeading = new HBox(new Text("Synonyms"));
+                synonymHeading.setId("synonymHeading");
+                definitionHousing.getChildren().addAll(synonymHeading);
+            }
+            HBox synonymString = new HBox(new Text(((Integer) (i+1)).toString() + ". " + filteredWords[index].getSynonyms()[i]));
+            synonymString.getStyleClass().add("synonyms");
+            definitionHousing.getChildren().addAll(synonymString);
+        }
 
-        
-
+        for (int i = 0; i < filteredWords[index].getAntonyms().length; i++) {
+            if (i == 0) {
+                HBox antonymHeading = new HBox(new Text("Antonym"));
+                antonymHeading.setId("antonymHeading");
+                definitionHousing.getChildren().addAll(antonymHeading);
+            }
+            HBox antonymString = new HBox(new Text(((Integer) (i+1)).toString() + ". " + filteredWords[index].getAntonyms()[i]));
+            antonymString.getStyleClass().add("antonyms");
+            definitionHousing.getChildren().addAll(antonymString);
+        }
     }
 
     /**

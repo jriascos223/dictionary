@@ -32,7 +32,26 @@
     -fx-padding: 5 5 5 50;
 }
 
+#antonymHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
+}
+
+.antonyms {
+    -fx-font: 20px Tahoma;
+    -fx-padding: 5 5 5 35;
+}
 .partOfSpeech {
+    -fx-font: 20px Tahoma;
+    -fx-padding: 5 5 5 35;
+}
+
+#synonymHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
+}
+
+.synonyms {
     -fx-font: 20px Tahoma;
     -fx-padding: 5 5 5 35;
 }

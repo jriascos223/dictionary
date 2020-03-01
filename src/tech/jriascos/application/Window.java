@@ -27,6 +27,15 @@ public class Window extends Application {
         Gson gson = new Gson();
         String classpathDirectory = Tools.getClasspathDir();
         BufferedReader br = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
+        BufferedReader br2 = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
+        try {
+            while (br2.ready()) {
+                System.out.println(br2.readLine());
+            }
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         Words[] words = gson.fromJson(br, Words[].class);
 
         primaryStage.setTitle("Dictionary Application");
