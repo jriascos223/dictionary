@@ -32,6 +32,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import tech.jriascos.model.Definitions;
 import tech.jriascos.model.Words;
+import tech.jriascos.utilities.Tools;
 
 public class SceneBuilder {
     /**
@@ -111,19 +112,17 @@ public class SceneBuilder {
             definitionHousing.getChildren().addAll(partOfSpeech);
             definitionHousing.getChildren().addAll(definitionString);
         }
-
-
-        
-
     }
 
-    private static void sortWordsAscending(Words[] words) {
+    private static Words[] sortWordsAscending(Words[] words, int isSorted) {
+        if (isSorted == 1) {
+            return words;
+        }
         ArrayList<String> wordStrings = new ArrayList<String>();
         ArrayList<byte[]> asciiArray = new ArrayList<byte[]>();
         for (Words word : words) {
             wordStrings.add((word.getWord()));
         }
-        System.out.println(wordStrings);
 
         for (String s : wordStrings) {
             byte[] asciiWord = new byte[s.length()];
@@ -133,11 +132,23 @@ public class SceneBuilder {
             asciiArray.add(asciiWord);
         }
 
-        for (int i = 0; i < asciiArray.size(); i++) {
-            for (byte b : asciiArray.get(i)) {
-                System.out.println(b);
-            }
+        words = Tools.sortAscending(words, asciiArray);
+        return words;
+    }
+
+    private static Words[] sortWordsDescending(Words[] words, int isSorted) {
+        if (isSorted == 2) {
+            return words;
         }
+        words = sortWordsAscending(words, 0);
+        int n = words.length;
+        int j = n;
+        Words[] b = new Words[n]; 
+        for (int i = 0; i < n; i++) { 
+            b[j - 1] = words[i]; 
+            j = j - 1; 
+        } 
+        return b;
     }
 
     /**
@@ -235,7 +246,7 @@ public class SceneBuilder {
         return grid;
     }
 
-    public static void leftColumnListeners(Scene scene, Words[] words, Stage stage) {
+    public static void leftColumnListeners(Scene scene, Words[] words, Stage stage, int isSorted) {
         CheckBox asc = (CheckBox) scene.lookup("#asc");
         CheckBox desc = (CheckBox) scene.lookup("#desc");
         TextField searchbar = (TextField) scene.lookup("#searchbar");
@@ -250,15 +261,29 @@ public class SceneBuilder {
         ObservableList<String> wordObserv = FXCollections.observableArrayList(wordStrings);
 
         asc.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
-            if (isNowSelected) {
+            if (isNowSelected && (isSorted != 1 || isSorted != 2)) {
                 desc.setSelected(false);
-                sortWordsAscending(words);
+                Words[] wordsInner = sortWordsAscending(words, isSorted);
+                List<String> wordStringsInner = new ArrayList<String>();
+                for (int i = 0; i < wordsInner.length; i++) {
+                    wordStringsInner.add(wordsInner[i].getWord());
+                }
+                wordHousing.setItems(FXCollections.observableArrayList(wordStringsInner));
             }
         });
 
         desc.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
-            if (isNowSelected) {
+            if (isNowSelected && (isSorted != 1 || isSorted != 2)) {
                 asc.setSelected(false);
+                if (isNowSelected && (isSorted != 1 || isSorted != 2)) {
+                    desc.setSelected(false);
+                    Words[] wordsInner = sortWordsDescending(words, isSorted);
+                    List<String> wordStringsInner = new ArrayList<String>();
+                    for (int i = 0; i < wordsInner.length; i++) {
+                        wordStringsInner.add(wordsInner[i].getWord());
+                    }
+                    wordHousing.setItems(FXCollections.observableArrayList(wordStringsInner));
+                }
             }
         });
         FilteredList<String> filteredWords = new FilteredList<String>(wordObserv, s -> true);
@@ -275,7 +300,6 @@ public class SceneBuilder {
         EventHandler<ActionEvent> showAddScreen = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
                 stage.getScene().setRoot(buildAddGrid(words));
-                SceneBuilder.leftColumnListeners(scene, words, stage);
             }
         };
         addButton.setOnAction(showAddScreen);
@@ -283,7 +307,6 @@ public class SceneBuilder {
         EventHandler<ActionEvent> showDeleteScreen = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
                 stage.getScene().setRoot(buildDeleteGrid(words));
-                SceneBuilder.leftColumnListeners(scene, words, stage);
             }
         };
         removeButton.setOnAction(showDeleteScreen);
