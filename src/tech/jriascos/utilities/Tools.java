@@ -1,5 +1,9 @@
 package tech.jriascos.utilities;
 
+import java.util.ArrayList;
+
+import tech.jriascos.model.Words;
+
 public class Tools {
     /**
      * Needed to obtain resources (such as words.json) from the classpath's directory
@@ -30,8 +34,44 @@ public class Tools {
             }
             return classpathDirectory;
         }
-        
     }    
+
+    public static Words[] sortAscending(Words[] words, ArrayList<byte[]> asciiArray) {
+        for (int i = 0; i < asciiArray.size() - 1; i++) {
+            for (int j = 0; j < asciiArray.size()-1-i; j++) {
+                if (asciiArray.get(j)[0] > asciiArray.get(j+1)[0]) {
+                    byte[] temp = asciiArray.get(j);
+                    asciiArray.set(j, asciiArray.get(j+1));
+                    asciiArray.set(j + 1, temp);
+                    Words temp2 = words[j];
+                    words[j] = words[j+1];
+                    words[j+1] = temp2;
+                //99% sure it will stop working if I add a one letter word
+                }else if (asciiArray.get(j)[0] == asciiArray.get(j+1)[0]) {
+                    if (asciiArray.get(j)[1] > asciiArray.get(j+1)[1]) { 
+                        byte[] temp = asciiArray.get(j);
+                        asciiArray.set(j, asciiArray.get(j+1));
+                        asciiArray.set(j + 1, temp);
+                        Words temp2 = words[j];
+                        words[j] = words[j+1];
+                        words[j+1] = temp2;
+                    }
+                }
+            }
+        }
+        return words;
+    }
+
+    public static Words[] reverse(Words a[], int n) 
+    { 
+        Words[] b = new Words[n]; 
+        int j = n; 
+        for (int i = 0; i < n; i++) { 
+            b[j - 1] = a[i]; 
+            j = j - 1; 
+        } 
+        return b;
+    } 
 
     
 }
