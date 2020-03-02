@@ -102,6 +102,23 @@
     -fx-border-color: transparent transparent black transparent;
 }
 
+#synonymInput {
+    -fx-padding: 5;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+
+#antonymInput {
+    -fx-padding: 5;
+    -fx-border-width: 2px;
+    -fx-border-color:black;
+}
+
+#defSpeechPair {
+    -fx-padding: 5;
+    -fx-border-width: 2px;
+    -fx-border-color:black ;
+}
 
 #definitionScroll {
     -fx-background-color: #FCFCFC;

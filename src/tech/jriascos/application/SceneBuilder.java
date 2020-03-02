@@ -256,6 +256,10 @@ public class SceneBuilder {
         //adding input boxes to right hand side of screen
         addHousing.getChildren().add(defSpeechPair);
 
+        VBox addSynSection = new VBox();
+        addSynSection.setSpacing(10);
+        addSynSection.setId("addSynSection");
+
         HBox addSynonymHeading = new HBox();
         addSynonymHeading.setId("addSynonymHeading");
         Text addSynonyms = new Text("Add Synonyms");
@@ -265,7 +269,8 @@ public class SceneBuilder {
         HBox.setHgrow(spacer3, Priority.ALWAYS);
 
         addSynonymHeading.getChildren().addAll(addSynonyms, spacer3, addSynonymButton);
-        addHousing.getChildren().add(addSynonymHeading);
+        addSynSection.getChildren().add(addSynonymHeading);
+        addHousing.getChildren().add(addSynSection);
 
         VBox synonymInput = new VBox();
         synonymInput.setSpacing(10);
@@ -277,6 +282,10 @@ public class SceneBuilder {
 
         addHousing.getChildren().add(synonymInput);
 
+
+        VBox addAntSection = new VBox();
+        addAntSection.setSpacing(10);
+        addAntSection.setId("addAntSection");
         HBox addAntonymHeading = new HBox();
         addAntonymHeading.setId("addAntonymHeading");
         Text addAntonym = new Text("Add Antonyms");
@@ -286,7 +295,8 @@ public class SceneBuilder {
         HBox.setHgrow(spacer4, Priority.ALWAYS);
 
         addAntonymHeading.getChildren().addAll(addAntonym, spacer4, addAntonymButton);
-        addHousing.getChildren().add(addAntonymHeading);
+        addAntSection.getChildren().add(addAntonymHeading);
+        addHousing.getChildren().add(addAntSection);
 
         VBox antonymInput = new VBox();
         antonymInput.setSpacing(10);
@@ -297,6 +307,7 @@ public class SceneBuilder {
         antonymInput.getChildren().addAll(antonym);
 
         addHousing.getChildren().add(antonymInput);
+
         
         grid.add(addHousing, 1, 0);
         GridPane.setMargin(addHousing, new Insets(8, 8, 8, 8));

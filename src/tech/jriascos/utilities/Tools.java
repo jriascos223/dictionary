@@ -263,9 +263,16 @@ public class Tools {
 
     public static void addScreenListeners(Scene scene, Words[] words, Stage stage) {
         Button back = (Button) scene.lookup("#close");
+        ScrollPane addScroll = (ScrollPane) scene.lookup("#addScroll");
         Button addDefinition = (Button) scene.lookup("#addDButton");
-        VBox addHousing = (VBox) scene.lookup("#addHousing");
         VBox addDSection = (VBox) scene.lookup("#addDSection");
+        VBox addSynSection = (VBox) scene.lookup("#addSynSection");
+        VBox addAntSection = (VBox) scene.lookup("#addAntSection");
+        Button addSynonymButton = (Button) scene.lookup("#addSynonymButton");
+        Button addAntonymButton = (Button) scene.lookup("#addAntonymButton");
+
+        System.out.println(addDSection);
+        System.out.println(addSynSection);
 
         EventHandler<ActionEvent> showDefaultScreen = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
@@ -278,12 +285,27 @@ public class Tools {
 
         EventHandler<ActionEvent> addDInputs = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
-                System.out.println(createDefSpeechPairInput());
                 addDSection.getChildren().add(createDefSpeechPairInput());
             }
         };
 
         addDefinition.setOnAction(addDInputs);
+
+        EventHandler<ActionEvent> addSInputs = new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent e) {
+                addSynSection.getChildren().add(createSynonymInput());
+            }
+        };
+
+        addSynonymButton.setOnAction(addSInputs);
+
+        EventHandler<ActionEvent> addAInputs = new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent e) {
+                addAntSection.getChildren().add(createAntonymInput());
+            }
+        };
+
+        addAntonymButton.setOnAction(addAInputs);
     }
 
     public static VBox createDefSpeechPairInput() {
