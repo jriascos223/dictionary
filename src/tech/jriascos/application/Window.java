@@ -32,15 +32,8 @@ public class Window extends Application {
 
 
         //Add word testing
-        /* Words newWord = new Words("Megalovania", new Definitions[]{new Definitions("song in undertale", "noun"), new Definitions("play on megalomaniac", null)}, new String[]{"synonym"}, new String[0]);
-
-        System.out.println(words[words.length - 1].getWord());
-        Words[] newWords = new Words[words.length + 1];
-        System.arraycopy(words, 0, newWords, 0, words.length);
-        words = newWords;
-        words[words.length - 1] = newWord;
-        System.out.println(words[words.length - 1].getWord());
-		Tools.saveWordJson(words, newWord); */
+        /* Words newWord = new Words("Megalovania", new Definitions[]{new Definitions("song in undertale", "noun"), new Definitions("haha funny definition", "noun")}, new String[]{"synonym"}, new String[]{"antonym"});
+		words = Tools.saveWordJson(words, newWord); */
 
         primaryStage.setTitle("Dictionary Application");
         primaryStage.setMaximized(true);

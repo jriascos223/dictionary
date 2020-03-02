@@ -18,6 +18,7 @@ import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
@@ -129,7 +130,7 @@ public class Tools {
      * @param wordObj instance of Words object to add to dictionary
      * @throws IOException
      */
-    public static void saveWordJson(Words[] words, Words wordObj) throws IOException {
+    public static Words[] saveWordJson(Words[] words, Words wordObj) throws IOException {
         String classpathDirectory = getClasspathDir();
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         FileWriter fw = new FileWriter(classpathDirectory + "words.json");
@@ -144,6 +145,8 @@ public class Tools {
         fw.write(json);
         fw.flush();
         fw.close();
+
+        return newWords;
     }
 
     private static Words[] sortWordsAscending(Words[] words, int isSorted) {
@@ -262,14 +265,14 @@ public class Tools {
     }
 
     public static void addScreenListeners(Scene scene, Words[] words, Stage stage) {
-        Button back = (Button) scene.lookup("#close");
         ScrollPane addScroll = (ScrollPane) scene.lookup("#addScroll");
-        Button addDefinition = (Button) scene.lookup("#addDButton");
-        VBox addDSection = (VBox) scene.lookup("#addDSection");
-        VBox addSynSection = (VBox) scene.lookup("#addSynSection");
-        VBox addAntSection = (VBox) scene.lookup("#addAntSection");
-        Button addSynonymButton = (Button) scene.lookup("#addSynonymButton");
-        Button addAntonymButton = (Button) scene.lookup("#addAntonymButton");
+        Button back = (Button) addScroll.getContent().lookup("#close");
+        Button addDefinition = (Button) addScroll.getContent().lookup("#addDButton");
+        VBox addDSection = (VBox) addScroll.getContent().lookup("#addDSection");
+        VBox addSynSection = (VBox) addScroll.getContent().lookup("#addSynSection");
+        VBox addAntSection = (VBox) addScroll.getContent().lookup("#addAntSection");
+        Button addSynonymButton = (Button) addScroll.getContent().lookup("#addSynonymButton");
+        Button addAntonymButton = (Button) addScroll.getContent().lookup("#addAntonymButton");
 
         System.out.println(addDSection);
         System.out.println(addSynSection);

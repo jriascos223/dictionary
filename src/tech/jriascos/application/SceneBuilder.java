@@ -225,6 +225,12 @@ public class SceneBuilder {
         addHeading.getChildren().addAll(addHeadingText, spacer, close);
         addHousing.getChildren().add(addHeading);
 
+        //New input box for word
+        TextField wordInput = new TextField();
+        wordInput.setId("wordInput");
+        wordInput.setPromptText("Enter word here.");
+        addHousing.getChildren().add(wordInput);
+
         //New heading for definition section
         HBox addDefinitionHeading = new HBox();
         addDefinitionHeading.setId("addDefinitionHeading");
@@ -308,9 +314,15 @@ public class SceneBuilder {
 
         addHousing.getChildren().add(antonymInput);
 
+        ScrollPane addScroll = new ScrollPane();    
+        addScroll.setId("addScroll");
+        addScroll.setContent(addHousing);    
+
+        addHousing.prefWidthProperty().bind(addScroll.widthProperty() );
         
-        grid.add(addHousing, 1, 0);
-        GridPane.setMargin(addHousing, new Insets(8, 8, 8, 8));
+
+        grid.add(addScroll, 1, 0);
+        GridPane.setMargin(addScroll, new Insets(8, 8, 8, 8));
 
         return grid;
     }
