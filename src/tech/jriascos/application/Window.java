@@ -28,6 +28,15 @@ public class Window extends Application {
         Gson gson = new Gson();
         String classpathDirectory = Tools.getClasspathDir();
         BufferedReader br = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
+        BufferedReader br2 = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
+        try {
+            while (br2.ready()) {
+                System.out.println(br2.readLine());
+            }
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         Words[] words = gson.fromJson(br, Words[].class);
 
         Words newWord = new Words("Megalovania", new Definitions[]{new Definitions("song in undertale", "noun"), new Definitions("play on megalomaniac", null)}, new String[]{"synonym"}, new String[0]);

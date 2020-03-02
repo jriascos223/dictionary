@@ -123,8 +123,8 @@ public class SceneBuilder {
 
         for (int i = 0; i < filteredWords[index].getAntonyms().length; i++) {
             if (i == 0) {
-                HBox antonymHeading = new HBox(new Text("Synonyms"));
-                antonymHeading.setId("synonymHeading");
+                HBox antonymHeading = new HBox(new Text("Antonym"));
+                antonymHeading.setId("antonymHeading");
                 definitionHousing.getChildren().addAll(antonymHeading);
             }
             HBox antonymString = new HBox(new Text(((Integer) (i+1)).toString() + ". " + filteredWords[index].getAntonyms()[i]));
