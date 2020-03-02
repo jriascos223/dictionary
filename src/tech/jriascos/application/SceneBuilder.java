@@ -1,5 +1,6 @@
 package tech.jriascos.application;
 
+import java.security.spec.DSAPrivateKeySpec;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
@@ -26,6 +27,7 @@ import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -42,13 +44,11 @@ public class SceneBuilder {
      * @param words array of words in the dictionary
      * @return constructed scene JavaFX has to show
      */
-    public static Scene buildDefaultScene(Words[] words) {
+    public static GridPane buildDefaultScene(Words[] words) {
         GridPane grid = new GridPane();
         grid.setId("rootGrid");
         grid.setVgap(10);
 
-        Scene defaultScene = new Scene(grid, 300, 275);
-        defaultScene.getStylesheets().add(Window.class.getResource("/styles/style.css").toExternalForm());
         ColumnConstraints col1 = new ColumnConstraints();
         col1.setPercentWidth(20);
         ColumnConstraints col2 = new ColumnConstraints();
@@ -72,14 +72,17 @@ public class SceneBuilder {
         definitionHousing.setId("definitionHousing");
         definitionScroll.setId("definitionScroll");
 
-        return defaultScene;
+        return grid;
     }
 
-    private static void buildDefinitionHousing(Words[] words, int index, Scene scene) {
+    public static void buildDefinitionHousing(Words[] words, int index, Scene scene) {
         if (index == -1) {
             return;
         }
         VBox definitionHousing = (VBox) scene.lookup("#definitionHousing");
+        if (definitionHousing == null) {
+            return;
+        }
         ListView<String> wordHousing = (ListView<String>) scene.lookup("#wordHousing");
         definitionHousing.getChildren().clear();
         TextField searchbar = (TextField) scene.lookup("#searchbar");
@@ -188,7 +191,7 @@ public class SceneBuilder {
         return leftColumn;
     }
 
-    public static GridPane buildAddGrid(Words[] words) {
+    public static GridPane buildAddGrid(Scene scene, Words[] words, Stage stage) {
         GridPane grid = new GridPane();
         grid.setId("addGrid");
         grid.setVgap(10);
@@ -204,6 +207,99 @@ public class SceneBuilder {
         leftColumn = buildLeftColumn(leftColumn, grid, words);
         leftColumn.setId("leftColumn");
         grid.add(leftColumn, 0, 0);
+
+        //Right hand side of screen
+        VBox addHousing = new VBox();
+        addHousing.setSpacing(10);
+        addHousing.setId("addHousing");
+        //Heading that says "Add word" and has button "back to dictionary"
+        HBox addHeading = new HBox();
+        addHeading.setId("addHeading");
+        Text addHeadingText = new Text("Add Word");
+        Button close = new Button("Back to Dictionary");
+        close.setId("close");
+        Region spacer = new Region();
+        HBox.setHgrow(spacer, Priority.ALWAYS);
+
+        //Adding heading to right hand side of screen
+        addHeading.getChildren().addAll(addHeadingText, spacer, close);
+        addHousing.getChildren().add(addHeading);
+
+        //New heading for definition section
+        HBox addDefinitionHeading = new HBox();
+        addDefinitionHeading.setId("addDefinitionHeading");
+        //VBox to add to later in event listeners (for extra fields)
+        VBox addDSection = new VBox();
+        addDSection.setSpacing(10);
+        addDSection.setId("addDSection");
+        //header text and button
+        Text addDefinitions = new Text("Add Definition & Part of Speech");
+        Button addDButton = new Button("+");
+        addDButton.setId("addDButton");
+        Region spacer2 = new Region();
+        HBox.setHgrow(spacer2, Priority.ALWAYS);
+        //adding header text and button to right hand side of screen
+        addDefinitionHeading.getChildren().addAll(addDefinitions, spacer2, addDButton);
+        addDSection.getChildren().add(addDefinitionHeading);
+        addHousing.getChildren().add(addDSection);
+
+        //input boxes for definition and part of speech (also model for container that will be added to sections)
+        VBox defSpeechPair = new VBox();
+        defSpeechPair.setSpacing(10);
+        defSpeechPair.setId("defSpeechPair");
+        TextField definition = new TextField();
+        definition.setPromptText("Enter definition here.");
+        TextField partOfSpeech = new TextField();
+        partOfSpeech.setPromptText("Enter part of speech here.");
+        //adding definition and part of speech input boxes into container
+        defSpeechPair.getChildren().addAll(definition, partOfSpeech);
+        //adding input boxes to right hand side of screen
+        addHousing.getChildren().add(defSpeechPair);
+
+        HBox addSynonymHeading = new HBox();
+        addSynonymHeading.setId("addSynonymHeading");
+        Text addSynonyms = new Text("Add Synonyms");
+        Button addSynonymButton = new Button("+");
+        addSynonymButton.setId("addSynonymButton");
+        Region spacer3 = new Region();
+        HBox.setHgrow(spacer3, Priority.ALWAYS);
+
+        addSynonymHeading.getChildren().addAll(addSynonyms, spacer3, addSynonymButton);
+        addHousing.getChildren().add(addSynonymHeading);
+
+        VBox synonymInput = new VBox();
+        synonymInput.setSpacing(10);
+        synonymInput.setId("synonymInput");
+        TextField synonym = new TextField();
+        synonym.setPromptText("Enter synonym here.");
+
+        synonymInput.getChildren().addAll(synonym);
+
+        addHousing.getChildren().add(synonymInput);
+
+        HBox addAntonymHeading = new HBox();
+        addAntonymHeading.setId("addAntonymHeading");
+        Text addAntonym = new Text("Add Antonyms");
+        Button addAntonymButton = new Button("+");
+        addAntonymButton.setId("addAntonymButton");
+        Region spacer4 = new Region();
+        HBox.setHgrow(spacer4, Priority.ALWAYS);
+
+        addAntonymHeading.getChildren().addAll(addAntonym, spacer4, addAntonymButton);
+        addHousing.getChildren().add(addAntonymHeading);
+
+        VBox antonymInput = new VBox();
+        antonymInput.setSpacing(10);
+        antonymInput.setId("antonymInput");
+        TextField antonym = new TextField();
+        antonym.setPromptText("Enter antonym here.");
+
+        antonymInput.getChildren().addAll(antonym);
+
+        addHousing.getChildren().add(antonymInput);
+        
+        grid.add(addHousing, 1, 0);
+        GridPane.setMargin(addHousing, new Insets(8, 8, 8, 8));
 
         return grid;
     }
@@ -227,117 +323,6 @@ public class SceneBuilder {
 
         return grid;
     }
-    private static Words[] sortWordsAscending(Words[] words, int isSorted) {
-        if (isSorted == 1) {
-            return words;
-        }
-        ArrayList<String> wordStrings = new ArrayList<String>();
-        ArrayList<byte[]> asciiArray = new ArrayList<byte[]>();
-        for (Words word : words) {
-            wordStrings.add((word.getWord().toLowerCase()));
-        }
 
-        for (String s : wordStrings) {
-            byte[] asciiWord = new byte[s.length()];
-            for(int i = 0; i < s.length(); i++) {
-                asciiWord[i] = (byte) s.charAt(i);
-            }
-            asciiArray.add(asciiWord);
-        }
-
-        words = Tools.sortAscending(words, asciiArray);
-        return words;
-    }
-
-    private static Words[] sortWordsDescending(Words[] words, int isSorted) {
-        if (isSorted == 2) {
-            return words;
-        }
-        words = sortWordsAscending(words, 0);
-        int n = words.length;
-        int j = n;
-        Words[] b = new Words[n]; 
-        for (int i = 0; i < n; i++) { 
-            b[j - 1] = words[i]; 
-            j = j - 1; 
-        } 
-        return b;
-    }
-
-    public static void leftColumnListeners(Scene scene, Words[] words, Stage stage, int isSorted) {
-        CheckBox asc = (CheckBox) scene.lookup("#asc");
-        CheckBox desc = (CheckBox) scene.lookup("#desc");
-        TextField searchbar = (TextField) scene.lookup("#searchbar");
-        ListView<String> wordHousing = (ListView<String>) scene.lookup("#wordHousing");
-        Button addButton = (Button) scene.lookup("#addButton");
-        Button removeButton = (Button) scene.lookup("#removeButton");
-        GridPane rootGrid = (GridPane) scene.lookup("#rootGrid");
-        List<String> wordStrings = new ArrayList<String>();
-        for (int i = 0; i < words.length; i++) {
-            wordStrings.add(words[i].getWord());
-        }
-        ObservableList<String> wordObserv = FXCollections.observableArrayList(wordStrings);
-
-        asc.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
-            if (isNowSelected && (isSorted != 1 || isSorted != 2)) {
-                desc.setSelected(false);
-                Words[] wordsInner = sortWordsAscending(words, isSorted);
-                List<String> wordStringsInner = new ArrayList<String>();
-                for (int i = 0; i < wordsInner.length; i++) {
-                    wordStringsInner.add(wordsInner[i].getWord());
-                }
-                wordHousing.setItems(FXCollections.observableArrayList(wordStringsInner));
-            }
-        });
-
-        desc.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
-            if (isNowSelected && (isSorted != 1 || isSorted != 2)) {
-                asc.setSelected(false);
-                if (isNowSelected && (isSorted != 1 || isSorted != 2)) {
-                    desc.setSelected(false);
-                    Words[] wordsInner = sortWordsDescending(words, isSorted);
-                    List<String> wordStringsInner = new ArrayList<String>();
-                    for (int i = 0; i < wordsInner.length; i++) {
-                        wordStringsInner.add(wordsInner[i].getWord());
-                    }
-                    wordHousing.setItems(FXCollections.observableArrayList(wordStringsInner));
-                }
-            }
-        });
-        FilteredList<String> filteredWords = new FilteredList<String>(wordObserv, s -> true);
-
-        searchbar.textProperty().addListener(obs -> {
-            String filter = searchbar.getText().toLowerCase();
-            if (filter == null || filter.length() == 0 || filter.matches("\\s*")) {
-                filteredWords.setPredicate(s -> true);
-            } else {
-                filteredWords.setPredicate(s -> s.matches(filter + ".*"));
-            }
-        });
-
-        EventHandler<ActionEvent> showAddScreen = new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent e) {
-                stage.getScene().setRoot(buildAddGrid(words));
-                SceneBuilder.leftColumnListeners(scene, words, stage, 0);
-            }
-        };
-        addButton.setOnAction(showAddScreen);
-
-        EventHandler<ActionEvent> showDeleteScreen = new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent e) {
-                stage.getScene().setRoot(buildDeleteGrid(words));
-                SceneBuilder.leftColumnListeners(scene, words, stage, 0);
-            }
-        };
-        removeButton.setOnAction(showDeleteScreen);
-        wordHousing.setItems(filteredWords);
-
-        wordHousing.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
-            @Override
-            public void changed(ObservableValue<? extends Number> arg0, Number arg1, Number index) {
-                buildDefinitionHousing(words, (Integer) index, scene);
-            }
-          
-        });
-    }
+    
 }

@@ -3538,18 +3538,24 @@
     "antonyms": []
   },
   {
-    "word": "Megalovania",
+    "word": "laboratory",
     "definitions": [
       {
-        "definition": "song in undertale",
+        "definition": "a region resembling a laboratory inasmuch as it offers opportunities for observation and practice and experimentation",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "play on megalomaniac"
+        "definition": "a workplace for the conduct of scientific research",
+        "partOfSpeech": "noun"
       }
     ],
     "synonyms": [
-      "synonym"
+      "testing ground",
+      "lab",
+      "research lab",
+      "research laboratory",
+      "science lab",
+      "science laboratory"
     ],
     "antonyms": []
   }

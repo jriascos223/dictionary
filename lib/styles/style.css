@@ -46,7 +46,6 @@
     -fx-padding: 5 5 5 35;
 }
 
-<<<<<<< HEAD
 .synonyms {
     -fx-font: 20px Tahoma;
     -fx-padding: 5 5 5 35;
@@ -57,26 +56,34 @@
     -fx-padding: 5 5 5 35;
 }
 
-=======
->>>>>>> bc25223dd89fb6b84b98582d2800e6569a580d86
 #synonymHeading {
     -fx-font: 30px Tahoma;
     -fx-padding: 5 5 5 5;
 }
 
-<<<<<<< HEAD
 #antonymHeading {
     -fx-font: 30px Tahoma;
     -fx-padding: 5 5 5 5;
-=======
-.synonyms {
-    -fx-font: 20px Tahoma;
-    -fx-padding: 5 5 5 35;
->>>>>>> bc25223dd89fb6b84b98582d2800e6569a580d86
 }
 
 #buttonHousing {
     -fx-spacing: 3px;
+}
+
+#addHeading {
+    -fx-font: 45px Tahoma;
+}
+
+#addHousing {
+    -fx-background-color: #FCFCFC;
+    -fx-padding: 5 5 5 5;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+
+#addDefinitionHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
 }
 
 #leftColumn {
@@ -103,3 +110,28 @@
     -fx-border-color: black;
 }
 
+#close {
+    -fx-font: 15px Tahoma;
+}
+
+#addDButton {
+    -fx-font: 15px Tahoma;
+}
+
+#addSynonymHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
+}
+
+#addSynonymButton {
+    -fx-font: 15px Tahoma;
+}
+
+#addAntonymHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
+}
+
+#addAntonymButton {
+    -fx-font: 15px Tahoma;
+}
