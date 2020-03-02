@@ -37,6 +37,26 @@
     -fx-padding: 5 5 5 35;
 }
 
+.synonyms {
+    -fx-font: 20px Tahoma;
+    -fx-padding: 5 5 5 35;
+}
+
+.antonyms {
+    -fx-font: 20px Tahoma;
+    -fx-padding: 5 5 5 35;
+}
+
+#synonymHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
+}
+
+#antonymHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
+}
+
 #buttonHousing {
     -fx-spacing: 3px;
 }

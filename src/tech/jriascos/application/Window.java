@@ -1,12 +1,14 @@
 package tech.jriascos.application;
 
 import tech.jriascos.utilities.Tools;
+import tech.jriascos.model.Definitions;
 import tech.jriascos.model.Words;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Array;
 import java.net.URL;
@@ -22,11 +24,22 @@ import javafx.stage.Stage;
 public class Window extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws FileNotFoundException {
+    public void start(Stage primaryStage) throws IOException {
         Gson gson = new Gson();
         String classpathDirectory = Tools.getClasspathDir();
         BufferedReader br = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
         Words[] words = gson.fromJson(br, Words[].class);
+
+        Words newWord = new Words("Megalovania", new Definitions[]{new Definitions("song in undertale", "noun"), new Definitions("play on megalomaniac", null)}, new String[]{"synonym"}, new String[0]);
+
+        System.out.println(words.length);
+        Words[] newWords = new Words[words.length + 1];
+        System.arraycopy(words, 0, newWords, 0, words.length);
+        words = newWords;
+        words[words.length - 1] = newWord;
+        System.out.println(words.length);
+
+		Tools.saveWordJson(words, newWord);
 
         primaryStage.setTitle("Dictionary Application");
         primaryStage.setMaximized(true);

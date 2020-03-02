@@ -50,9 +50,9 @@ public class SceneBuilder {
         Scene defaultScene = new Scene(grid, 300, 275);
         defaultScene.getStylesheets().add(Window.class.getResource("/styles/style.css").toExternalForm());
         ColumnConstraints col1 = new ColumnConstraints();
-        col1.setPercentWidth(15);
+        col1.setPercentWidth(20);
         ColumnConstraints col2 = new ColumnConstraints();
-        col2.setPercentWidth(85);
+        col2.setPercentWidth(80);
         grid.getColumnConstraints().addAll(col1, col2);
         RowConstraints row1 = new RowConstraints();
         row1.setPercentHeight(100);
@@ -86,15 +86,13 @@ public class SceneBuilder {
         List<String> filteredStrings = wordHousing.getItems();
         Words[] filteredWords = new Words[filteredStrings.size()];
 
-        if (searchbar.getText() != null || searchbar.getText().length() != 0) {
-            for (int i = 0; i < words.length; i++) {
-                for (int j = 0; j < filteredStrings.size(); j++) {
-                    if (words[i].getWord().equals(filteredStrings.get(j))) {
-                        filteredWords[j] = words[i];
-                    }
+        for (int i = 0; i < words.length; i++) {
+            for (int j = 0; j < filteredStrings.size(); j++) {
+                if (words[i].getWord().equals(filteredStrings.get(j))) {
+                    filteredWords[j] = words[i];
                 }
-            }   
-        }
+            }
+        }   
         Text word = new Text(filteredWords[index].getWord());
         word.setId("word");
         definitionHousing.getChildren().addAll(word);
@@ -106,49 +104,33 @@ public class SceneBuilder {
         for (int i = 0; i < filteredWords[index].getDefinitions().length; i++) {
             HBox definitionString = new HBox(new Text(filteredWords[index].getDefinitions()[i].getDefinition()));
             HBox partOfSpeech = new HBox(new Text(((Integer) (i+1)).toString() + ". " + filteredWords[index].getWord() + " (" + filteredWords[index].getDefinitions()[i].getPartOfSpeech() + ")"));
-            
             definitionString.getStyleClass().add("definitions");
             partOfSpeech.getStyleClass().add("partOfSpeech");
             definitionHousing.getChildren().addAll(partOfSpeech);
             definitionHousing.getChildren().addAll(definitionString);
         }
-    }
 
-    private static Words[] sortWordsAscending(Words[] words, int isSorted) {
-        if (isSorted == 1) {
-            return words;
-        }
-        ArrayList<String> wordStrings = new ArrayList<String>();
-        ArrayList<byte[]> asciiArray = new ArrayList<byte[]>();
-        for (Words word : words) {
-            wordStrings.add((word.getWord()));
-        }
-
-        for (String s : wordStrings) {
-            byte[] asciiWord = new byte[s.length()];
-            for(int i = 0; i < s.length(); i++) {
-                asciiWord[i] = (byte) s.charAt(i);
+        for (int i = 0; i < filteredWords[index].getSynonyms().length; i++) {
+            if (i == 0) {
+                HBox synonymHeading = new HBox(new Text("Synonyms"));
+                synonymHeading.setId("synonymHeading");
+                definitionHousing.getChildren().addAll(synonymHeading);
             }
-            asciiArray.add(asciiWord);
+            HBox synonymString = new HBox(new Text(((Integer) (i+1)).toString() + ". " + filteredWords[index].getSynonyms()[i]));
+            synonymString.getStyleClass().add("synonyms");
+            definitionHousing.getChildren().addAll(synonymString);
         }
 
-        words = Tools.sortAscending(words, asciiArray);
-        return words;
-    }
-
-    private static Words[] sortWordsDescending(Words[] words, int isSorted) {
-        if (isSorted == 2) {
-            return words;
+        for (int i = 0; i < filteredWords[index].getAntonyms().length; i++) {
+            if (i == 0) {
+                HBox antonymHeading = new HBox(new Text("Synonyms"));
+                antonymHeading.setId("synonymHeading");
+                definitionHousing.getChildren().addAll(antonymHeading);
+            }
+            HBox antonymString = new HBox(new Text(((Integer) (i+1)).toString() + ". " + filteredWords[index].getAntonyms()[i]));
+            antonymString.getStyleClass().add("antonyms");
+            definitionHousing.getChildren().addAll(antonymString);
         }
-        words = sortWordsAscending(words, 0);
-        int n = words.length;
-        int j = n;
-        Words[] b = new Words[n]; 
-        for (int i = 0; i < n; i++) { 
-            b[j - 1] = words[i]; 
-            j = j - 1; 
-        } 
-        return b;
     }
 
     /**
@@ -211,9 +193,9 @@ public class SceneBuilder {
         grid.setId("addGrid");
         grid.setVgap(10);
         ColumnConstraints col1 = new ColumnConstraints();
-        col1.setPercentWidth(15);
+        col1.setPercentWidth(20);
         ColumnConstraints col2 = new ColumnConstraints();
-        col2.setPercentWidth(85);
+        col2.setPercentWidth(80);
         grid.getColumnConstraints().addAll(col1, col2);
         RowConstraints row1 = new RowConstraints();
         row1.setPercentHeight(100);
@@ -231,9 +213,9 @@ public class SceneBuilder {
         grid.setId("deleteGrid");
         grid.setVgap(10);
         ColumnConstraints col1 = new ColumnConstraints();
-        col1.setPercentWidth(15);
+        col1.setPercentWidth(20);
         ColumnConstraints col2 = new ColumnConstraints();
-        col2.setPercentWidth(85);
+        col2.setPercentWidth(80);
         grid.getColumnConstraints().addAll(col1, col2);
         RowConstraints row1 = new RowConstraints();
         row1.setPercentHeight(100);
@@ -244,6 +226,42 @@ public class SceneBuilder {
         grid.add(leftColumn, 0, 0);
 
         return grid;
+    }
+    private static Words[] sortWordsAscending(Words[] words, int isSorted) {
+        if (isSorted == 1) {
+            return words;
+        }
+        ArrayList<String> wordStrings = new ArrayList<String>();
+        ArrayList<byte[]> asciiArray = new ArrayList<byte[]>();
+        for (Words word : words) {
+            wordStrings.add((word.getWord().toLowerCase()));
+        }
+
+        for (String s : wordStrings) {
+            byte[] asciiWord = new byte[s.length()];
+            for(int i = 0; i < s.length(); i++) {
+                asciiWord[i] = (byte) s.charAt(i);
+            }
+            asciiArray.add(asciiWord);
+        }
+
+        words = Tools.sortAscending(words, asciiArray);
+        return words;
+    }
+
+    private static Words[] sortWordsDescending(Words[] words, int isSorted) {
+        if (isSorted == 2) {
+            return words;
+        }
+        words = sortWordsAscending(words, 0);
+        int n = words.length;
+        int j = n;
+        Words[] b = new Words[n]; 
+        for (int i = 0; i < n; i++) { 
+            b[j - 1] = words[i]; 
+            j = j - 1; 
+        } 
+        return b;
     }
 
     public static void leftColumnListeners(Scene scene, Words[] words, Stage stage, int isSorted) {
@@ -300,6 +318,7 @@ public class SceneBuilder {
         EventHandler<ActionEvent> showAddScreen = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
                 stage.getScene().setRoot(buildAddGrid(words));
+                SceneBuilder.leftColumnListeners(scene, words, stage, 0);
             }
         };
         addButton.setOnAction(showAddScreen);
@@ -307,6 +326,7 @@ public class SceneBuilder {
         EventHandler<ActionEvent> showDeleteScreen = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
                 stage.getScene().setRoot(buildDeleteGrid(words));
+                SceneBuilder.leftColumnListeners(scene, words, stage, 0);
             }
         };
         removeButton.setOnAction(showDeleteScreen);
