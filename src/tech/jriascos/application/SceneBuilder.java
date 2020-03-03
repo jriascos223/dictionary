@@ -316,11 +316,11 @@ public class SceneBuilder {
 
         ScrollPane addScroll = new ScrollPane();    
         addScroll.setId("addScroll");
-        addScroll.setContent(addHousing);    
+        addScroll.setContent(addHousing);
 
-        addHousing.prefWidthProperty().bind(addScroll.widthProperty() );
+        addHousing.prefWidthProperty().bind(addScroll.widthProperty());
+        addScroll.setFitToWidth(true);
         
-
         grid.add(addScroll, 1, 0);
         GridPane.setMargin(addScroll, new Insets(8, 8, 8, 8));
 

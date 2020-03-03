@@ -274,9 +274,6 @@ public class Tools {
         Button addSynonymButton = (Button) addScroll.getContent().lookup("#addSynonymButton");
         Button addAntonymButton = (Button) addScroll.getContent().lookup("#addAntonymButton");
 
-        System.out.println(addDSection);
-        System.out.println(addSynSection);
-
         EventHandler<ActionEvent> showDefaultScreen = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
                 stage.getScene().setRoot(SceneBuilder.buildDefaultScene(words));

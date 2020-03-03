@@ -78,7 +78,6 @@
     -fx-background-color: #FCFCFC;
     -fx-padding: 5 5 5 5;
     -fx-border-width: 2px;
-    -fx-border-color: black;
 }
 
 #addDefinitionHeading {
@@ -103,28 +102,26 @@
 }
 
 #synonymInput {
-    -fx-padding: 5;
     -fx-border-width: 2px;
-    -fx-border-color: black;
 }
 
 #antonymInput {
-    -fx-padding: 5;
     -fx-border-width: 2px;
-    -fx-border-color:black;
 }
 
 #defSpeechPair {
-    -fx-padding: 5;
     -fx-border-width: 2px;
-    -fx-border-color:black ;
 }
 
 #definitionScroll {
-    -fx-background-color: #FCFCFC;
+    -fx-background: #FCFCFC;
     -fx-padding: 3 3 3 3;
     -fx-border-width: 2px;
     -fx-border-color: black;
+}
+
+#addScroll {
+    -fx-background: #FCFCFC;
 }
 
 #close {
