@@ -149,7 +149,7 @@ public class Tools {
         return newWords;
     }
 
-    private static Words[] sortWordsAscending(Words[] words, int isSorted) {
+    public static Words[] sortWordsAscending(Words[] words, int isSorted) {
         if (isSorted == 1) {
             return words;
         }
@@ -171,7 +171,7 @@ public class Tools {
         return words;
     }
 
-    private static Words[] sortWordsDescending(Words[] words, int isSorted) {
+    public static Words[] sortWordsDescending(Words[] words, int isSorted) {
         if (isSorted == 2) {
             return words;
         }
@@ -201,6 +201,7 @@ public class Tools {
         ObservableList<String> wordObserv = FXCollections.observableArrayList(wordStrings);
 
         asc.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
+            searchbar.clear();
             if (isNowSelected && (isSorted != 1 || isSorted != 2)) {
                 desc.setSelected(false);
                 Words[] wordsInner = sortWordsAscending(words, isSorted);
@@ -213,6 +214,7 @@ public class Tools {
         });
 
         desc.selectedProperty().addListener((obs, wasSelected, isNowSelected) -> {
+            searchbar.clear();
             if (isNowSelected && (isSorted != 1 || isSorted != 2)) {
                 asc.setSelected(false);
                 if (isNowSelected && (isSorted != 1 || isSorted != 2)) {
@@ -229,11 +231,35 @@ public class Tools {
         FilteredList<String> filteredWords = new FilteredList<String>(wordObserv, s -> true);
 
         searchbar.textProperty().addListener(obs -> {
+            //Since these lambda expressions can't modify outside variables, gotta check if array is sorted in ascending order or not
+            FilteredList<String> innerFilteredWords = new FilteredList<String>(wordObserv);
+            Words[] innerWords = new Words[words.length];
+            //should default to ascending if none of the boxes are selected
+            if (asc.isSelected() || (!asc.isSelected() && !desc.isSelected())) {
+                List<String> innerWordStrings = new ArrayList<String>();
+                innerWords = Tools.sortWordsAscending(words, 0);
+                for (int i = 0; i < words.length; i++) {
+                    innerWordStrings.add(innerWords[i].getWord());
+                }
+                ObservableList<String> innerWordObserv = FXCollections.observableArrayList(innerWordStrings);
+                innerFilteredWords = new FilteredList<String>(innerWordObserv, s -> true);
+            }else if (desc.isSelected()) {
+                List<String> innerWordStrings = new ArrayList<String>();
+                innerWords = Tools.sortWordsDescending(words, 0);
+                for (int i = 0; i < words.length; i++) {
+                    innerWordStrings.add(innerWords[i].getWord());
+                }
+                ObservableList<String> innerWordObserv = FXCollections.observableArrayList(innerWordStrings);
+                innerFilteredWords = new FilteredList<String>(innerWordObserv, s -> true);
+            }
             String filter = searchbar.getText().toLowerCase();
             if (filter == null || filter.length() == 0 || filter.matches("\\s*")) {
-                filteredWords.setPredicate(s -> true);
+                innerFilteredWords.setPredicate(s -> true);
+                wordHousing.setItems(innerFilteredWords);
+
             } else {
-                filteredWords.setPredicate(s -> s.matches(filter + ".*"));
+                innerFilteredWords.setPredicate(s -> s.matches(filter + ".*"));
+                wordHousing.setItems(innerFilteredWords);
             }
         });
 
@@ -255,6 +281,7 @@ public class Tools {
         removeButton.setOnAction(showDeleteScreen);
         wordHousing.setItems(filteredWords);
 
+        
         wordHousing.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> arg0, Number arg1, Number index) {

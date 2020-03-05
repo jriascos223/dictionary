@@ -29,7 +29,7 @@ public class Window extends Application {
         String classpathDirectory = Tools.getClasspathDir();
         BufferedReader br = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
         Words[] words = gson.fromJson(br, Words[].class);
-
+        words = Tools.sortWordsAscending(words, 0);
 
         //Add word testing
         /* Words newWord = new Words("Megalovania", new Definitions[]{new Definitions("song in undertale", "noun"), new Definitions("haha funny definition", "noun")}, new String[]{"synonym"}, new String[]{"antonym"});
