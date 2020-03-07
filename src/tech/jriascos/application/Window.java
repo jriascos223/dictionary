@@ -32,7 +32,7 @@ public class Window extends Application {
         words = Tools.sortWordsAscending(words, 0);
 
         // Add word testing
-         Words newWord = new Words("a", new Definitions[]{new Definitions("word that messed up dictionary", "noun"), new Definitions("haha funny definition", "noun")}, new String[]{"synonym"}, new String[]{"antonym"}); words = Tools.saveWordJson(words, newWord);
+         /* Words newWord = new Words("a", new Definitions[]{new Definitions("word that messed up dictionary", "noun"), new Definitions("haha funny definition", "noun")}, new String[]{"synonym"}, new String[]{"antonym"}); words = Tools.saveWordJson(words, newWord); */
         
 
         primaryStage.setTitle("Dictionary Application");

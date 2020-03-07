@@ -281,6 +281,7 @@ public class Tools {
         VBox addAntSection = (VBox) addScroll.getContent().lookup("#addAntSection");
         Button addSynonymButton = (Button) addScroll.getContent().lookup("#addSynonymButton");
         Button addAntonymButton = (Button) addScroll.getContent().lookup("#addAntonymButton");
+        TextField wordInput = (TextField) addScroll.getContent().lookup("#wordInput");
 
         EventHandler<ActionEvent> showDefaultScreen = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
@@ -288,12 +289,26 @@ public class Tools {
                 leftColumnListeners(scene, words, stage, 0);
             }
         };
+ 
+
+
 
         EventHandler<ActionEvent> addWordToDict = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
-                
+                /* private String word;
+                private Definitions[] definitions;
+                private String[] synonyms;
+                private String[] antonyms; */
+                String word = wordInput.getText();
+                if (word.matches("\\\\s+")) {
+                    System.out.println("no whitespace man!");
+
+                }
+                System.out.println(word);
             }
         };
+
+        submit.setOnAction(addWordToDict);
 
         back.setOnAction(showDefaultScreen);
 
