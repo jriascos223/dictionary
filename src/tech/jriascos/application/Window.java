@@ -24,31 +24,32 @@ import javafx.stage.Stage;
 public class Window extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws IOException {
-        Gson gson = new Gson();
-        String classpathDirectory = Tools.getClasspathDir();
-        BufferedReader br = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
+    public void start(final Stage primaryStage) throws IOException {
+        final Gson gson = new Gson();
+        final String classpathDirectory = Tools.getClasspathDir();
+        final BufferedReader br = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
         Words[] words = gson.fromJson(br, Words[].class);
         words = Tools.sortWordsAscending(words, 0);
 
-        //Add word testing
-        /* Words newWord = new Words("an", new Definitions[]{new Definitions("basic word", "noun"), new Definitions("haha funny definition", "noun")}, new String[]{"synonym"}, new String[]{"antonym"});
-        words = Tools.saveWordJson(words, newWord); */
+        // Add word testing
+         Words newWord = new Words("a", new Definitions[]{new Definitions("word that messed up dictionary", "noun"), new Definitions("haha funny definition", "noun")}, new String[]{"synonym"}, new String[]{"antonym"}); words = Tools.saveWordJson(words, newWord);
+        
 
         primaryStage.setTitle("Dictionary Application");
         primaryStage.setMaximized(true);
 
-        Scene defaultScene = new Scene(SceneBuilder.buildDefaultScene(words), 300, 275);
+        final Scene defaultScene = new Scene(SceneBuilder.buildDefaultScene(words), 300, 275);
         defaultScene.getStylesheets().add(Window.class.getResource("/styles/style.css").toExternalForm());
 
         primaryStage.setScene(defaultScene);
         primaryStage.show();
-        //Event listeners are after stage.show() since it depends on looking up elements with ids, which only works
-        //after the stage has been built and shown
+        // Event listeners are after stage.show() since it depends on looking up
+        // elements with ids, which only works
+        // after the stage has been built and shown
         Tools.leftColumnListeners(defaultScene, words, primaryStage, 0);
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         launch(args);
     }
 

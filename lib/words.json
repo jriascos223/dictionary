@@ -1,5 +1,62 @@
 [
   {
+    "word": "a",
+    "definitions": [
+      {
+        "definition": "word that messed up dictionary",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "haha funny definition",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "synonym"
+    ],
+    "antonyms": [
+      "antonym"
+    ]
+  },
+  {
+    "word": "a",
+    "definitions": [
+      {
+        "definition": "word that messed up dictionary",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "haha funny definition",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "synonym"
+    ],
+    "antonyms": [
+      "antonym"
+    ]
+  },
+  {
+    "word": "acquisitioa",
+    "definitions": [
+      {
+        "definition": "word that messed up dictionary",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "haha funny definition",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "synonym"
+    ],
+    "antonyms": [
+      "antonym"
+    ]
+  },
+  {
     "word": "acquisition",
     "definitions": [
       {
@@ -27,25 +84,6 @@
       "learning"
     ],
     "antonyms": []
-  },
-  {
-    "word": "acquisitioa",
-    "definitions": [
-      {
-        "definition": "basic word",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "haha funny definition",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "synonym"
-    ],
-    "antonyms": [
-      "antonym"
-    ]
   },
   {
     "word": "affinity",
@@ -116,44 +154,6 @@
     "antonyms": []
   },
   {
-    "word": "ana",
-    "definitions": [
-      {
-        "definition": "basic word",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "haha funny definition",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "synonym"
-    ],
-    "antonyms": [
-      "antonym"
-    ]
-  },
-  {
-    "word": "ant",
-    "definitions": [
-      {
-        "definition": "basic word",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "haha funny definition",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "synonym"
-    ],
-    "antonyms": [
-      "antonym"
-    ]
-  },
-  {
     "word": "anxiety",
     "definitions": [
       {
@@ -169,25 +169,6 @@
       "anxiousness"
     ],
     "antonyms": []
-  },
-  {
-    "word": "an",
-    "definitions": [
-      {
-        "definition": "basic word",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "haha funny definition",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "synonym"
-    ],
-    "antonyms": [
-      "antonym"
-    ]
   },
   {
     "word": "approval",
@@ -278,6 +259,44 @@
     "antonyms": []
   },
   {
+    "word": "attraction",
+    "definitions": [
+      {
+        "definition": "the quality of arousing interest; being attractive or something that attracts",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an entertainer who attracts large audiences",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the force by which one object attracts another",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a characteristic that provides pleasure and attracts",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an entertainment that is offered to the public",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "attractiveness",
+      "attracter",
+      "attractor",
+      "draw",
+      "drawing card",
+      "attractive force",
+      "attractive feature",
+      "magnet"
+    ],
+    "antonyms": [
+      "repulsion"
+    ]
+  },
+  {
     "word": "association",
     "definitions": [
       {
@@ -322,44 +341,6 @@
     ],
     "antonyms": [
       "disassociation"
-    ]
-  },
-  {
-    "word": "attraction",
-    "definitions": [
-      {
-        "definition": "the quality of arousing interest; being attractive or something that attracts",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an entertainer who attracts large audiences",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the force by which one object attracts another",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a characteristic that provides pleasure and attracts",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an entertainment that is offered to the public",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "attractiveness",
-      "attracter",
-      "attractor",
-      "draw",
-      "drawing card",
-      "attractive force",
-      "attractive feature",
-      "magnet"
-    ],
-    "antonyms": [
-      "repulsion"
     ]
   },
   {
@@ -577,33 +558,6 @@
     "antonyms": []
   },
   {
-    "word": "chapter",
-    "definitions": [
-      {
-        "definition": "a local branch of some fraternity or association",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an ecclesiastical assembly of the monks in a monastery or even of the canons of a church",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "any distinct period in history or in a person\u0027s life",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a series of related events forming an episode",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a subdivision of a written work; usually numbered and titled",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  {
     "word": "champion",
     "definitions": [
       {
@@ -662,6 +616,33 @@
     "antonyms": []
   },
   {
+    "word": "chapter",
+    "definitions": [
+      {
+        "definition": "a local branch of some fraternity or association",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an ecclesiastical assembly of the monks in a monastery or even of the canons of a church",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "any distinct period in history or in a person\u0027s life",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a series of related events forming an episode",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a subdivision of a written work; usually numbered and titled",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
     "word": "cinema",
     "definitions": [
       {
@@ -680,6 +661,40 @@
       "picture palace",
       "celluloid",
       "film"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "commitment",
+    "definitions": [
+      {
+        "definition": "a message that makes a pledge",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the trait of sincere and steadfast fixity of purpose",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the official act of consigning a person to confinement (as in a prison or mental hospital)",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the act of binding yourself (intellectually or emotionally) to a course of action",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an engagement by contract involving financial obligation",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "dedication",
+      "committedness",
+      "committal",
+      "consignment",
+      "allegiance",
+      "loyalty"
     ],
     "antonyms": []
   },
@@ -720,40 +735,6 @@
       "residential district",
       "community of interests",
       "biotic community"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "commitment",
-    "definitions": [
-      {
-        "definition": "a message that makes a pledge",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the trait of sincere and steadfast fixity of purpose",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the official act of consigning a person to confinement (as in a prison or mental hospital)",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the act of binding yourself (intellectually or emotionally) to a course of action",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an engagement by contract involving financial obligation",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "dedication",
-      "committedness",
-      "committal",
-      "consignment",
-      "allegiance",
-      "loyalty"
     ],
     "antonyms": []
   },
@@ -816,6 +797,28 @@
     "antonyms": [
       "simple"
     ]
+  },
+  {
+    "word": "conference",
+    "definitions": [
+      {
+        "definition": "an association of sports teams that organizes matches for its members",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a discussion among participants who have an agreed (serious) topic",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a prearranged meeting for consultation or exchange of information or discussion (especially one with a formal agenda)",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "league",
+      "group discussion"
+    ],
+    "antonyms": []
   },
   {
     "word": "constitution",
@@ -940,28 +943,6 @@
     "antonyms": [
       "expand"
     ]
-  },
-  {
-    "word": "conference",
-    "definitions": [
-      {
-        "definition": "an association of sports teams that organizes matches for its members",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a discussion among participants who have an agreed (serious) topic",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a prearranged meeting for consultation or exchange of information or discussion (especially one with a formal agenda)",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "league",
-      "group discussion"
-    ],
-    "antonyms": []
   },
   {
     "word": "critical",
@@ -2498,58 +2479,6 @@
     "antonyms": []
   },
   {
-    "word": "password",
-    "definitions": [
-      {
-        "definition": "a secret word or phrase known only to a restricted group",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "countersign",
-      "parole",
-      "watchword",
-      "word"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "pasture",
-    "definitions": [
-      {
-        "definition": "a field covered with grass or herbage and suitable for grazing by livestock",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "bulky food like grass or hay for browsing or grazing horses or cattle",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "let feed in a field or pasture or meadow",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "feed as in a meadow or pasture",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": [
-      "grazing land",
-      "lea",
-      "ley",
-      "pastureland",
-      "eatage",
-      "forage",
-      "grass",
-      "pasturage",
-      "crop",
-      "graze",
-      "browse",
-      "range"
-    ],
-    "antonyms": []
-  },
-  {
     "word": "passage",
     "definitions": [
       {
@@ -2601,6 +2530,58 @@
       "musical passage",
       "passageway",
       "handing over"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "password",
+    "definitions": [
+      {
+        "definition": "a secret word or phrase known only to a restricted group",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "countersign",
+      "parole",
+      "watchword",
+      "word"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "pasture",
+    "definitions": [
+      {
+        "definition": "a field covered with grass or herbage and suitable for grazing by livestock",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "bulky food like grass or hay for browsing or grazing horses or cattle",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "let feed in a field or pasture or meadow",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "feed as in a meadow or pasture",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "grazing land",
+      "lea",
+      "ley",
+      "pastureland",
+      "eatage",
+      "forage",
+      "grass",
+      "pasturage",
+      "crop",
+      "graze",
+      "browse",
+      "range"
     ],
     "antonyms": []
   },
@@ -3636,10 +3617,10 @@
     "antonyms": []
   },
   {
-    "word": "an",
+    "word": "a",
     "definitions": [
       {
-        "definition": "basic word",
+        "definition": "word that messed up dictionary",
         "partOfSpeech": "noun"
       },
       {

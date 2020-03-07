@@ -77,37 +77,24 @@ public class Tools {
     }
 
     /**
-     * Does, as you'd imagine, sorting. Turns words into ascii, sorts those numbers to two letters, 
+     * Does, as you'd imagine, sorting. Turns words into ascii, sorts those numbers, 
      * and then puts the words back together.
      * @param words array of words for the dictionary
      * @param asciiArray array of words in ascii
      */
-    public static Words[] sortAscending(Words[] words, ArrayList<byte[]> asciiArray) {
-        //we have to make our own sorting method, right? this is why this is here
-        for (int i = 0; i < asciiArray.size() - 1; i++) {
-            for (int j = 0; j < asciiArray.size() - 1 - i; j++) {
-                if (asciiArray.get(j)[0] > asciiArray.get(j + 1)[0]) {
-                    byte[] temp = asciiArray.get(j);
-                    asciiArray.set(j, asciiArray.get(j + 1));
-                    asciiArray.set(j + 1, temp);
-                    Words temp2 = words[j];
-                    words[j] = words[j + 1];
-                    words[j + 1] = temp2;
-                // 99% sure it will stop working if I add a one letter word
-                } else if (asciiArray.get(j)[0] == asciiArray.get(j + 1)[0] && asciiArray.get(j).length > 1) {
-                    if (asciiArray.get(j)[1] > asciiArray.get(j + 1)[1]) {
-                        byte[] temp = asciiArray.get(j);
-                        asciiArray.set(j, asciiArray.get(j + 1));
-                        asciiArray.set(j + 1, temp);
-                        Words temp2 = words[j];
-                        words[j] = words[j + 1];
-                        words[j + 1] = temp2;
-                    }
+    public static Words[] sortAscending(Words[] words, ArrayList<String> wordStrings) {
+        for (int i = 0; i < wordStrings.size(); i++) {
+            for (int j = i + 1; j < wordStrings.size(); j++) {
+                if (wordStrings.get(i).compareTo(wordStrings.get(j)) > 0) {
+                    Words temp = words[i];
+                    words[i] = words[j];
+                    words[j] = temp;
+                    String temp2 = wordStrings.get(i);
+                    wordStrings.set(j, wordStrings.get(i));
+                    wordStrings.set(i, temp2);
                 }
             }
         }
-
-        
         return words;
     }
 
@@ -157,20 +144,10 @@ public class Tools {
             return words;
         }
         ArrayList<String> wordStrings = new ArrayList<String>();
-        ArrayList<byte[]> asciiArray = new ArrayList<byte[]>();
         for (Words word : words) {
             wordStrings.add((word.getWord().toLowerCase()));
         }
-
-        for (String s : wordStrings) {
-            byte[] asciiWord = new byte[s.length()];
-            for(int i = 0; i < s.length(); i++) {
-                asciiWord[i] = (byte) s.charAt(i);
-            }
-            asciiArray.add(asciiWord);
-        }
-
-        words = Tools.sortAscending(words, asciiArray);
+        words = Tools.sortAscending(words, wordStrings);
         return words;
     }
 
@@ -297,6 +274,7 @@ public class Tools {
     public static void addScreenListeners(Scene scene, Words[] words, Stage stage) {
         ScrollPane addScroll = (ScrollPane) scene.lookup("#addScroll");
         Button back = (Button) addScroll.getContent().lookup("#close");
+        Button submit = (Button) addScroll.getContent().lookup("#submit");
         Button addDefinition = (Button) addScroll.getContent().lookup("#addDButton");
         VBox addDSection = (VBox) addScroll.getContent().lookup("#addDSection");
         VBox addSynSection = (VBox) addScroll.getContent().lookup("#addSynSection");
@@ -308,6 +286,12 @@ public class Tools {
             public void handle(ActionEvent e) {
                 stage.getScene().setRoot(SceneBuilder.buildDefaultScene(words));
                 leftColumnListeners(scene, words, stage, 0);
+            }
+        };
+
+        EventHandler<ActionEvent> addWordToDict = new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent e) {
+                
             }
         };
 
@@ -349,7 +333,7 @@ public class Tools {
         TextField definition = new TextField();
         definition.setPromptText("Enter definition here.");
         TextField partOfSpeech = new TextField();
-        partOfSpeech.setPromptText("Enter part of speech here:");
+        partOfSpeech.setPromptText("Enter part of speech here.");
 
         defSpeechPair.getChildren().addAll(definition, partOfSpeech);
 
