@@ -217,12 +217,18 @@ public class SceneBuilder {
         addHeading.setId("addHeading");
         Text addHeadingText = new Text("Add Word");
         Button close = new Button("Back to Dictionary");
+        Button submit = new Button("Submit");
+        addHeading.prefWidthProperty().bind(addHousing.widthProperty().multiply(.3));
+        close.prefWidthProperty().bind(addHousing.widthProperty().multiply(.3));
+        submit.prefWidthProperty().bind(addHousing.widthProperty().multiply(.3));
+        submit.setId("submit");
         close.setId("close");
         Region spacer = new Region();
+        Region spacer12 = new Region();
         HBox.setHgrow(spacer, Priority.ALWAYS);
-
+        HBox.setHgrow(spacer12, Priority.ALWAYS);
         //Adding heading to right hand side of screen
-        addHeading.getChildren().addAll(addHeadingText, spacer, close);
+        addHeading.getChildren().addAll(addHeadingText, spacer, submit, spacer12, close);
         addHousing.getChildren().add(addHeading);
 
         //New input box for word
@@ -323,26 +329,6 @@ public class SceneBuilder {
         
         grid.add(addScroll, 1, 0);
         GridPane.setMargin(addScroll, new Insets(8, 8, 8, 8));
-
-        return grid;
-    }
-
-    public static GridPane buildDeleteGrid(Words[] words) {
-        GridPane grid = new GridPane();
-        grid.setId("deleteGrid");
-        grid.setVgap(10);
-        ColumnConstraints col1 = new ColumnConstraints();
-        col1.setPercentWidth(20);
-        ColumnConstraints col2 = new ColumnConstraints();
-        col2.setPercentWidth(80);
-        grid.getColumnConstraints().addAll(col1, col2);
-        RowConstraints row1 = new RowConstraints();
-        row1.setPercentHeight(100);
-        grid.getRowConstraints().addAll(row1);
-        VBox leftColumn = new VBox();
-        leftColumn = buildLeftColumn(leftColumn, grid, words);
-        leftColumn.setId("leftColumn");
-        grid.add(leftColumn, 0, 0);
 
         return grid;
     }

@@ -83,6 +83,7 @@ public class Tools {
      * @param asciiArray array of words in ascii
      */
     public static Words[] sortAscending(Words[] words, ArrayList<byte[]> asciiArray) {
+        //we have to make our own sorting method, right? this is why this is here
         for (int i = 0; i < asciiArray.size() - 1; i++) {
             for (int j = 0; j < asciiArray.size() - 1 - i; j++) {
                 if (asciiArray.get(j)[0] > asciiArray.get(j + 1)[0]) {
@@ -92,8 +93,8 @@ public class Tools {
                     Words temp2 = words[j];
                     words[j] = words[j + 1];
                     words[j + 1] = temp2;
-                    // 99% sure it will stop working if I add a one letter word
-                } else if (asciiArray.get(j)[0] == asciiArray.get(j + 1)[0]) {
+                // 99% sure it will stop working if I add a one letter word
+                } else if (asciiArray.get(j)[0] == asciiArray.get(j + 1)[0] && asciiArray.get(j).length > 1) {
                     if (asciiArray.get(j)[1] > asciiArray.get(j + 1)[1]) {
                         byte[] temp = asciiArray.get(j);
                         asciiArray.set(j, asciiArray.get(j + 1));
@@ -105,6 +106,8 @@ public class Tools {
                 }
             }
         }
+
+        
         return words;
     }
 
@@ -272,13 +275,13 @@ public class Tools {
         };
         addButton.setOnAction(showAddScreen);
 
-        EventHandler<ActionEvent> showDeleteScreen = new EventHandler<ActionEvent>() {
+        EventHandler<ActionEvent> deleteWords = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
-                stage.getScene().setRoot(SceneBuilder.buildDeleteGrid(words));
+                deleteWords();
                 leftColumnListeners(scene, words, stage, 0);
             }
         };
-        removeButton.setOnAction(showDeleteScreen);
+        removeButton.setOnAction(deleteWords);
         wordHousing.setItems(filteredWords);
 
         
@@ -333,6 +336,10 @@ public class Tools {
         };
 
         addAntonymButton.setOnAction(addAInputs);
+    }
+
+    private static void deleteWords() {
+        
     }
 
     public static VBox createDefSpeechPairInput() {
