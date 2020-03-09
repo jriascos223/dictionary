@@ -258,7 +258,7 @@ public class SceneBuilder {
         //input boxes for definition and part of speech (also model for container that will be added to sections)
         VBox defSpeechPair = new VBox();
         defSpeechPair.setSpacing(10);
-        defSpeechPair.setId("defSpeechPair");
+        defSpeechPair.getStyleClass().add("defSpeechPair");
         TextField definition = new TextField();
         definition.setPromptText("Enter definition here.");
         definition.getStyleClass().add("definition");
@@ -268,7 +268,7 @@ public class SceneBuilder {
         //adding definition and part of speech input boxes into container
         defSpeechPair.getChildren().addAll(definition, partOfSpeech);
         //adding input boxes to right hand side of screen
-        addHousing.getChildren().add(defSpeechPair);
+        addDSection.getChildren().add(defSpeechPair);
 
         VBox addSynSection = new VBox();
         addSynSection.setSpacing(10);
@@ -288,13 +288,13 @@ public class SceneBuilder {
 
         VBox synonymInput = new VBox();
         synonymInput.setSpacing(10);
-        synonymInput.setId("synonymInput");
+        synonymInput.getStyleClass().add("synonymInput");
         TextField synonym = new TextField();
         synonym.setPromptText("Enter synonym here.");
 
         synonymInput.getChildren().addAll(synonym);
 
-        addHousing.getChildren().add(synonymInput);
+        addSynSection.getChildren().add(synonymInput);
 
 
         VBox addAntSection = new VBox();
@@ -314,13 +314,13 @@ public class SceneBuilder {
 
         VBox antonymInput = new VBox();
         antonymInput.setSpacing(10);
-        antonymInput.setId("antonymInput");
+        antonymInput.getStyleClass().add("antonymInput");
         TextField antonym = new TextField();
         antonym.setPromptText("Enter antonym here.");
 
         antonymInput.getChildren().addAll(antonym);
 
-        addHousing.getChildren().add(antonymInput);
+        addAntSection.getChildren().add(antonymInput);
 
         ScrollPane addScroll = new ScrollPane();    
         addScroll.setId("addScroll");

@@ -30,11 +30,7 @@ public class Window extends Application {
         final BufferedReader br = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
         Words[] words = gson.fromJson(br, Words[].class);
         words = Tools.sortWordsAscending(words, 0);
-
-        // Add word testing
-         /* Words newWord = new Words("a", new Definitions[]{new Definitions("word that messed up dictionary", "noun"), new Definitions("haha funny definition", "noun")}, new String[]{"synonym"}, new String[]{"antonym"}); words = Tools.saveWordJson(words, newWord); */
         
-
         primaryStage.setTitle("Dictionary Application");
         primaryStage.setMaximized(true);
 

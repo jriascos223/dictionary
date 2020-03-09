@@ -328,7 +328,7 @@ public class Tools {
 
         EventHandler<ActionEvent> addWordToDictAlert = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
-                
+                addWordToDict(scene, stage);
             }
         };
 
@@ -366,53 +366,55 @@ public class Tools {
     }
 
     private static void addWordToDict(Scene scene, Stage stage) {
-        ScrollPane addScroll = (ScrollPane) scene.lookup("#addScroll");
-        VBox addHousing = (VBox) addScroll.getContent().lookup("#addHousing");
-        TextField wordInput = (TextField) addScroll.getContent().lookup("#wordInput");
-        String word = wordInput.getText();
-        ObservableList<Node> arr = addHousing.getChildren();
-        boolean whitespace = false;
-        whitespace = word.matches("\\s*") ? true : false;
         ArrayList<String> definitionStrings = new ArrayList<String>();
         ArrayList<String> partOfSpeechStrings = new ArrayList<String>();
         ArrayList<String> synonyms = new ArrayList<String>();
         ArrayList<String> antonyms = new ArrayList<String>();
-        for (Node n : arr) {
-            if (n instanceof VBox && n.getId().equals("defSpeechPair")) {
+        ScrollPane addScrollInternal = (ScrollPane) scene.lookup("#addScroll");
+        VBox addDSectionInternal = (VBox) addScrollInternal.getContent().lookup("#addDSection");
+        VBox addSynSectionInternal = (VBox) addScrollInternal.getContent().lookup("#addSynSection");
+        VBox addAntSectionInternal = (VBox) addScrollInternal.getContent().lookup("#addAntSection");
+        TextField wordInputInternal = (TextField) addScrollInternal.getContent().lookup("#wordInput");
+        String word = wordInputInternal.getText();
+        boolean whitespace = false;
+        whitespace = (word.contains(" ")) ? true : false;
+        ObservableList<Node> defArr = addDSectionInternal.getChildren();
+        for (Node n : defArr) {
+            if (n instanceof VBox) {
                 VBox container = (VBox) n;
                 ObservableList<Node> array = container.getChildren();
-                for (int i = 0; i < array.size(); i++) {
-                    if (array.get(i) instanceof TextField && i % 2 == 0){
-                        TextField container2 = (TextField) array.get(i);
-                        String text = container2.getText();
-                        whitespace = text.contains(" ") || text.matches("\\s") ? true : false;
-                        definitionStrings.add(text);
-                    }else if (array.get(i) instanceof TextField && i % 2 == 1) {
-                        TextField container2 = (TextField) array.get(i);
-                        String text = container2.getText();
-                        whitespace = text.matches("\\s*") ? true : false;
-                        partOfSpeechStrings.add(text);
-                    }
+                TextField container2 = (TextField) array.get(0);
+                String text = container2.getText();
+                whitespace = text.contains(" ") || text.matches("\\s*") ? true : false;
+                definitionStrings.add(text);
+                TextField container3 = (TextField) array.get(1);
+                String text2 = container3.getText();
+                whitespace = text.matches("\\s*") ? true : false;
+                partOfSpeechStrings.add(text2);
+                System.out.printf("%s, %s", text, text2);
+            }
+        }
+        ObservableList<Node> synArr = addSynSectionInternal.getChildren();
+        for (Node n : synArr) {
+            if (n instanceof VBox) {
+                VBox container = (VBox) n;
+                ObservableList<Node> array = container.getChildren();
+                if (array.get(0) instanceof TextField) {
+                    TextField container2 = (TextField) array.get(0);
+                    String text = container2.getText();
+                    synonyms.add(text);
                 }
-            }else if (n instanceof VBox && n.getId().equals("synonymInput")) {
+            }
+        }
+        ObservableList<Node> antArr = addAntSectionInternal.getChildren();
+        for (Node n : antArr) {
+            if (n instanceof VBox) {
                 VBox container = (VBox) n;
                 ObservableList<Node> array = container.getChildren();
-                for (int i = 0; i < array.size(); i++) {
-                    if (array.get(i) instanceof TextField) {
-                        TextField container2 = (TextField) array.get(i);
-                        String text = container2.getText();
-                        synonyms.add(text);
-                    }
-                }
-            }else if (n instanceof VBox && n.getId().equals("antonymInput")) {
-                VBox container = (VBox) n;
-                ObservableList<Node> array = container.getChildren();
-                for (int i = 0; i < array.size(); i++) {
-                    if (array.get(i) instanceof TextField) {
-                        TextField container2 = (TextField) array.get(i);
-                        String text = container2.getText();
-                        antonyms.add(text);
-                    }
+                if (array.get(0) instanceof TextField) {
+                    TextField container2 = (TextField) array.get(0);
+                    String text = container2.getText();
+                    antonyms.add(text);
                 }
             }
         }
@@ -446,7 +448,7 @@ public class Tools {
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
-        }
+        } 
     }
 
     private static void updateWords(Words[] words, Scene scene) {
@@ -464,7 +466,7 @@ public class Tools {
     public static VBox createDefSpeechPairInput() {
         VBox defSpeechPair = new VBox();
         defSpeechPair.setSpacing(10);
-        defSpeechPair.setId("defSpeechPair");
+        defSpeechPair.getStyleClass().add("defSpeechPair");
         TextField definition = new TextField();
         definition.setPromptText("Enter definition here.");
         definition.getStyleClass().add("definitionInput");
@@ -480,7 +482,7 @@ public class Tools {
     public static VBox createSynonymInput() {
         VBox synonymInput = new VBox();
         synonymInput.setSpacing(10);
-        synonymInput.setId("synonymInput");
+        synonymInput.getStyleClass().add("synonymInput");
         TextField synonym = new TextField();
         synonym.setPromptText("Enter synonym here.");
         synonymInput.getChildren().addAll(synonym);
@@ -490,7 +492,7 @@ public class Tools {
     public static VBox createAntonymInput() {
         VBox antonymInput = new VBox();
         antonymInput.setSpacing(10);
-        antonymInput.setId("antonymInput");
+        antonymInput.getStyleClass().add("antonymInput");
         TextField antonym = new TextField();
         antonym.setPromptText("Enter antonym here.");
         antonymInput.getChildren().addAll(antonym);
