@@ -477,8 +477,10 @@ public class Tools {
         VBox addAntSectionInternal = (VBox) addScrollInternal.getContent().lookup("#addAntSection");
         TextField wordInputInternal = (TextField) addScrollInternal.getContent().lookup("#wordInput");
         String word = wordInputInternal.getText();
-        boolean whitespace = false;
-        whitespace = (word.contains(" ")) ? true : false;
+        boolean whitespaceWord = false;
+        boolean whitespaceDefinition = false;
+        boolean whitespacePOS = false;
+        whitespaceWord = (word.contains(" ")) ? true : false;
         ObservableList<Node> defArr = addDSectionInternal.getChildren();
         for (Node n : defArr) {
             if (n instanceof VBox) {
@@ -486,11 +488,11 @@ public class Tools {
                 ObservableList<Node> array = container.getChildren();
                 TextField container2 = (TextField) array.get(0);
                 String text = container2.getText();
-                whitespace = text.contains(" ") || text.matches("\\s*") ? true : false;
+                whitespaceDefinition = text.matches("\\s*") ? true : false;
                 definitionStrings.add(text);
                 TextField container3 = (TextField) array.get(1);
                 String text2 = container3.getText();
-                whitespace = text.matches("\\s*") ? true : false;
+                whitespacePOS = text2.matches("\\s*") || text2.contains(" ") ? true : false;
                 partOfSpeechStrings.add(text2);
             }
         }
@@ -517,9 +519,8 @@ public class Tools {
                     antonyms.add(text);
                 }
             }
-        }
-
-        if (whitespace) {
+        } 
+        if (whitespaceWord || whitespaceDefinition || whitespacePOS) {
             Alert alert = new Alert(AlertType.ERROR);
             alert.setContentText("Something was incorrect, please try again.");
             alert.show();
@@ -556,6 +557,10 @@ public class Tools {
     private static void updateWords(Words[] words, Scene scene) {
         words = sortWordsAscending(words, 0);
         ListView<String> wordHousing = (ListView<String>) scene.lookup("#wordHousing");
+        CheckBox asc = (CheckBox) scene.lookup("#asc");
+        CheckBox desc = (CheckBox) scene.lookup("#desc");
+        asc.setSelected(false);
+        desc.setSelected(false);
         List<String> wordStrings = new ArrayList<String>();
         for (int i = 0; i < words.length; i++) {
             wordStrings.add(words[i].getWord());

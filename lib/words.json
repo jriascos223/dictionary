@@ -1,123 +1,35 @@
 [
   {
-    "word": "scatter",
+    "word": ";lakejf ;laksjef ;laksjef ;alskjef ;laskejf ;laskjef ",
     "definitions": [
       {
-        "definition": "strew or distribute over an area",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "the act of scattering",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "move away from each other",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "to cause to separate and go in different directions",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "a haphazard distribution in all directions",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "cause to separate",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "distribute loosely",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "sow by scattering",
-        "partOfSpeech": "verb"
+        "definition": "a;lsejk f;lkja sef;lakjsef ",
+        "partOfSpeech": ";lkajsef ;lkajs ef;lkajs ef;laksefj "
       }
     ],
-    "synonyms": [
-      "spread",
-      "spread out",
-      "scattering",
-      "strewing",
-      "disperse",
-      "dissipate",
-      "break up",
-      "dispel",
-      "dot",
-      "dust",
-      "sprinkle"
-    ],
+    "synonyms": [],
     "antonyms": []
   },
   {
-    "word": "praise",
+    "word": ";lakejf ;laksjef ;laksjef ;alskjef ;laskejf ;laskjef ",
     "definitions": [
       {
-        "definition": "an expression of approval and commendation",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "express approval of",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "offering words of homage as an act of worship",
-        "partOfSpeech": "noun"
+        "definition": "a;lsejk f;lkja sef;lakjsef ",
+        "partOfSpeech": ";lkajsef ;lkajs ef;lkajs ef;laksefj "
       }
     ],
-    "synonyms": ["congratulations", "extolment", "kudos"],
-    "antonyms": ["criticize"]
-  },
-  {
-    "word": "preference",
-    "definitions": [
-      {
-        "definition": "a strong liking",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a predisposition in favor of something",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the right or chance to choose",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "grant of favor or advantage to one over another (especially to a country or countries in matters of international trade, such as levying duties)",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "penchant",
-      "predilection",
-      "taste",
-      "orientation",
-      "druthers"
-    ],
+    "synonyms": [],
     "antonyms": []
   },
   {
-    "word": "reporter",
+    "word": ";lakejf ;laksjef ;laksjef ;alskjef ;laskejf ;laskjef ",
     "definitions": [
       {
-        "definition": "a person who investigates and reports or edits news stories",
-        "partOfSpeech": "noun"
+        "definition": "a;lsejk f;lkja sef;lakjsef ",
+        "partOfSpeech": ";lkajsef ;lkajs ef;lkajs ef;laksefj "
       }
     ],
-    "synonyms": ["newsman", "newsperson"],
-    "antonyms": []
-  },
-  {
-    "word": "salesperson",
-    "definitions": [
-      {
-        "definition": "a person employed to represent a business and to sell its merchandise (as to customers in a store or to customers who are visited)",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["sales rep", "sales representative"],
+    "synonyms": [],
     "antonyms": []
   },
   {
@@ -150,694 +62,20 @@
     "antonyms": []
   },
   {
-    "word": "reproduce",
+    "word": "anxiety",
     "definitions": [
       {
-        "definition": "repeat after memorization",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "have offspring or produce more individuals of a given animal or plant",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "make a copy or equivalent of",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "recreate a sound, image, idea, mood, atmosphere, etc.",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": ["regurgitate", "multiply", "procreate"],
-    "antonyms": []
-  },
-  {
-    "word": "sticky",
-    "definitions": [
-      {
-        "definition": "hot or warm and humid",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "having the sticky properties of an adhesive",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "hard to deal with; especially causing pain or embarrassment",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "covered with an adhesive material",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "moist as with undried perspiration and with clothing sticking to the body",
-        "partOfSpeech": "adjective"
-      }
-    ],
-    "synonyms": [
-      "muggy",
-      "steamy",
-      "gluey",
-      "glutinous",
-      "gummy",
-      "mucilaginous",
-      "pasty",
-      "viscid",
-      "viscous",
-      "awkward",
-      "embarrassing",
-      "unenviable"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "spontaneous",
-    "definitions": [
-      {
-        "definition": "happening or arising without apparent external cause",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "said or done without having been planned or written in advance",
-        "partOfSpeech": "adjective"
-      }
-    ],
-    "synonyms": ["self-generated", "ad-lib", "unwritten"],
-    "antonyms": ["induced"]
-  },
-  {
-    "word": "resort",
-    "definitions": [
-      {
-        "definition": "have recourse to",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "a hotel located in a resort area",
+        "definition": "(psychiatry) a relatively permanent state of worry and nervousness occurring in a variety of mental disorders, usually accompanied by compulsive behavior or attacks of panic",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "something or someone turned to for assistance or security",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "act of turning to for assistance",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "move, travel, or proceed toward some place",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "a frequently visited place",
+        "definition": "a vague unpleasant emotion that is experienced in anticipation of some (usually ill-defined) misfortune",
         "partOfSpeech": "noun"
       }
     ],
     "synonyms": [
-      "fall back",
-      "recur",
-      "holiday resort",
-      "resort hotel",
-      "recourse",
-      "refuge",
-      "repair",
-      "hangout",
-      "haunt",
-      "stamping ground"
+      "anxiousness"
     ],
-    "antonyms": []
-  },
-  {
-    "word": "verdict",
-    "definitions": [
-      {
-        "definition": "(law) the findings of a jury on issues of fact submitted to it for decision; can be used in formulating a judgment",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["finding of fact"],
-    "antonyms": []
-  },
-  {
-    "word": "perform",
-    "definitions": [
-      {
-        "definition": "carry out or perform an action",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "get (something) done",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "give a performance (of something)",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "perform a function",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": ["do", "execute"],
-    "antonyms": []
-  },
-  {
-    "word": "temperature",
-    "definitions": [
-      {
-        "definition": "the degree of hotness or coldness of a body or environment (corresponding to its molecular activity)",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the somatic sensation of cold or heat",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  {
-    "word": "superior",
-    "definitions": [
-      {
-        "definition": "having a higher rank",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "a combatant who is able to defeat rivals",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a character or symbol set or printed or written above and immediately to one side of another character",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "written or printed above and to one side of another character",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "one of greater rank or station or quality",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the largest freshwater lake in the world; the deepest of the Great Lakes",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a town in northwest Wisconsin on Lake Superior across from Duluth",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "having an orbit farther from the sun than the Earth's orbit",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "of high or superior quality or performance",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "of or characteristic of high rank or importance",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "(often followed by `to') above being affected or influenced by",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "(sometimes followed by `to') not subject to or influenced by",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "the head of a religious community",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "higher-ranking",
-      "ranking",
-      "master",
-      "victor",
-      "superscript",
-      "higher-up",
-      "superordinate",
-      "lake superior"
-    ],
-    "antonyms": ["inferior"]
-  },
-  {
-    "word": "password",
-    "definitions": [
-      {
-        "definition": "a secret word or phrase known only to a restricted group",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["countersign", "parole", "watchword", "word"],
-    "antonyms": []
-  },
-  {
-    "word": "recommendation",
-    "definitions": [
-      {
-        "definition": "any quality or characteristic that gains a person a favorable reception or acceptance or admission",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "something that recommends (or expresses commendation of) a person or thing as worthy or desirable",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "something (as a course of action) that is recommended as advisable",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["passport", "good word", "testimonial"],
-    "antonyms": []
-  },
-  {
-    "word": "standard",
-    "definitions": [
-      {
-        "definition": "a basis for comparison; a reference point against which other things can be evaluated",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "any distinctive flag",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "conforming to the established language usage of educated native speakers",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "the ideal in terms of which something can be judged",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the value behind the money in a monetary system",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "regularly and widely used or sold",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "a board measure = 1980 board feet",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an upright pole or beam (especially one used as a support)",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "commonly used or supplied",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "conforming to or constituting a standard of measurement or value; or of the usual or regularized or accepted kind",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "established or well-known or widely recognized as a model of authority or excellence",
-        "partOfSpeech": "adjective"
-      }
-    ],
-    "synonyms": [
-      "criterion",
-      "measure",
-      "touchstone",
-      "banner",
-      "received",
-      "monetary standard",
-      "stock"
-    ],
-    "antonyms": ["nonstandard"]
-  },
-  {
-    "word": "association",
-    "definitions": [
-      {
-        "definition": "a social or business relationship",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the process of bringing ideas or events together in memory or imagination",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a formal organization of people or groups of people",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a relation resulting from interaction or dependence",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "(chemistry) any process of combination (especially in solution) that depends on relatively weak chemical bonding",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "(ecology) a group of organisms (plants and animals) that live together in a certain geographical region and constitute a community with a few dominant species",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the act of consorting with or joining with others",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the state of being connected together as in memory or imagination",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["affiliation", "tie", "tie-up", "connection", "connexion"],
-    "antonyms": ["disassociation"]
-  },
-  {
-    "word": "stream",
-    "definitions": [
-      {
-        "definition": "something that resembles a flowing stream in moving continuously",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a steady flow of a fluid (usually from natural causes)",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "rain heavily",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "flow freely and abundantly",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "dominant course (suggestive of running water) of successive events or ideas",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "move in large numbers",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "the act of flowing or streaming; continuous progression",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a natural body of running water flowing on or under the earth",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "exude profusely",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "to extend, wave or float outward, as if in the wind",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": [
-      "flow",
-      "current",
-      "pelt",
-      "pour",
-      "rain buckets",
-      "rain cats and dogs",
-      "well out",
-      "pullulate",
-      "swarm",
-      "teem",
-      "watercourse"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "refuse",
-    "definitions": [
-      {
-        "definition": "refuse entrance or membership",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "show unwillingness towards",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "resist immunologically the introduction of some foreign tissue or organ",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "refuse to accept",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "food that is discarded (as from a kitchen)",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "elude, especially in a baffling way",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "refuse to let have",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": [
-      "reject",
-      "turn away",
-      "turn down",
-      "decline",
-      "resist",
-      "pass up",
-      "food waste",
-      "garbage",
-      "scraps",
-      "defy",
-      "deny"
-    ],
-    "antonyms": ["accept"]
-  },
-  {
-    "word": "sulphur",
-    "definitions": [
-      {
-        "definition": "an abundant tasteless odorless multivalent nonmetallic element; best known in yellow crystals; occurs in many sulphide and sulphate minerals and even in native form (especially in volcanic regions)",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "treat with sulphur in order to preserve",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": ["atomic number 16", "s", "sulfur"],
-    "antonyms": []
-  },
-  {
-    "word": "pepper",
-    "definitions": [
-      {
-        "definition": "attack and bombard with or as if with missiles",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "pungent seasoning from the berry of the common pepper plant of East India; use whole or ground",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "climber having dark red berries (peppercorns) when fully ripe; southern India and Sri Lanka; naturalized in northern Burma and Assam",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "any of various tropical plants of the genus Capsicum bearing peppers",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "add pepper to",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "sweet and hot varieties of fruits of plants of the genus Capsicum",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "pelt",
-      "peppercorn",
-      "black pepper",
-      "common pepper",
-      "madagascar pepper",
-      "piper nigrum",
-      "white pepper",
-      "capsicum",
-      "capsicum pepper plant"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "strong",
-    "definitions": [
-      {
-        "definition": "immune to attack; incapable of being tampered with",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "of good quality and condition; solidly built",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "having or wielding force or authority",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "strong and sure",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "having a strong physiological or chemical effect",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "freshly made or left",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "being distilled rather than fermented; having a high alcoholic content",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "having strength or power greater than average or expected",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "not faint or feeble",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "of verbs not having standard (or regular) inflection",
-        "partOfSpeech": "adjective"
-      }
-    ],
-    "synonyms": [
-      "impregnable",
-      "inviolable",
-      "secure",
-      "unassailable",
-      "unattackable",
-      "solid",
-      "substantial",
-      "potent",
-      "firm",
-      "stiff",
-      "warm",
-      "hard"
-    ],
-    "antonyms": ["weak"]
-  },
-  {
-    "word": "ghostwriter",
-    "definitions": [
-      {
-        "definition": "a writer who gives the credit of authorship to someone else",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["ghost"],
-    "antonyms": []
-  },
-  {
-    "word": "suitcase",
-    "definitions": [
-      {
-        "definition": "a portable rectangular container for carrying clothes",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["bag", "grip", "traveling bag", "travelling bag"],
-    "antonyms": []
-  },
-  {
-    "word": "attraction",
-    "definitions": [
-      {
-        "definition": "the quality of arousing interest; being attractive or something that attracts",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an entertainer who attracts large audiences",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the force by which one object attracts another",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a characteristic that provides pleasure and attracts",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an entertainment that is offered to the public",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "attractiveness",
-      "attracter",
-      "attractor",
-      "draw",
-      "drawing card",
-      "attractive force",
-      "attractive feature",
-      "magnet"
-    ],
-    "antonyms": ["repulsion"]
-  },
-  {
-    "word": "archive",
-    "definitions": [
-      {
-        "definition": "put into an archive",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "a depository containing historical records and documents",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["file away"],
-    "antonyms": []
-  },
-  {
-    "word": "station",
-    "definitions": [
-      {
-        "definition": "assign to a station",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "proper or designated social situation",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the position where someone (as a guard or sentry) stands or is assigned to stand",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a facility equipped with special equipment and personnel for a particular purpose",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "(nautical) the location to which a ship or fleet is assigned for duty",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the frequency assigned to a broadcasting station",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["place", "post", "send"],
     "antonyms": []
   },
   {
@@ -867,107 +105,24 @@
       "favourable reception",
       "commendation"
     ],
-    "antonyms": ["disapproval"]
+    "antonyms": [
+      "disapproval"
+    ]
   },
   {
-    "word": "limited",
+    "word": "archive",
     "definitions": [
       {
-        "definition": "subject to limits or subjected to limits",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "mediocre",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "having a specific function or scope",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "public transport consisting of a fast train or bus that makes only a few scheduled stops",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "including only a part",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "not excessive",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "not unlimited",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "small in range or scope",
-        "partOfSpeech": "adjective"
-      }
-    ],
-    "synonyms": ["circumscribed", "modified", "special", "express"],
-    "antonyms": ["unlimited"]
-  },
-  {
-    "word": "pasture",
-    "definitions": [
-      {
-        "definition": "a field covered with grass or herbage and suitable for grazing by livestock",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "bulky food like grass or hay for browsing or grazing horses or cattle",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "let feed in a field or pasture or meadow",
+        "definition": "put into an archive",
         "partOfSpeech": "verb"
       },
       {
-        "definition": "feed as in a meadow or pasture",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": [
-      "grazing land",
-      "lea",
-      "ley",
-      "pastureland",
-      "eatage",
-      "forage",
-      "grass",
-      "pasturage",
-      "crop",
-      "graze",
-      "browse",
-      "range"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "allocation",
-    "definitions": [
-      {
-        "definition": "(computer science) the assignment of particular areas of a magnetic disk to particular data or instructions",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a share set aside for a specific purpose",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the act of distributing by allotting or apportioning; distribution according to a plan",
+        "definition": "a depository containing historical records and documents",
         "partOfSpeech": "noun"
       }
     ],
     "synonyms": [
-      "storage allocation",
-      "allotment",
-      "apportioning",
-      "apportionment",
-      "assignation",
-      "parceling",
-      "parcelling"
+      "file away"
     ],
     "antonyms": []
   },
@@ -1012,70 +167,89 @@
     "antonyms": []
   },
   {
-    "word": "football",
+    "word": "association",
     "definitions": [
       {
-        "definition": "any of various games played with a ball (round or oval) in which two teams try to kick or carry or propel the ball into each other's goal",
+        "definition": "a social or business relationship",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "the inflated oblong ball used in playing American football",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["football game"],
-    "antonyms": []
-  },
-  {
-    "word": "community",
-    "definitions": [
-      {
-        "definition": "a district where people live; occupied primarily by private residences",
+        "definition": "the process of bringing ideas or events together in memory or imagination",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "agreement as to goals",
+        "definition": "a formal organization of people or groups of people",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "(ecology) a group of interdependent organisms inhabiting the same region and interacting with each other",
+        "definition": "a relation resulting from interaction or dependence",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "a group of nations having common interests",
+        "definition": "(chemistry) any process of combination (especially in solution) that depends on relatively weak chemical bonding",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "a group of people having a religion, ethnic, profession, or other particular characteristic in common",
+        "definition": "(ecology) a group of organisms (plants and animals) that live together in a certain geographical region and constitute a community with a few dominant species",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "a group of people living in a particular local area",
+        "definition": "the act of consorting with or joining with others",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "common ownership",
+        "definition": "the state of being connected together as in memory or imagination",
         "partOfSpeech": "noun"
       }
     ],
     "synonyms": [
-      "residential area",
-      "residential district",
-      "community of interests",
-      "biotic community"
+      "affiliation",
+      "tie",
+      "tie-up",
+      "connection",
+      "connexion"
     ],
-    "antonyms": []
+    "antonyms": [
+      "disassociation"
+    ]
   },
   {
-    "word": "kidney",
+    "word": "attraction",
     "definitions": [
       {
-        "definition": "either of two bean-shaped excretory organs that filter wastes (especially urea) from the blood and excrete them and water in urine",
+        "definition": "the quality of arousing interest; being attractive or something that attracts",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an entertainer who attracts large audiences",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the force by which one object attracts another",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a characteristic that provides pleasure and attracts",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an entertainment that is offered to the public",
         "partOfSpeech": "noun"
       }
     ],
-    "synonyms": [],
-    "antonyms": []
+    "synonyms": [
+      "attractiveness",
+      "attracter",
+      "attractor",
+      "draw",
+      "drawing card",
+      "attractive force",
+      "attractive feature",
+      "magnet"
+    ],
+    "antonyms": [
+      "repulsion"
+    ]
   },
   {
     "word": "background",
@@ -1109,7 +283,7 @@
         "partOfSpeech": "noun"
       },
       {
-        "definition": "a person's social heritage: previous experience or training",
+        "definition": "a person\u0027s social heritage: previous experience or training",
         "partOfSpeech": "noun"
       },
       {
@@ -1130,254 +304,9 @@
       "background knowledge",
       "background signal"
     ],
-    "antonyms": ["foreground"]
-  },
-  {
-    "word": "captivate",
-    "definitions": [
-      {
-        "definition": "attract; cause to be enamored",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": [
-      "becharm",
-      "beguile",
-      "bewitch",
-      "capture",
-      "catch",
-      "charm",
-      "enamor",
-      "enamour",
-      "enchant",
-      "entrance",
-      "fascinate",
-      "trance"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "revolutionary",
-    "definitions": [
-      {
-        "definition": "a radical supporter of political or social revolution",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "markedly new or introducing radical change",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "of or relating to or characteristic or causing an axial or orbital turn",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "advocating or engaged in revolution",
-        "partOfSpeech": null
-      },
-      {
-        "definition": "relating to or having the nature of a revolution",
-        "partOfSpeech": null
-      }
-    ],
-    "synonyms": [
-      "revolutionist",
-      "subversive",
-      "subverter",
-      "radical",
-      "rotatory"
-    ],
-    "antonyms": ["counterrevolutionary"]
-  },
-  {
-    "word": "recycle",
-    "definitions": [
-      {
-        "definition": "use again after processing",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "cause to repeat a cycle",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": ["reprocess", "reuse"],
-    "antonyms": []
-  },
-  {
-    "word": "delicate",
-    "definitions": [
-      {
-        "definition": "difficult to handle; requiring great tact",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "easily broken or damaged or destroyed",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "easily hurt",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "developed with extreme delicacy and subtlety",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "exquisitely fine and subtle and pleasing; susceptible to injury",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "marked by great skill especially in meticulous technique",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "of an instrument or device; capable of registering minute differences or changes precisely",
-        "partOfSpeech": "adjective"
-      }
-    ],
-    "synonyms": ["ticklish", "touchy", "fragile", "frail", "soft", "finespun"],
-    "antonyms": ["rugged"]
-  },
-  {
-    "word": "government",
-    "definitions": [
-      {
-        "definition": "the act of governing; exercising authority",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the organization that is the governing authority of a political unit",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the study of government of states and other political units",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "(government) the system or form by which a community or other political unit is governed",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "administration",
-      "governance",
-      "governing",
-      "government activity",
-      "authorities",
-      "regime",
-      "political science",
-      "politics"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "display",
-    "definitions": [
-      {
-        "definition": "to show, make visible or apparent",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "something shown to the public",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an electronic device that represents information in visual form",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "something intended to communicate a particular impression",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a visual representation of something",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "attract attention by displaying some body part or posing; of animals",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "behavior that makes your feelings public",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "exhibiting openly in public view",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "exhibit",
-      "expose",
-      "showing",
-      "video display",
-      "show",
-      "presentation"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "critical",
-    "definitions": [
-      {
-        "definition": "forming or having the nature of a turning point or crisis",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "urgently needed; absolutely necessary",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "at or of a point at which a property or phenomenon suffers an abrupt change especially having enough mass to sustain a chain reaction",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "being in or verging on a state of crisis or emergency",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "characterized by careful evaluation and judgment",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "marked by a tendency to find and call attention to errors and flaws",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "of or involving or characteristic of critics or criticism",
-        "partOfSpeech": null
-      }
-    ],
-    "synonyms": ["decisive", "vital"],
-    "antonyms": ["noncritical", "uncritical"]
-  },
-  {
-    "word": "length",
-    "definitions": [
-      {
-        "definition": "continuance in time",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "size of the gap between two places",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a section of something that is long and narrow",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the linear extent in space from one end to the other; the longest dimension of something that is fixed in place",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the property of being the extent of something from beginning to end",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["duration", "distance"],
-    "antonyms": []
+    "antonyms": [
+      "foreground"
+    ]
   },
   {
     "word": "bridge",
@@ -1442,229 +371,81 @@
     "antonyms": []
   },
   {
-    "word": "constitution",
+    "word": "bubble",
     "definitions": [
       {
-        "definition": "law determining the fundamental political principles of a government",
+        "definition": "flow in an irregular current with a bubbling noise",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "expel gas from the stomach",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "a speculative scheme that depends on unstable factors that the planner cannot control",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "the act of forming or establishing something",
+        "definition": "a dome-shaped covering made of transparent glass or plastic",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "the way in which someone or something is composed",
+        "definition": "a hollow globule of gas (e.g., air or carbon dioxide)",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "the constitution written at the Constitutional Convention in Philadelphia in 1787 and subsequently ratified by the original thirteen states",
+        "definition": "an impracticable and illusory idea",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "a United States 44-gun frigate that was one of the first three naval ships built by the United States; it won brilliant victories over British frigates during the War of 1812 and is without doubt the most famous ship in the history of the United States Navy; it has been rebuilt and is anchored in the Charlestown Navy Yard in Boston",
-        "partOfSpeech": "noun"
+        "definition": "cause to form bubbles",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "form, produce, or emit bubbles",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "rise in bubbles or as if in bubbles",
+        "partOfSpeech": "verb"
       }
     ],
     "synonyms": [
-      "fundamental law",
-      "organic law",
-      "establishment",
-      "formation",
-      "organisation",
-      "organization",
-      "composition",
-      "make-up",
-      "makeup",
-      "physical composition",
-      "constitution of the united states",
-      "u.s. constitution",
-      "united states constitution",
-      "us constitution",
-      "old ironsides"
+      "babble",
+      "burble",
+      "guggle",
+      "gurgle",
+      "ripple",
+      "belch",
+      "burp",
+      "eruct",
+      "house of cards"
     ],
     "antonyms": []
   },
   {
-    "word": "sustain",
+    "word": "captivate",
     "definitions": [
       {
-        "definition": "lengthen or extend in duration or space",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "undergo (as of injuries and illnesses)",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "be the physical support of; carry the weight of",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "provide with nourishment",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "supply with necessities and support",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "establish or strengthen as with new evidence or facts",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "admit as valid",
+        "definition": "attract; cause to be enamored",
         "partOfSpeech": "verb"
       }
     ],
     "synonyms": [
-      "keep up",
-      "prolong",
-      "get",
-      "have",
-      "suffer",
-      "hold",
-      "hold up",
-      "support",
-      "nourish",
-      "nurture",
-      "keep",
-      "maintain",
-      "affirm",
-      "confirm",
-      "corroborate",
-      "substantiate"
+      "becharm",
+      "beguile",
+      "bewitch",
+      "capture",
+      "catch",
+      "charm",
+      "enamor",
+      "enamour",
+      "enchant",
+      "entrance",
+      "fascinate",
+      "trance"
     ],
     "antonyms": []
-  },
-  {
-    "word": "illusion",
-    "definitions": [
-      {
-        "definition": "an illusory feat; considered magical by naive observers",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "something many people believe that is false",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an erroneous mental representation",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the act of deluding; deception by creating illusory ideas",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "conjuration",
-      "conjuring trick",
-      "deception",
-      "legerdemain",
-      "magic",
-      "magic trick",
-      "thaumaturgy",
-      "trick",
-      "fancy",
-      "fantasy",
-      "phantasy",
-      "semblance",
-      "delusion",
-      "head game"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "commitment",
-    "definitions": [
-      {
-        "definition": "a message that makes a pledge",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the trait of sincere and steadfast fixity of purpose",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the official act of consigning a person to confinement (as in a prison or mental hospital)",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the act of binding yourself (intellectually or emotionally) to a course of action",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an engagement by contract involving financial obligation",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "dedication",
-      "committedness",
-      "committal",
-      "consignment",
-      "allegiance",
-      "loyalty"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "establish",
-    "definitions": [
-      {
-        "definition": "institute, enact, or establish",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "build or establish something abstract",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "bring about",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "place",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "use as a basis for; found on",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "set up or lay the groundwork for",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "establish the validity of something, as by an example, explanation or experiment",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "set up or found",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": [
-      "lay down",
-      "make",
-      "build",
-      "give",
-      "instal",
-      "install",
-      "set up",
-      "base",
-      "found",
-      "ground",
-      "constitute",
-      "institute",
-      "plant",
-      "demonstrate",
-      "prove",
-      "shew",
-      "show",
-      "launch"
-    ],
-    "antonyms": ["abolish"]
   },
   {
     "word": "census",
@@ -1678,467 +459,9 @@
         "partOfSpeech": "verb"
       }
     ],
-    "synonyms": ["nose count", "nosecount"],
-    "antonyms": []
-  },
-  {
-    "word": "epicalyx",
-    "definitions": [
-      {
-        "definition": "a group of bracts simulating a calyx as in a carnation or hibiscus",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["calycle", "calyculus", "false calyx"],
-    "antonyms": []
-  },
-  {
-    "word": "cultivate",
-    "definitions": [
-      {
-        "definition": "teach or refine to be discriminative in taste or judgment",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "prepare for crops",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "adapt (a wild plant or unclaimed land) to the environment",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "foster the growth of",
-        "partOfSpeech": "verb"
-      }
-    ],
     "synonyms": [
-      "civilise",
-      "civilize",
-      "educate",
-      "school",
-      "train",
-      "crop",
-      "work",
-      "domesticate",
-      "naturalise",
-      "naturalize",
-      "tame"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "compound",
-    "definitions": [
-      {
-        "definition": "make more intense, stronger, or more marked",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "put or add together",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "combine so as to form a whole; mix",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "(chemistry) a substance formed by chemical union of two or more elements or ingredients in definite proportion by weight",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "composed of many distinct individuals united to form a whole or colony",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "an enclosure of residences and other building (especially in the Orient)",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a whole formed by a union of two or more elements or parts",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "calculate principal and interest",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "composed of more than one part",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "consisting of two or more substances or ingredients or elements or parts",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "create by mixing or combining",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": [
-      "deepen",
-      "heighten",
-      "intensify",
-      "combine",
-      "chemical compound",
-      "colonial"
-    ],
-    "antonyms": ["simple"]
-  },
-  {
-    "word": "elegant",
-    "definitions": [
-      {
-        "definition": "suggesting taste, ease, and wealth",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "displaying effortless beauty and simplicity in movement or execution",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "refined and tasteful in appearance or behavior or style",
-        "partOfSpeech": "adjective"
-      }
-    ],
-    "synonyms": ["graceful", "refined"],
-    "antonyms": ["inelegant"]
-  },
-  {
-    "word": "eavesdrop",
-    "definitions": [
-      {
-        "definition": "listen without the speaker's knowledge",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": ["listen in"],
-    "antonyms": []
-  },
-  {
-    "word": "anxiety",
-    "definitions": [
-      {
-        "definition": "(psychiatry) a relatively permanent state of worry and nervousness occurring in a variety of mental disorders, usually accompanied by compulsive behavior or attacks of panic",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a vague unpleasant emotion that is experienced in anticipation of some (usually ill-defined) misfortune",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["anxiousness"],
-    "antonyms": []
-  },
-  {
-    "word": "exhibition",
-    "definitions": [
-      {
-        "definition": "a collection of things (goods or works of art etc.) for public display",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the act of exhibiting",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["expo", "exposition"],
-    "antonyms": []
-  },
-  {
-    "word": "failure",
-    "definitions": [
-      {
-        "definition": "a person with a record of failing; someone who loses consistently",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "inability to discharge all your debts as they come due",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an act that fails",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an event that does not accomplish its intended purpose",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an unexpected omission",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "lack of success",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "loss of ability to function normally",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["loser", "nonstarter", "unsuccessful person", "bankruptcy"],
-    "antonyms": ["success"]
-  },
-  {
-    "word": "affinity",
-    "definitions": [
-      {
-        "definition": "the force attracting atoms to each other and binding them together in a molecule",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a close connection marked by community of interests or similarity in nature or character",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "(biology) state of relationship between organisms or groups of organisms resulting in resemblance in structure or structural parts",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a natural attraction or feeling of kinship",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "(anthropology) kinship by marriage or adoption; not a blood relationship",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "(immunology) the attraction between an antigen and an antibody",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "inherent resemblance between persons or things",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["chemical attraction", "kinship", "phylogenetic relation"],
-    "antonyms": ["consanguinity"]
-  },
-  {
-    "word": "secure",
-    "definitions": [
-      {
-        "definition": "immune to attack; incapable of being tampered with",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "fill or close tightly with or as if with a plug",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "make certain of",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "furnish with battens",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "financially safe",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "get by special effort",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "cause to be firmly attached",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "free from fear or doubt; easy in mind",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "assure payment of",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "free from danger or risk",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "not likely to fail or give way",
-        "partOfSpeech": "adjective"
-      }
-    ],
-    "synonyms": [
-      "impregnable",
-      "inviolable",
-      "strong",
-      "unassailable",
-      "unattackable",
-      "plug",
-      "stop up",
-      "assure",
-      "ensure",
-      "guarantee",
-      "insure",
-      "batten",
-      "batten down",
-      "dependable",
-      "good",
-      "safe",
-      "procure",
-      "fasten",
-      "fix",
-      "unafraid",
-      "untroubled"
-    ],
-    "antonyms": ["insecure"]
-  },
-  {
-    "word": "thought",
-    "definitions": [
-      {
-        "definition": "a personal belief or judgment that is not founded on proof or certainty",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the content of cognition; the main thing you are thinking about",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the process of using your mind to consider something carefully",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the organized beliefs of a period or group or individual",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "opinion",
-      "persuasion",
-      "sentiment",
-      "view",
-      "idea",
-      "cerebration",
-      "intellection",
-      "mentation",
-      "thinking",
-      "thought process"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "productive",
-    "definitions": [
-      {
-        "definition": "marked by great fruitfulness",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "having the ability to produce or originate",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "producing or capable of producing (especially abundantly)",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "yielding positive results",
-        "partOfSpeech": "adjective"
-      }
-    ],
-    "synonyms": ["fat", "fertile", "rich", "generative"],
-    "antonyms": ["unproductive"]
-  },
-  {
-    "word": "crusade",
-    "definitions": [
-      {
-        "definition": "exert oneself continuously, vigorously, or obtrusively to gain an end or engage in a crusade for a certain cause or person; be an advocate for",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "a series of actions advancing a principle or tending toward a particular end",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "any of the more or less continuous military expeditions in the 11th to 13th centuries when Christian powers of Europe tried to recapture the Holy Land from the Muslims",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "go on a crusade; fight a holy war",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": [
-      "agitate",
-      "campaign",
-      "fight",
-      "press",
-      "push",
-      "cause",
-      "drive",
-      "effort",
-      "movement"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "chapter",
-    "definitions": [
-      {
-        "definition": "a local branch of some fraternity or association",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an ecclesiastical assembly of the monks in a monastery or even of the canons of a church",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "any distinct period in history or in a person's life",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a series of related events forming an episode",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a subdivision of a written work; usually numbered and titled",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  {
-    "word": "relinquish",
-    "definitions": [
-      {
-        "definition": "part with a possession or right",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "do without or cease to hold or adhere to",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "release, as from one's grip",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "turn away from; give up",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": [
-      "free",
-      "give up",
-      "release",
-      "resign",
-      "dispense with",
-      "forego",
-      "foreswear",
-      "forgo",
-      "waive",
-      "let go",
-      "let go of",
-      "quit",
-      "renounce"
+      "nose count",
+      "nosecount"
     ],
     "antonyms": []
   },
@@ -2201,760 +524,30 @@
     "antonyms": []
   },
   {
-    "word": "extract",
+    "word": "chapter",
     "definitions": [
       {
-        "definition": "obtain from a substance, as by mechanical action",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "take out of a literary work in order to cite or copy",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "a passage selected from a larger work",
+        "definition": "a local branch of some fraternity or association",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "a solution obtained by steeping or soaking a substance (usually in water)",
+        "definition": "an ecclesiastical assembly of the monks in a monastery or even of the canons of a church",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "remove, usually with some force or effort; also used in an abstract sense",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "deduce (a principle) or construe (a meaning)",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "extract by the process of distillation",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "calculate the root of a number",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "get despite difficulties or obstacles",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "separate (a metal) from an ore",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": [
-      "express",
-      "press out",
-      "excerpt",
-      "take out",
-      "excerption",
-      "selection",
-      "infusion",
-      "draw out",
-      "pull",
-      "pull out",
-      "pull up",
-      "rip out",
-      "tear out",
-      "educe",
-      "elicit",
-      "evoke",
-      "distil",
-      "distill"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "dressing",
-    "definitions": [
-      {
-        "definition": "making fertile as by applying fertilizer or manure",
+        "definition": "any distinct period in history or in a person\u0027s life",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "the activity of getting dressed; putting on clothes",
+        "definition": "a series of related events forming an episode",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "a mixture of seasoned ingredients used to stuff meats and vegetables",
+        "definition": "a subdivision of a written work; usually numbered and titled",
         "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a cloth covering for a wound or sore",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "savory dressings for salads; basically of two kinds: either the thin French or vinaigrette type or the creamy mayonnaise type",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the act of applying a bandage",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "processes in the conversion of rough hides into leather",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "fecundation",
-      "fertilisation",
-      "fertilization",
-      "grooming",
-      "stuffing",
-      "medical dressing",
-      "salad dressing",
-      "bandaging",
-      "binding"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "dentist",
-    "definitions": [
-      {
-        "definition": "a person qualified to practice dentistry",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["dental practitioner", "tooth doctor"],
-    "antonyms": []
-  },
-  {
-    "word": "knowledge",
-    "definitions": [
-      {
-        "definition": "the psychological result of perception and learning and reasoning",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["cognition", "noesis"],
-    "antonyms": []
-  },
-  {
-    "word": "manufacturer",
-    "definitions": [
-      {
-        "definition": "someone who manufactures something",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a business engaged in manufacturing some product",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["producer", "maker", "manufacturing business"],
-    "antonyms": []
-  },
-  {
-    "word": "licence",
-    "definitions": [
-      {
-        "definition": "excessive freedom; lack of due restraint",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "freedom to deviate deliberately from normally applicable rules or practices (especially in behavior or speech)",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a legal document giving official permission to do something",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "authorize officially",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": ["license", "permit", "certify"],
-    "antonyms": []
-  },
-  {
-    "word": "liberty",
-    "definitions": [
-      {
-        "definition": "immunity from arbitrary exercise of authority: political independence",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "leave granted to a sailor or naval officer",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an act of undue intimacy",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "freedom of choice",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "personal freedom from servitude or confinement or oppression",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "autonomy",
-      "shore leave",
-      "familiarity",
-      "impropriety",
-      "indecorum"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "paragraph",
-    "definitions": [
-      {
-        "definition": "divide into paragraphs, as of text",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "one of several distinct subdivisions of a text intended to separate ideas; the beginning is usually marked by a new indented line",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "write about in a paragraph",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "write paragraphs; work as a paragrapher",
-        "partOfSpeech": "verb"
       }
     ],
     "synonyms": [],
-    "antonyms": []
-  },
-  {
-    "word": "object",
-    "definitions": [
-      {
-        "definition": "the goal intended to be attained (and which is believed to be attainable)",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a tangible and visible entity; an entity that can cast a shadow",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "be averse to or express disapproval of",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "(computing) a discrete item that provides a description of virtually anything known to a computer",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "express or raise an objection or protest or criticism or express dissent",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "(grammar) a constituent that is acted upon",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the focus of cognitions or feelings",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": ["aim", "objective", "target", "physical object"],
-    "antonyms": []
-  },
-  {
-    "word": "mother",
-    "definitions": [
-      {
-        "definition": "make (offspring) by reproduction",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "a woman who has given birth to a child (also used as a term of address to your mother)",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "care for like a mother",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "a condition that is the inspiration for an activity or situation",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a stringy slimy substance consisting of yeast cells and bacteria; forms during fermentation and is added to cider or wine to produce vinegar",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a term of address for a mother superior",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a term of address for an elderly woman",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "beget",
-      "bring forth",
-      "engender",
-      "father",
-      "generate",
-      "get",
-      "sire",
-      "female parent",
-      "fuss",
-      "overprotect"
-    ],
-    "antonyms": ["father"]
-  },
-  {
-    "word": "gravity",
-    "definitions": [
-      {
-        "definition": "(physics) the force of attraction between all masses in the universe; especially the attraction of the earth's mass for bodies near its surface",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a solemn and dignified feeling",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a manner that is serious and solemn",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "gravitation",
-      "gravitational attraction",
-      "gravitational force",
-      "solemnity",
-      "graveness",
-      "soberness",
-      "sobriety",
-      "somberness",
-      "sombreness"
-    ],
-    "antonyms": ["levity"]
-  },
-  {
-    "word": "material",
-    "definitions": [
-      {
-        "definition": "artifact made by weaving or felting or knitting or crocheting natural or synthetic fibers",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "having substance or capable of being treated as fact; not imaginary",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "having material or physical form or substance",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "the tangible substance that goes into the makeup of a physical object",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a person judged suitable for admission or employment",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "concerned with or affecting physical as distinct from intellectual or psychological well-being",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "concerned with worldly rather than spiritual interests",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "derived from or composed of matter",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "directly relevant to a matter especially a law case",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "information (data or ideas or observations) that can be used or reworked into a finished form",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "things needed for doing or making something",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "cloth",
-      "fabric",
-      "textile",
-      "real",
-      "substantial",
-      "corporeal",
-      "stuff"
-    ],
-    "antonyms": ["immaterial"]
-  },
-  {
-    "word": "jealous",
-    "definitions": [
-      {
-        "definition": "showing extreme cupidity; painfully desirous of another's advantages",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "suspicious or unduly suspicious or fearful of being displaced by a rival",
-        "partOfSpeech": "adjective"
-      }
-    ],
-    "synonyms": ["covetous", "envious", "green-eyed", "overjealous"],
-    "antonyms": []
-  },
-  {
-    "word": "organization",
-    "definitions": [
-      {
-        "definition": "the persons (or committees or departments etc.) who make up a body for the purpose of administering something",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an ordered manner; orderliness by virtue of being methodical and well organized",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the act of forming or establishing something",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the activity or result of distributing or disposing persons or things properly or methodically",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a group of people who work together",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the act of organizing a business or an activity related to a business",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an organized structure for arranging or classifying",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "administration",
-      "brass",
-      "establishment",
-      "governance",
-      "governing body",
-      "organisation",
-      "system",
-      "constitution",
-      "formation",
-      "arrangement"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "office",
-    "definitions": [
-      {
-        "definition": "a job in an organization",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the actions and activities assigned to or required or expected of a person or group",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "professional or clerical workers in an office",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "(of a government or government official) holding an office means being in power",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "place of business where professional or clerical duties are performed",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an administrative unit of government",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a religious rite or service prescribed by ecclesiastical authorities",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "berth",
-      "billet",
-      "place",
-      "position",
-      "post",
-      "situation",
-      "spot",
-      "function",
-      "part",
-      "role",
-      "office staff",
-      "power",
-      "business office",
-      "agency",
-      "authority",
-      "bureau",
-      "federal agency",
-      "government agency"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "judicial",
-    "definitions": [
-      {
-        "definition": "relating to the administration of justice or the function of a judge",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "expressing careful judgment",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "decreed by or proceeding from a court of justice",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "belonging or appropriate to the office of a judge",
-        "partOfSpeech": null
-      }
-    ],
-    "synonyms": ["juridic", "juridical", "discriminative"],
-    "antonyms": []
-  },
-  {
-    "word": "passage",
-    "definitions": [
-      {
-        "definition": "the passing of a law by a legislative body",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a bodily reaction of changing from one place or stage to another",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the act of passing from one state or place to the next",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a journey usually by ship",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a short section of a musical composition",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the motion of one object relative to another",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a path or channel or duct through or along which something may pass",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the act of passing something to another person",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a section of text; particularly a section of medium length",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a way through or along which someone or something may pass",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "enactment",
-      "passing",
-      "transition",
-      "transit",
-      "musical passage",
-      "passageway",
-      "handing over"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "overwhelm",
-    "definitions": [
-      {
-        "definition": "charge someone with too many tasks",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "cover completely or make imperceptible",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "overcome, as with emotions or perceptual stimuli",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "overcome by superior force",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": [
-      "deluge",
-      "flood out",
-      "drown",
-      "submerge",
-      "overcome",
-      "overpower",
-      "overtake",
-      "sweep over",
-      "whelm",
-      "overmaster"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "lounge",
-    "definitions": [
-      {
-        "definition": "an upholstered seat for more than one person",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a room (as in a hotel or airport) with seating where people can wait",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "be about",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "sit or recline comfortably",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": [
-      "couch",
-      "sofa",
-      "waiting area",
-      "waiting room",
-      "footle",
-      "hang around",
-      "lallygag",
-      "linger",
-      "loaf",
-      "loiter",
-      "lollygag",
-      "lurk",
-      "mess about",
-      "mill about",
-      "mill around",
-      "tarry"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "marine",
-    "definitions": [
-      {
-        "definition": "a member of the United States Marine Corps",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "relating to or involving ships or shipping or navigation or seamen",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "a soldier who serves both on shipboard and on land",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "native to or inhabiting the sea",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "of or relating to military personnel who serve both on land and at sea (specifically the U.S. Marine Corps)",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "relating to or characteristic of or occurring on or in the sea",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "of or relating to the sea",
-        "partOfSpeech": null
-      }
-    ],
-    "synonyms": [
-      "devil dog",
-      "leatherneck",
-      "shipboard soldier",
-      "maritime",
-      "nautical"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "bubble",
-    "definitions": [
-      {
-        "definition": "flow in an irregular current with a bubbling noise",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "expel gas from the stomach",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "a speculative scheme that depends on unstable factors that the planner cannot control",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a dome-shaped covering made of transparent glass or plastic",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a hollow globule of gas (e.g., air or carbon dioxide)",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "an impracticable and illusory idea",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "cause to form bubbles",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "form, produce, or emit bubbles",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "rise in bubbles or as if in bubbles",
-        "partOfSpeech": "verb"
-      }
-    ],
-    "synonyms": [
-      "babble",
-      "burble",
-      "guggle",
-      "gurgle",
-      "ripple",
-      "belch",
-      "burp",
-      "eruct",
-      "house of cards"
-    ],
     "antonyms": []
   },
   {
@@ -2976,6 +569,205 @@
       "picture palace",
       "celluloid",
       "film"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "commitment",
+    "definitions": [
+      {
+        "definition": "a message that makes a pledge",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the trait of sincere and steadfast fixity of purpose",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the official act of consigning a person to confinement (as in a prison or mental hospital)",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the act of binding yourself (intellectually or emotionally) to a course of action",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an engagement by contract involving financial obligation",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "dedication",
+      "committedness",
+      "committal",
+      "consignment",
+      "allegiance",
+      "loyalty"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "community",
+    "definitions": [
+      {
+        "definition": "a district where people live; occupied primarily by private residences",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "agreement as to goals",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "(ecology) a group of interdependent organisms inhabiting the same region and interacting with each other",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a group of nations having common interests",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a group of people having a religion, ethnic, profession, or other particular characteristic in common",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a group of people living in a particular local area",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "common ownership",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "residential area",
+      "residential district",
+      "community of interests",
+      "biotic community"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "compound",
+    "definitions": [
+      {
+        "definition": "make more intense, stronger, or more marked",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "put or add together",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "combine so as to form a whole; mix",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "(chemistry) a substance formed by chemical union of two or more elements or ingredients in definite proportion by weight",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "composed of many distinct individuals united to form a whole or colony",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "an enclosure of residences and other building (especially in the Orient)",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a whole formed by a union of two or more elements or parts",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "calculate principal and interest",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "composed of more than one part",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "consisting of two or more substances or ingredients or elements or parts",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "create by mixing or combining",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "deepen",
+      "heighten",
+      "intensify",
+      "combine",
+      "chemical compound",
+      "colonial"
+    ],
+    "antonyms": [
+      "simple"
+    ]
+  },
+  {
+    "word": "conference",
+    "definitions": [
+      {
+        "definition": "an association of sports teams that organizes matches for its members",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a discussion among participants who have an agreed (serious) topic",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a prearranged meeting for consultation or exchange of information or discussion (especially one with a formal agenda)",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "league",
+      "group discussion"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "constitution",
+    "definitions": [
+      {
+        "definition": "law determining the fundamental political principles of a government",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the act of forming or establishing something",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the way in which someone or something is composed",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the constitution written at the Constitutional Convention in Philadelphia in 1787 and subsequently ratified by the original thirteen states",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a United States 44-gun frigate that was one of the first three naval ships built by the United States; it won brilliant victories over British frigates during the War of 1812 and is without doubt the most famous ship in the history of the United States Navy; it has been rebuilt and is anchored in the Charlestown Navy Yard in Boston",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "fundamental law",
+      "organic law",
+      "establishment",
+      "formation",
+      "organisation",
+      "organization",
+      "composition",
+      "make-up",
+      "makeup",
+      "physical composition",
+      "constitution of the united states",
+      "u.s. constitution",
+      "united states constitution",
+      "us constitution",
+      "old ironsides"
     ],
     "antonyms": []
   },
@@ -3056,7 +848,175 @@
       "get",
       "take"
     ],
-    "antonyms": ["expand"]
+    "antonyms": [
+      "expand"
+    ]
+  },
+  {
+    "word": "critical",
+    "definitions": [
+      {
+        "definition": "forming or having the nature of a turning point or crisis",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "urgently needed; absolutely necessary",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "at or of a point at which a property or phenomenon suffers an abrupt change especially having enough mass to sustain a chain reaction",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "being in or verging on a state of crisis or emergency",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "characterized by careful evaluation and judgment",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "marked by a tendency to find and call attention to errors and flaws",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "of or involving or characteristic of critics or criticism"
+      }
+    ],
+    "synonyms": [
+      "decisive",
+      "vital"
+    ],
+    "antonyms": [
+      "noncritical",
+      "uncritical"
+    ]
+  },
+  {
+    "word": "crusade",
+    "definitions": [
+      {
+        "definition": "exert oneself continuously, vigorously, or obtrusively to gain an end or engage in a crusade for a certain cause or person; be an advocate for",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "a series of actions advancing a principle or tending toward a particular end",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "any of the more or less continuous military expeditions in the 11th to 13th centuries when Christian powers of Europe tried to recapture the Holy Land from the Muslims",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "go on a crusade; fight a holy war",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "agitate",
+      "campaign",
+      "fight",
+      "press",
+      "push",
+      "cause",
+      "drive",
+      "effort",
+      "movement"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "cultivate",
+    "definitions": [
+      {
+        "definition": "teach or refine to be discriminative in taste or judgment",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "prepare for crops",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "adapt (a wild plant or unclaimed land) to the environment",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "foster the growth of",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "civilise",
+      "civilize",
+      "educate",
+      "school",
+      "train",
+      "crop",
+      "work",
+      "domesticate",
+      "naturalise",
+      "naturalize",
+      "tame"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "delicate",
+    "definitions": [
+      {
+        "definition": "difficult to handle; requiring great tact",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "easily broken or damaged or destroyed",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "easily hurt",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "developed with extreme delicacy and subtlety",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "exquisitely fine and subtle and pleasing; susceptible to injury",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "marked by great skill especially in meticulous technique",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "of an instrument or device; capable of registering minute differences or changes precisely",
+        "partOfSpeech": "adjective"
+      }
+    ],
+    "synonyms": [
+      "ticklish",
+      "touchy",
+      "fragile",
+      "frail",
+      "soft",
+      "finespun"
+    ],
+    "antonyms": [
+      "rugged"
+    ]
+  },
+  {
+    "word": "dentist",
+    "definitions": [
+      {
+        "definition": "a person qualified to practice dentistry",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "dental practitioner",
+      "tooth doctor"
+    ],
+    "antonyms": []
   },
   {
     "word": "dimension",
@@ -3086,90 +1046,56 @@
         "partOfSpeech": "noun"
       }
     ],
-    "synonyms": ["attribute", "property", "proportion"],
-    "antonyms": []
-  },
-  {
-    "word": "packet",
-    "definitions": [
-      {
-        "definition": "a collection of things wrapped or boxed together",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a boat for carrying mail",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a small package or bundle",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "(computer science) a message or message fragment",
-        "partOfSpeech": "noun"
-      }
-    ],
     "synonyms": [
-      "bundle",
-      "package",
-      "parcel",
-      "mail boat",
-      "mailboat",
-      "packet boat"
+      "attribute",
+      "property",
+      "proportion"
     ],
     "antonyms": []
   },
   {
-    "word": "foundation",
+    "word": "display",
     "definitions": [
       {
-        "definition": "education or instruction in the fundamentals of a field of knowledge",
+        "definition": "to show, make visible or apparent",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "something shown to the public",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "lowest support of a structure",
+        "definition": "an electronic device that represents information in visual form",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "a woman's undergarment worn to give shape to the contours of the body",
+        "definition": "something intended to communicate a particular impression",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "the fundamental assumptions from which something is begun or developed or calculated or explained",
+        "definition": "a visual representation of something",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "the act of starting something for the first time; introducing something new",
+        "definition": "attract attention by displaying some body part or posing; of animals",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "behavior that makes your feelings public",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "an institution supported by an endowment",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "the basis on which something is grounded",
+        "definition": "exhibiting openly in public view",
         "partOfSpeech": "noun"
       }
     ],
     "synonyms": [
-      "grounding",
-      "base",
-      "foot",
-      "fundament",
-      "groundwork",
-      "substructure",
-      "understructure",
-      "foundation garment",
-      "basis",
-      "cornerstone",
-      "creation",
-      "founding",
-      "initiation",
-      "innovation",
-      "instauration",
-      "institution",
-      "introduction",
-      "origination"
+      "exhibit",
+      "expose",
+      "showing",
+      "video display",
+      "show",
+      "presentation"
     ],
     "antonyms": []
   },
@@ -3229,22 +1155,388 @@
     "antonyms": []
   },
   {
-    "word": "conference",
+    "word": "dressing",
     "definitions": [
       {
-        "definition": "an association of sports teams that organizes matches for its members",
+        "definition": "making fertile as by applying fertilizer or manure",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "a discussion among participants who have an agreed (serious) topic",
+        "definition": "the activity of getting dressed; putting on clothes",
         "partOfSpeech": "noun"
       },
       {
-        "definition": "a prearranged meeting for consultation or exchange of information or discussion (especially one with a formal agenda)",
+        "definition": "a mixture of seasoned ingredients used to stuff meats and vegetables",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a cloth covering for a wound or sore",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "savory dressings for salads; basically of two kinds: either the thin French or vinaigrette type or the creamy mayonnaise type",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the act of applying a bandage",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "processes in the conversion of rough hides into leather",
         "partOfSpeech": "noun"
       }
     ],
-    "synonyms": ["league", "group discussion"],
+    "synonyms": [
+      "fecundation",
+      "fertilisation",
+      "fertilization",
+      "grooming",
+      "stuffing",
+      "medical dressing",
+      "salad dressing",
+      "bandaging",
+      "binding"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "eavesdrop",
+    "definitions": [
+      {
+        "definition": "listen without the speaker\u0027s knowledge",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "listen in"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "elegant",
+    "definitions": [
+      {
+        "definition": "suggesting taste, ease, and wealth",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "displaying effortless beauty and simplicity in movement or execution",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "refined and tasteful in appearance or behavior or style",
+        "partOfSpeech": "adjective"
+      }
+    ],
+    "synonyms": [
+      "graceful",
+      "refined"
+    ],
+    "antonyms": [
+      "inelegant"
+    ]
+  },
+  {
+    "word": "epicalyx",
+    "definitions": [
+      {
+        "definition": "a group of bracts simulating a calyx as in a carnation or hibiscus",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "calycle",
+      "calyculus",
+      "false calyx"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "establish",
+    "definitions": [
+      {
+        "definition": "institute, enact, or establish",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "build or establish something abstract",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "bring about",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "place",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "use as a basis for; found on",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "set up or lay the groundwork for",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "establish the validity of something, as by an example, explanation or experiment",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "set up or found",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "lay down",
+      "make",
+      "build",
+      "give",
+      "instal",
+      "install",
+      "set up",
+      "base",
+      "found",
+      "ground",
+      "constitute",
+      "institute",
+      "plant",
+      "demonstrate",
+      "prove",
+      "shew",
+      "show",
+      "launch"
+    ],
+    "antonyms": [
+      "abolish"
+    ]
+  },
+  {
+    "word": "exceed",
+    "definitions": [
+      {
+        "definition": "be greater in scope or size than some standard",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "be superior or better than some standard",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "be or do something to a greater degree",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "surpass",
+      "transcend",
+      "go past",
+      "overstep",
+      "pass",
+      "top",
+      "outdo",
+      "outgo",
+      "outmatch",
+      "outperform",
+      "outstrip",
+      "surmount"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "exhibition",
+    "definitions": [
+      {
+        "definition": "a collection of things (goods or works of art etc.) for public display",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the act of exhibiting",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "expo",
+      "exposition"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "extract",
+    "definitions": [
+      {
+        "definition": "obtain from a substance, as by mechanical action",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "take out of a literary work in order to cite or copy",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "a passage selected from a larger work",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a solution obtained by steeping or soaking a substance (usually in water)",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "remove, usually with some force or effort; also used in an abstract sense",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "deduce (a principle) or construe (a meaning)",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "extract by the process of distillation",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "calculate the root of a number",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "get despite difficulties or obstacles",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "separate (a metal) from an ore",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "express",
+      "press out",
+      "excerpt",
+      "take out",
+      "excerption",
+      "selection",
+      "infusion",
+      "draw out",
+      "pull",
+      "pull out",
+      "pull up",
+      "rip out",
+      "tear out",
+      "educe",
+      "elicit",
+      "evoke",
+      "distil",
+      "distill"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "failure",
+    "definitions": [
+      {
+        "definition": "a person with a record of failing; someone who loses consistently",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "inability to discharge all your debts as they come due",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an act that fails",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an event that does not accomplish its intended purpose",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an unexpected omission",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "lack of success",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "loss of ability to function normally",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "loser",
+      "nonstarter",
+      "unsuccessful person",
+      "bankruptcy"
+    ],
+    "antonyms": [
+      "success"
+    ]
+  },
+  {
+    "word": "fea",
+    "definitions": [
+      {
+        "definition": "fea",
+        "partOfSpeech": "fea"
+      }
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "fea",
+    "definitions": [
+      {
+        "definition": " fea fea fea",
+        "partOfSpeech": "f"
+      }
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "fea ea fea fea",
+    "definitions": [
+      {
+        "definition": "f ea fea fea",
+        "partOfSpeech": " fea fea fea"
+      }
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "fea fea",
+    "definitions": [
+      {
+        "definition": "fea",
+        "partOfSpeech": "fea"
+      }
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "fea fea",
+    "definitions": [
+      {
+        "definition": "fea",
+        "partOfSpeech": "fea"
+      }
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "feafea f",
+    "definitions": [
+      {
+        "definition": "fe aef ea ",
+        "partOfSpeech": "f ea fea "
+      },
+      {
+        "definition": " feaf ea",
+        "partOfSpeech": " fea fae"
+      }
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   {
@@ -3284,34 +1576,19 @@
     "antonyms": []
   },
   {
-    "word": "exceed",
+    "word": "football",
     "definitions": [
       {
-        "definition": "be greater in scope or size than some standard",
-        "partOfSpeech": "verb"
+        "definition": "any of various games played with a ball (round or oval) in which two teams try to kick or carry or propel the ball into each other\u0027s goal",
+        "partOfSpeech": "noun"
       },
       {
-        "definition": "be superior or better than some standard",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "be or do something to a greater degree",
-        "partOfSpeech": "verb"
+        "definition": "the inflated oblong ball used in playing American football",
+        "partOfSpeech": "noun"
       }
     ],
     "synonyms": [
-      "surpass",
-      "transcend",
-      "go past",
-      "overstep",
-      "pass",
-      "top",
-      "outdo",
-      "outgo",
-      "outmatch",
-      "outperform",
-      "outstrip",
-      "surmount"
+      "football game"
     ],
     "antonyms": []
   },
@@ -3348,6 +1625,256 @@
     "antonyms": []
   },
   {
+    "word": "foundation",
+    "definitions": [
+      {
+        "definition": "education or instruction in the fundamentals of a field of knowledge",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "lowest support of a structure",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a woman\u0027s undergarment worn to give shape to the contours of the body",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the fundamental assumptions from which something is begun or developed or calculated or explained",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the act of starting something for the first time; introducing something new",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an institution supported by an endowment",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the basis on which something is grounded",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "grounding",
+      "base",
+      "foot",
+      "fundament",
+      "groundwork",
+      "substructure",
+      "understructure",
+      "foundation garment",
+      "basis",
+      "cornerstone",
+      "creation",
+      "founding",
+      "initiation",
+      "innovation",
+      "instauration",
+      "institution",
+      "introduction",
+      "origination"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "FUCK",
+    "definitions": [
+      {
+        "definition": "this",
+        "partOfSpeech": "sucks"
+      }
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "ghostwriter",
+    "definitions": [
+      {
+        "definition": "a writer who gives the credit of authorship to someone else",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "ghost"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "government",
+    "definitions": [
+      {
+        "definition": "the act of governing; exercising authority",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the organization that is the governing authority of a political unit",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the study of government of states and other political units",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "(government) the system or form by which a community or other political unit is governed",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "administration",
+      "governance",
+      "governing",
+      "government activity",
+      "authorities",
+      "regime",
+      "political science",
+      "politics"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "gravity",
+    "definitions": [
+      {
+        "definition": "(physics) the force of attraction between all masses in the universe; especially the attraction of the earth\u0027s mass for bodies near its surface",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a solemn and dignified feeling",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a manner that is serious and solemn",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "gravitation",
+      "gravitational attraction",
+      "gravitational force",
+      "solemnity",
+      "graveness",
+      "soberness",
+      "sobriety",
+      "somberness",
+      "sombreness"
+    ],
+    "antonyms": [
+      "levity"
+    ]
+  },
+  {
+    "word": "illusion",
+    "definitions": [
+      {
+        "definition": "an illusory feat; considered magical by naive observers",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "something many people believe that is false",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an erroneous mental representation",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the act of deluding; deception by creating illusory ideas",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "conjuration",
+      "conjuring trick",
+      "deception",
+      "legerdemain",
+      "magic",
+      "magic trick",
+      "thaumaturgy",
+      "trick",
+      "fancy",
+      "fantasy",
+      "phantasy",
+      "semblance",
+      "delusion",
+      "head game"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "jealous",
+    "definitions": [
+      {
+        "definition": "showing extreme cupidity; painfully desirous of another\u0027s advantages",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "suspicious or unduly suspicious or fearful of being displaced by a rival",
+        "partOfSpeech": "adjective"
+      }
+    ],
+    "synonyms": [
+      "covetous",
+      "envious",
+      "green-eyed",
+      "overjealous"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "judicial",
+    "definitions": [
+      {
+        "definition": "relating to the administration of justice or the function of a judge",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "expressing careful judgment",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "decreed by or proceeding from a court of justice",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "belonging or appropriate to the office of a judge"
+      }
+    ],
+    "synonyms": [
+      "juridic",
+      "juridical",
+      "discriminative"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "kidney",
+    "definitions": [
+      {
+        "definition": "either of two bean-shaped excretory organs that filter wastes (especially urea) from the blood and excrete them and water in urine",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "knowledge",
+    "definitions": [
+      {
+        "definition": "the psychological result of perception and learning and reasoning",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "cognition",
+      "noesis"
+    ],
+    "antonyms": []
+  },
+  {
     "word": "laboratory",
     "definitions": [
       {
@@ -3367,6 +1894,1532 @@
       "science lab",
       "science laboratory"
     ],
+    "antonyms": []
+  },
+  {
+    "word": "length",
+    "definitions": [
+      {
+        "definition": "continuance in time",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "size of the gap between two places",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a section of something that is long and narrow",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the linear extent in space from one end to the other; the longest dimension of something that is fixed in place",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the property of being the extent of something from beginning to end",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "duration",
+      "distance"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "liberty",
+    "definitions": [
+      {
+        "definition": "immunity from arbitrary exercise of authority: political independence",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "leave granted to a sailor or naval officer",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an act of undue intimacy",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "freedom of choice",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "personal freedom from servitude or confinement or oppression",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "autonomy",
+      "shore leave",
+      "familiarity",
+      "impropriety",
+      "indecorum"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "licence",
+    "definitions": [
+      {
+        "definition": "excessive freedom; lack of due restraint",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "freedom to deviate deliberately from normally applicable rules or practices (especially in behavior or speech)",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a legal document giving official permission to do something",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "authorize officially",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "license",
+      "permit",
+      "certify"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "limited",
+    "definitions": [
+      {
+        "definition": "subject to limits or subjected to limits",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "mediocre",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "having a specific function or scope",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "public transport consisting of a fast train or bus that makes only a few scheduled stops",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "including only a part",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "not excessive",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "not unlimited",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "small in range or scope",
+        "partOfSpeech": "adjective"
+      }
+    ],
+    "synonyms": [
+      "circumscribed",
+      "modified",
+      "special",
+      "express"
+    ],
+    "antonyms": [
+      "unlimited"
+    ]
+  },
+  {
+    "word": "lounge",
+    "definitions": [
+      {
+        "definition": "an upholstered seat for more than one person",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a room (as in a hotel or airport) with seating where people can wait",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "be about",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "sit or recline comfortably",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "couch",
+      "sofa",
+      "waiting area",
+      "waiting room",
+      "footle",
+      "hang around",
+      "lallygag",
+      "linger",
+      "loaf",
+      "loiter",
+      "lollygag",
+      "lurk",
+      "mess about",
+      "mill about",
+      "mill around",
+      "tarry"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "manufacturer",
+    "definitions": [
+      {
+        "definition": "someone who manufactures something",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a business engaged in manufacturing some product",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "producer",
+      "maker",
+      "manufacturing business"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "marine",
+    "definitions": [
+      {
+        "definition": "a member of the United States Marine Corps",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "relating to or involving ships or shipping or navigation or seamen",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "a soldier who serves both on shipboard and on land",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "native to or inhabiting the sea",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "of or relating to military personnel who serve both on land and at sea (specifically the U.S. Marine Corps)",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "relating to or characteristic of or occurring on or in the sea",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "of or relating to the sea"
+      }
+    ],
+    "synonyms": [
+      "devil dog",
+      "leatherneck",
+      "shipboard soldier",
+      "maritime",
+      "nautical"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "material",
+    "definitions": [
+      {
+        "definition": "artifact made by weaving or felting or knitting or crocheting natural or synthetic fibers",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "having substance or capable of being treated as fact; not imaginary",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "having material or physical form or substance",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "the tangible substance that goes into the makeup of a physical object",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a person judged suitable for admission or employment",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "concerned with or affecting physical as distinct from intellectual or psychological well-being",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "concerned with worldly rather than spiritual interests",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "derived from or composed of matter",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "directly relevant to a matter especially a law case",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "information (data or ideas or observations) that can be used or reworked into a finished form",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "things needed for doing or making something",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "cloth",
+      "fabric",
+      "textile",
+      "real",
+      "substantial",
+      "corporeal",
+      "stuff"
+    ],
+    "antonyms": [
+      "immaterial"
+    ]
+  },
+  {
+    "word": "mf f ea f",
+    "definitions": [
+      {
+        "definition": "m fea fe f",
+        "partOfSpeech": "m fea fae "
+      }
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "mother",
+    "definitions": [
+      {
+        "definition": "make (offspring) by reproduction",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "a woman who has given birth to a child (also used as a term of address to your mother)",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "care for like a mother",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "a condition that is the inspiration for an activity or situation",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a stringy slimy substance consisting of yeast cells and bacteria; forms during fermentation and is added to cider or wine to produce vinegar",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a term of address for a mother superior",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a term of address for an elderly woman",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "beget",
+      "bring forth",
+      "engender",
+      "father",
+      "generate",
+      "get",
+      "sire",
+      "female parent",
+      "fuss",
+      "overprotect"
+    ],
+    "antonyms": [
+      "father"
+    ]
+  },
+  {
+    "word": "object",
+    "definitions": [
+      {
+        "definition": "the goal intended to be attained (and which is believed to be attainable)",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a tangible and visible entity; an entity that can cast a shadow",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "be averse to or express disapproval of",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "(computing) a discrete item that provides a description of virtually anything known to a computer",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "express or raise an objection or protest or criticism or express dissent",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "(grammar) a constituent that is acted upon",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the focus of cognitions or feelings",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "aim",
+      "objective",
+      "target",
+      "physical object"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "office",
+    "definitions": [
+      {
+        "definition": "a job in an organization",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the actions and activities assigned to or required or expected of a person or group",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "professional or clerical workers in an office",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "(of a government or government official) holding an office means being in power",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "place of business where professional or clerical duties are performed",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an administrative unit of government",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a religious rite or service prescribed by ecclesiastical authorities",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "berth",
+      "billet",
+      "place",
+      "position",
+      "post",
+      "situation",
+      "spot",
+      "function",
+      "part",
+      "role",
+      "office staff",
+      "power",
+      "business office",
+      "agency",
+      "authority",
+      "bureau",
+      "federal agency",
+      "government agency"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "organization",
+    "definitions": [
+      {
+        "definition": "the persons (or committees or departments etc.) who make up a body for the purpose of administering something",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an ordered manner; orderliness by virtue of being methodical and well organized",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the act of forming or establishing something",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the activity or result of distributing or disposing persons or things properly or methodically",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a group of people who work together",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the act of organizing a business or an activity related to a business",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "an organized structure for arranging or classifying",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "administration",
+      "brass",
+      "establishment",
+      "governance",
+      "governing body",
+      "organisation",
+      "system",
+      "constitution",
+      "formation",
+      "arrangement"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "overwhelm",
+    "definitions": [
+      {
+        "definition": "charge someone with too many tasks",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "cover completely or make imperceptible",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "overcome, as with emotions or perceptual stimuli",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "overcome by superior force",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "deluge",
+      "flood out",
+      "drown",
+      "submerge",
+      "overcome",
+      "overpower",
+      "overtake",
+      "sweep over",
+      "whelm",
+      "overmaster"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "packet",
+    "definitions": [
+      {
+        "definition": "a collection of things wrapped or boxed together",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a boat for carrying mail",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a small package or bundle",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "(computer science) a message or message fragment",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "bundle",
+      "package",
+      "parcel",
+      "mail boat",
+      "mailboat",
+      "packet boat"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "paragraph",
+    "definitions": [
+      {
+        "definition": "divide into paragraphs, as of text",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "one of several distinct subdivisions of a text intended to separate ideas; the beginning is usually marked by a new indented line",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "write about in a paragraph",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "write paragraphs; work as a paragrapher",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "passage",
+    "definitions": [
+      {
+        "definition": "the passing of a law by a legislative body",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a bodily reaction of changing from one place or stage to another",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the act of passing from one state or place to the next",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a journey usually by ship",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a short section of a musical composition",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the motion of one object relative to another",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a path or channel or duct through or along which something may pass",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the act of passing something to another person",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a section of text; particularly a section of medium length",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a way through or along which someone or something may pass",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "enactment",
+      "passing",
+      "transition",
+      "transit",
+      "musical passage",
+      "passageway",
+      "handing over"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "password",
+    "definitions": [
+      {
+        "definition": "a secret word or phrase known only to a restricted group",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "countersign",
+      "parole",
+      "watchword",
+      "word"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "pasture",
+    "definitions": [
+      {
+        "definition": "a field covered with grass or herbage and suitable for grazing by livestock",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "bulky food like grass or hay for browsing or grazing horses or cattle",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "let feed in a field or pasture or meadow",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "feed as in a meadow or pasture",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "grazing land",
+      "lea",
+      "ley",
+      "pastureland",
+      "eatage",
+      "forage",
+      "grass",
+      "pasturage",
+      "crop",
+      "graze",
+      "browse",
+      "range"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "pepper",
+    "definitions": [
+      {
+        "definition": "attack and bombard with or as if with missiles",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "pungent seasoning from the berry of the common pepper plant of East India; use whole or ground",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "climber having dark red berries (peppercorns) when fully ripe; southern India and Sri Lanka; naturalized in northern Burma and Assam",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "any of various tropical plants of the genus Capsicum bearing peppers",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "add pepper to",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "sweet and hot varieties of fruits of plants of the genus Capsicum",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "pelt",
+      "peppercorn",
+      "black pepper",
+      "common pepper",
+      "madagascar pepper",
+      "piper nigrum",
+      "white pepper",
+      "capsicum",
+      "capsicum pepper plant"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "perform",
+    "definitions": [
+      {
+        "definition": "carry out or perform an action",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "get (something) done",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "give a performance (of something)",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "perform a function",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "do",
+      "execute"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "praise",
+    "definitions": [
+      {
+        "definition": "an expression of approval and commendation",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "express approval of",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "offering words of homage as an act of worship",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "congratulations",
+      "extolment",
+      "kudos"
+    ],
+    "antonyms": [
+      "criticize"
+    ]
+  },
+  {
+    "word": "preference",
+    "definitions": [
+      {
+        "definition": "a strong liking",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a predisposition in favor of something",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the right or chance to choose",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "grant of favor or advantage to one over another (especially to a country or countries in matters of international trade, such as levying duties)",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "penchant",
+      "predilection",
+      "taste",
+      "orientation",
+      "druthers"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "productive",
+    "definitions": [
+      {
+        "definition": "marked by great fruitfulness",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "having the ability to produce or originate",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "producing or capable of producing (especially abundantly)",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "yielding positive results",
+        "partOfSpeech": "adjective"
+      }
+    ],
+    "synonyms": [
+      "fat",
+      "fertile",
+      "rich",
+      "generative"
+    ],
+    "antonyms": [
+      "unproductive"
+    ]
+  },
+  {
+    "word": "recommendation",
+    "definitions": [
+      {
+        "definition": "any quality or characteristic that gains a person a favorable reception or acceptance or admission",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "something that recommends (or expresses commendation of) a person or thing as worthy or desirable",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "something (as a course of action) that is recommended as advisable",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "passport",
+      "good word",
+      "testimonial"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "recycle",
+    "definitions": [
+      {
+        "definition": "use again after processing",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "cause to repeat a cycle",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "reprocess",
+      "reuse"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "refuse",
+    "definitions": [
+      {
+        "definition": "refuse entrance or membership",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "show unwillingness towards",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "resist immunologically the introduction of some foreign tissue or organ",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "refuse to accept",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "food that is discarded (as from a kitchen)",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "elude, especially in a baffling way",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "refuse to let have",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "reject",
+      "turn away",
+      "turn down",
+      "decline",
+      "resist",
+      "pass up",
+      "food waste",
+      "garbage",
+      "scraps",
+      "defy",
+      "deny"
+    ],
+    "antonyms": [
+      "accept"
+    ]
+  },
+  {
+    "word": "relinquish",
+    "definitions": [
+      {
+        "definition": "part with a possession or right",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "do without or cease to hold or adhere to",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "release, as from one\u0027s grip",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "turn away from; give up",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "free",
+      "give up",
+      "release",
+      "resign",
+      "dispense with",
+      "forego",
+      "foreswear",
+      "forgo",
+      "waive",
+      "let go",
+      "let go of",
+      "quit",
+      "renounce"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "reporter",
+    "definitions": [
+      {
+        "definition": "a person who investigates and reports or edits news stories",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "newsman",
+      "newsperson"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "reproduce",
+    "definitions": [
+      {
+        "definition": "repeat after memorization",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "have offspring or produce more individuals of a given animal or plant",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "make a copy or equivalent of",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "recreate a sound, image, idea, mood, atmosphere, etc.",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "regurgitate",
+      "multiply",
+      "procreate"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "resort",
+    "definitions": [
+      {
+        "definition": "have recourse to",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "a hotel located in a resort area",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "something or someone turned to for assistance or security",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "act of turning to for assistance",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "move, travel, or proceed toward some place",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "a frequently visited place",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "fall back",
+      "recur",
+      "holiday resort",
+      "resort hotel",
+      "recourse",
+      "refuge",
+      "repair",
+      "hangout",
+      "haunt",
+      "stamping ground"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "revolutionary",
+    "definitions": [
+      {
+        "definition": "a radical supporter of political or social revolution",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "markedly new or introducing radical change",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "of or relating to or characteristic or causing an axial or orbital turn",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "advocating or engaged in revolution"
+      },
+      {
+        "definition": "relating to or having the nature of a revolution"
+      }
+    ],
+    "synonyms": [
+      "revolutionist",
+      "subversive",
+      "subverter",
+      "radical",
+      "rotatory"
+    ],
+    "antonyms": [
+      "counterrevolutionary"
+    ]
+  },
+  {
+    "word": "salesperson",
+    "definitions": [
+      {
+        "definition": "a person employed to represent a business and to sell its merchandise (as to customers in a store or to customers who are visited)",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "sales rep",
+      "sales representative"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "sample",
+    "definitions": [
+      {
+        "definition": "sample definition",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "sample2",
+    "definitions": [
+      {
+        "definition": "definition1",
+        "partOfSpeech": "pos1"
+      },
+      {
+        "definition": "definition2",
+        "partOfSpeech": "pos2"
+      }
+    ],
+    "synonyms": [
+      "syn1",
+      "syn2",
+      "syn3"
+    ],
+    "antonyms": [
+      "ant1",
+      "ant2",
+      "ant3"
+    ]
+  },
+  {
+    "word": "scatter",
+    "definitions": [
+      {
+        "definition": "strew or distribute over an area",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "the act of scattering",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "move away from each other",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "to cause to separate and go in different directions",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "a haphazard distribution in all directions",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "cause to separate",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "distribute loosely",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "sow by scattering",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "spread",
+      "spread out",
+      "scattering",
+      "strewing",
+      "disperse",
+      "dissipate",
+      "break up",
+      "dispel",
+      "dot",
+      "dust",
+      "sprinkle"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "secure",
+    "definitions": [
+      {
+        "definition": "immune to attack; incapable of being tampered with",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "fill or close tightly with or as if with a plug",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "make certain of",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "furnish with battens",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "financially safe",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "get by special effort",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "cause to be firmly attached",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "free from fear or doubt; easy in mind",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "assure payment of",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "free from danger or risk",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "not likely to fail or give way",
+        "partOfSpeech": "adjective"
+      }
+    ],
+    "synonyms": [
+      "impregnable",
+      "inviolable",
+      "strong",
+      "unassailable",
+      "unattackable",
+      "plug",
+      "stop up",
+      "assure",
+      "ensure",
+      "guarantee",
+      "insure",
+      "batten",
+      "batten down",
+      "dependable",
+      "good",
+      "safe",
+      "procure",
+      "fasten",
+      "fix",
+      "unafraid",
+      "untroubled"
+    ],
+    "antonyms": [
+      "insecure"
+    ]
+  },
+  {
+    "word": "spontaneous",
+    "definitions": [
+      {
+        "definition": "happening or arising without apparent external cause",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "said or done without having been planned or written in advance",
+        "partOfSpeech": "adjective"
+      }
+    ],
+    "synonyms": [
+      "self-generated",
+      "ad-lib",
+      "unwritten"
+    ],
+    "antonyms": [
+      "induced"
+    ]
+  },
+  {
+    "word": "sticky",
+    "definitions": [
+      {
+        "definition": "hot or warm and humid",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "having the sticky properties of an adhesive",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "hard to deal with; especially causing pain or embarrassment",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "covered with an adhesive material",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "moist as with undried perspiration and with clothing sticking to the body",
+        "partOfSpeech": "adjective"
+      }
+    ],
+    "synonyms": [
+      "muggy",
+      "steamy",
+      "gluey",
+      "glutinous",
+      "gummy",
+      "mucilaginous",
+      "pasty",
+      "viscid",
+      "viscous",
+      "awkward",
+      "embarrassing",
+      "unenviable"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "stream",
+    "definitions": [
+      {
+        "definition": "something that resembles a flowing stream in moving continuously",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a steady flow of a fluid (usually from natural causes)",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "rain heavily",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "flow freely and abundantly",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "dominant course (suggestive of running water) of successive events or ideas",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "move in large numbers",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "the act of flowing or streaming; continuous progression",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "a natural body of running water flowing on or under the earth",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "exude profusely",
+        "partOfSpeech": "verb"
+      },
+      {
+        "definition": "to extend, wave or float outward, as if in the wind",
+        "partOfSpeech": "verb"
+      }
+    ],
+    "synonyms": [
+      "flow",
+      "current",
+      "pelt",
+      "pour",
+      "rain buckets",
+      "rain cats and dogs",
+      "well out",
+      "pullulate",
+      "swarm",
+      "teem",
+      "watercourse"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "strong",
+    "definitions": [
+      {
+        "definition": "immune to attack; incapable of being tampered with",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "of good quality and condition; solidly built",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "having or wielding force or authority",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "strong and sure",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "having a strong physiological or chemical effect",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "freshly made or left",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "being distilled rather than fermented; having a high alcoholic content",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "having strength or power greater than average or expected",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "not faint or feeble",
+        "partOfSpeech": "adjective"
+      },
+      {
+        "definition": "of verbs not having standard (or regular) inflection",
+        "partOfSpeech": "adjective"
+      }
+    ],
+    "synonyms": [
+      "impregnable",
+      "inviolable",
+      "secure",
+      "unassailable",
+      "unattackable",
+      "solid",
+      "substantial",
+      "potent",
+      "firm",
+      "stiff",
+      "warm",
+      "hard"
+    ],
+    "antonyms": [
+      "weak"
+    ]
+  },
+  {
+    "word": "suitcase",
+    "definitions": [
+      {
+        "definition": "a portable rectangular container for carrying clothes",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "bag",
+      "grip",
+      "traveling bag",
+      "travelling bag"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "temperature",
+    "definitions": [
+      {
+        "definition": "the degree of hotness or coldness of a body or environment (corresponding to its molecular activity)",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the somatic sensation of cold or heat",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "thea thefeaf ",
+    "definitions": [
+      {
+        "definition": "feaf ef ae",
+        "partOfSpeech": " fea fea fea"
+      }
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  {
+    "word": "thought",
+    "definitions": [
+      {
+        "definition": "a personal belief or judgment that is not founded on proof or certainty",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the content of cognition; the main thing you are thinking about",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the process of using your mind to consider something carefully",
+        "partOfSpeech": "noun"
+      },
+      {
+        "definition": "the organized beliefs of a period or group or individual",
+        "partOfSpeech": "noun"
+      }
+    ],
+    "synonyms": [
+      "opinion",
+      "persuasion",
+      "sentiment",
+      "view",
+      "idea",
+      "cerebration",
+      "intellection",
+      "mentation",
+      "thinking",
+      "thought process"
+    ],
+    "antonyms": []
+  },
+  {
+    "word": "fea",
+    "definitions": [
+      {
+        "definition": " feea",
+        "partOfSpeech": "f"
+      }
+    ],
+    "synonyms": [],
     "antonyms": []
   }
 ]
