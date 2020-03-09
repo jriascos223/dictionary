@@ -32,13 +32,57 @@
     -fx-padding: 5 5 5 50;
 }
 
+#antonymHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
+}
+
+.antonyms {
+    -fx-font: 20px Tahoma;
+    -fx-padding: 5 5 5 35;
+}
 .partOfSpeech {
     -fx-font: 20px Tahoma;
     -fx-padding: 5 5 5 35;
 }
 
+.synonyms {
+    -fx-font: 20px Tahoma;
+    -fx-padding: 5 5 5 35;
+}
+
+.antonyms {
+    -fx-font: 20px Tahoma;
+    -fx-padding: 5 5 5 35;
+}
+
+#synonymHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
+}
+
+#antonymHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
+}
+
 #buttonHousing {
     -fx-spacing: 3px;
+}
+
+#addHeading {
+    -fx-font: 45px Tahoma;
+}
+
+#addHousing {
+    -fx-background-color: #FCFCFC;
+    -fx-padding: 5 5 5 5;
+    -fx-border-width: 2px;
+}
+
+#addDefinitionHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
 }
 
 #leftColumn {
@@ -57,11 +101,56 @@
     -fx-border-color: transparent transparent black transparent;
 }
 
+#synonymInput {
+    -fx-border-width: 2px;
+}
+
+#antonymInput {
+    -fx-border-width: 2px;
+}
+
+#defSpeechPair {
+    -fx-border-width: 2px;
+}
+
 
 #definitionScroll {
-    -fx-background-color: #FCFCFC;
+    -fx-background: #FCFCFC;
     -fx-padding: 3 3 3 3;
     -fx-border-width: 2px;
     -fx-border-color: black;
 }
 
+#addScroll {
+    -fx-background: #FCFCFC;
+}
+
+#close {
+    -fx-font: 15px Tahoma;
+}
+
+#submit {
+    -fx-font: 15px Tahoma;
+}
+
+#addDButton {
+    -fx-font: 15px Tahoma;
+}
+
+#addSynonymHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
+}
+
+#addSynonymButton {
+    -fx-font: 15px Tahoma;
+}
+
+#addAntonymHeading {
+    -fx-font: 30px Tahoma;
+    -fx-padding: 5 5 5 5;
+}
+
+#addAntonymButton {
+    -fx-font: 15px Tahoma;
+}
