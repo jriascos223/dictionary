@@ -20,6 +20,7 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
@@ -84,6 +85,7 @@ public class SceneBuilder {
             return;
         }
         ListView<String> wordHousing = (ListView<String>) scene.lookup("#wordHousing");
+        wordHousing.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         definitionHousing.getChildren().clear();
         TextField searchbar = (TextField) scene.lookup("#searchbar");
         List<String> filteredStrings = wordHousing.getItems();

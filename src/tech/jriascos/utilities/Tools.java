@@ -129,6 +129,19 @@ public class Tools {
      * @throws IOException
      */
     public static Words[] saveWordJson(Words[] words, Words wordObj) throws IOException {
+        if (wordObj == null) {
+            String classpathDirectory = getClasspathDir();
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            FileWriter fw = new FileWriter(classpathDirectory + "words.json");
+
+            String json = gson.toJson(words, Words[].class);
+
+            fw.write(json);
+            fw.flush();
+            fw.close();
+
+            return words;
+        }
         String classpathDirectory = getClasspathDir();
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         FileWriter fw = new FileWriter(classpathDirectory + "words.json");
@@ -276,7 +289,15 @@ public class Tools {
 
         EventHandler<ActionEvent> deleteWords = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
-                deleteWords();
+                try {
+                    deleteWords(scene, stage);
+                } catch (FileNotFoundException e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
+                } catch (IOException e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
+                }
                 leftColumnListeners(scene, words, stage, 0);
             }
         };
@@ -371,9 +392,54 @@ public class Tools {
         addAntonymButton.setOnAction(addAInputs);
     }
 
-    private static void deleteWords() {
-        
+    private static void deleteWords(Scene scene, Stage stage) throws IOException {
+        Words[] words = getWords();
+        ListView<String> wordHousing = (ListView<String>) scene.lookup("#wordHousing");
+        ObservableList<String> strings = wordHousing.getSelectionModel().getSelectedItems();
+        for (int i = 0; i < strings.size(); i++) {
+            if (words[i].getWord().equals(strings.get(i))) {
+                words = removeTheElement(words, i);
+            }
+        }
+        words = saveWordJson(words, null);
+        updateWords(words, scene);
     }
+
+    public static Words[] removeTheElement(Words[] arr, 
+                                          int index) 
+    { 
+  
+        // If the array is empty 
+        // or the index is not in array range 
+        // return the original array 
+        if (arr == null
+            || index < 0
+            || index >= arr.length) { 
+  
+            return arr; 
+        } 
+  
+        // Create another array of size one less 
+        Words[] anotherArray = new Words[arr.length - 1]; 
+  
+        // Copy the elements except the index 
+        // from original array to the other array 
+        for (int i = 0, k = 0; i < arr.length; i++) { 
+  
+            // if the index is 
+            // the removal element index 
+            if (i == index) { 
+                continue; 
+            } 
+  
+            // if the index is not 
+            // the removal element index 
+            anotherArray[k++] = arr[i]; 
+        } 
+  
+        // return the resultant array 
+        return anotherArray; 
+    } 
 
     private static void addWordToDict(Scene scene, Stage stage) {
         ArrayList<String> definitionStrings = new ArrayList<String>();
