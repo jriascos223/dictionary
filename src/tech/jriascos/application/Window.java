@@ -42,7 +42,7 @@ public class Window extends Application {
         // Event listeners are after stage.show() since it depends on looking up
         // elements with ids, which only works
         // after the stage has been built and shown
-        Tools.leftColumnListeners(defaultScene, words, primaryStage, 0);
+        Tools.leftColumnListeners(defaultScene, primaryStage, 0);
     }
 
     public static void main(final String[] args) {

@@ -187,7 +187,8 @@ public class Tools {
         return b;
     }
 
-    public static void leftColumnListeners(Scene scene, Words[] words, Stage stage, int isSorted) {
+    public static void leftColumnListeners(Scene scene, Stage stage, int isSorted) throws FileNotFoundException {
+        Words[] words = getWords();
         CheckBox asc = (CheckBox) scene.lookup("#asc");
         CheckBox desc = (CheckBox) scene.lookup("#desc");
         TextField searchbar = (TextField) scene.lookup("#searchbar");
@@ -248,7 +249,13 @@ public class Tools {
         searchbar.textProperty().addListener(obs -> {
             //Since these lambda expressions can't modify outside variables, gotta check if array is sorted in ascending order or not
             FilteredList<String> innerFilteredWords = new FilteredList<String>(wordObserv);
-            Words[] innerWords = new Words[words.length];
+            Words[] innerWords;
+            try {
+                innerWords = getWords();
+            } catch (FileNotFoundException e1) {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            }
             //should default to ascending if none of the boxes are selected
             if (asc.isSelected() || (!asc.isSelected() && !desc.isSelected())) {
                 List<String> innerWordStrings = new ArrayList<String>();
@@ -281,8 +288,18 @@ public class Tools {
         EventHandler<ActionEvent> showAddScreen = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
                 stage.getScene().setRoot(SceneBuilder.buildAddGrid(scene, words, stage));
-                leftColumnListeners(scene, words, stage, 0);
-                addScreenListeners(scene, words, stage);
+                try {
+                    leftColumnListeners(scene, stage, 0);
+                } catch (FileNotFoundException e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
+                }
+                try {
+                    addScreenListeners(scene, stage);
+                } catch (FileNotFoundException e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
+                }
             }
         };
         addButton.setOnAction(showAddScreen);
@@ -298,7 +315,12 @@ public class Tools {
                     // TODO Auto-generated catch block
                     e1.printStackTrace();
                 }
-                leftColumnListeners(scene, words, stage, 0);
+                try {
+                    leftColumnListeners(scene, stage, 0);
+                } catch (FileNotFoundException e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
+                }
             }
         };
         removeButton.setOnAction(deleteWords);
@@ -323,7 +345,8 @@ public class Tools {
         return words;
     }
 
-    public static void addScreenListeners(Scene scene, Words[] words, Stage stage) {
+    public static void addScreenListeners(Scene scene, Stage stage) throws FileNotFoundException {
+        Words[] words = getWords();
         ScrollPane addScroll = (ScrollPane) scene.lookup("#addScroll");
         Button back = (Button) addScroll.getContent().lookup("#close");
         Button submit = (Button) addScroll.getContent().lookup("#submit");
@@ -341,7 +364,7 @@ public class Tools {
                 try {
                     Words[] innerWords = getWords();
                     stage.getScene().setRoot(SceneBuilder.buildDefaultScene(innerWords));
-                    leftColumnListeners(scene, innerWords, stage, 0);
+                    leftColumnListeners(scene, stage, 0);
                 } catch (FileNotFoundException e1) {
                     // TODO Auto-generated catch block
                     e1.printStackTrace();
@@ -394,15 +417,19 @@ public class Tools {
 
     private static void deleteWords(Scene scene, Stage stage) throws IOException {
         Words[] words = getWords();
+        System.out.println(words.length);
         ListView<String> wordHousing = (ListView<String>) scene.lookup("#wordHousing");
         ObservableList<String> strings = wordHousing.getSelectionModel().getSelectedItems();
-        for (int i = 0; i < strings.size(); i++) {
-            if (words[i].getWord().equals(strings.get(i))) {
-                words = removeTheElement(words, i);
+        for (int j = 0; j < strings.size(); j++) {
+            for (int i = 0; i < words.length; i++) {
+                if (strings.get(j).equals(words[i].getWord())) {
+                    words = removeTheElement(words, i);
+                }
             }
         }
-        words = saveWordJson(words, null);
-        updateWords(words, scene);
+        System.out.println(words.length);
+        Words[] outputWords = saveWordJson(words, null);
+        updateWords(outputWords, scene);
     }
 
     public static Words[] removeTheElement(Words[] arr, 
@@ -521,7 +548,7 @@ public class Tools {
                 Words[] innerWords = getWords();
                 innerWords = saveWordJson(innerWords, newWord);
                 updateWords(innerWords, scene);
-                leftColumnListeners(scene, innerWords, stage, 0);
+                leftColumnListeners(scene, stage, 0);
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
@@ -538,6 +565,7 @@ public class Tools {
         ObservableList<String> wordObserv = FXCollections.observableArrayList(wordStrings);
         FilteredList<String> filteredWords = new FilteredList<String>(wordObserv, s -> true);
         wordHousing.setItems(filteredWords);
+        
     }
 
     public static VBox createDefSpeechPairInput() {
