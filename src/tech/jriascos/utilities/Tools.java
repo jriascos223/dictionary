@@ -1,8 +1,12 @@
 package tech.jriascos.utilities;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -83,15 +87,16 @@ public class Tools {
      * @param asciiArray array of words in ascii
      */
     public static Words[] sortAscending(Words[] words, ArrayList<String> wordStrings) {
-        for (int i = 0; i < wordStrings.size(); i++) {
-            for (int j = i + 1; j < wordStrings.size(); j++) {
-                if (wordStrings.get(i).compareTo(wordStrings.get(j)) > 0) {
+        int n = wordStrings.size();
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (wordStrings.get(i).toLowerCase().compareTo(wordStrings.get(j).toLowerCase())>0) {
                     Words temp = words[i];
                     words[i] = words[j];
                     words[j] = temp;
                     String temp2 = wordStrings.get(i);
-                    wordStrings.set(j, wordStrings.get(i));
-                    wordStrings.set(i, temp2);
+                    wordStrings.set(i, wordStrings.get(j));
+                    wordStrings.set(j, temp2);
                 }
             }
         }
@@ -184,12 +189,19 @@ public class Tools {
             searchbar.clear();
             if (isNowSelected && (isSorted != 1 || isSorted != 2)) {
                 desc.setSelected(false);
-                Words[] wordsInner = sortWordsAscending(words, isSorted);
-                List<String> wordStringsInner = new ArrayList<String>();
-                for (int i = 0; i < wordsInner.length; i++) {
-                    wordStringsInner.add(wordsInner[i].getWord());
+                Words[] wordsInner;
+                try {
+                    wordsInner = sortWordsAscending(getWords(), isSorted);
+                    List<String> wordStringsInner = new ArrayList<String>();
+                    for (int i = 0; i < wordsInner.length; i++) {
+                        wordStringsInner.add(wordsInner[i].getWord());
+                    }
+                    wordHousing.setItems(FXCollections.observableArrayList(wordStringsInner));
+                } catch (FileNotFoundException e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
                 }
-                wordHousing.setItems(FXCollections.observableArrayList(wordStringsInner));
+                
             }
         });
 
@@ -199,12 +211,19 @@ public class Tools {
                 asc.setSelected(false);
                 if (isNowSelected && (isSorted != 1 || isSorted != 2)) {
                     asc.setSelected(false);
-                    Words[] wordsInner = sortWordsDescending(words, isSorted);
-                    List<String> wordStringsInner = new ArrayList<String>();
-                    for (int i = 0; i < wordsInner.length; i++) {
-                        wordStringsInner.add(wordsInner[i].getWord());
+                    Words[] wordsInner;
+                    try {
+                        wordsInner = sortWordsDescending(getWords(), isSorted);
+                        List<String> wordStringsInner = new ArrayList<String>();
+                        for (int i = 0; i < wordsInner.length; i++) {
+                            wordStringsInner.add(wordsInner[i].getWord());
+                        }
+                        wordHousing.setItems(FXCollections.observableArrayList(wordStringsInner));
+                    } catch (FileNotFoundException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
                     }
-                    wordHousing.setItems(FXCollections.observableArrayList(wordStringsInner));
+                    
                 }
             }
         });
@@ -271,44 +290,49 @@ public class Tools {
         });
     }
 
+    private static Words[] getWords() throws FileNotFoundException {
+        Gson gson = new Gson();
+        String classpathDirectory = Tools.getClasspathDir();
+        BufferedReader br = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
+        Words[] words = gson.fromJson(br, Words[].class);
+        words = Tools.sortWordsAscending(words, 0);
+        return words;
+    }
+
     public static void addScreenListeners(Scene scene, Words[] words, Stage stage) {
         ScrollPane addScroll = (ScrollPane) scene.lookup("#addScroll");
         Button back = (Button) addScroll.getContent().lookup("#close");
         Button submit = (Button) addScroll.getContent().lookup("#submit");
         Button addDefinition = (Button) addScroll.getContent().lookup("#addDButton");
+        VBox addHousing = (VBox) addScroll.getContent().lookup("#addHousing");
         VBox addDSection = (VBox) addScroll.getContent().lookup("#addDSection");
         VBox addSynSection = (VBox) addScroll.getContent().lookup("#addSynSection");
         VBox addAntSection = (VBox) addScroll.getContent().lookup("#addAntSection");
         Button addSynonymButton = (Button) addScroll.getContent().lookup("#addSynonymButton");
         Button addAntonymButton = (Button) addScroll.getContent().lookup("#addAntonymButton");
-        TextField wordInput = (TextField) addScroll.getContent().lookup("#wordInput");
+        
 
         EventHandler<ActionEvent> showDefaultScreen = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
-                stage.getScene().setRoot(SceneBuilder.buildDefaultScene(words));
-                leftColumnListeners(scene, words, stage, 0);
-            }
-        };
- 
-
-
-
-        EventHandler<ActionEvent> addWordToDict = new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent e) {
-                /* private String word;
-                private Definitions[] definitions;
-                private String[] synonyms;
-                private String[] antonyms; */
-                String word = wordInput.getText();
-                if (word.matches("\\\\s+")) {
-                    System.out.println("no whitespace man!");
-
+                try {
+                    Words[] innerWords = getWords();
+                    stage.getScene().setRoot(SceneBuilder.buildDefaultScene(innerWords));
+                    leftColumnListeners(scene, innerWords, stage, 0);
+                } catch (FileNotFoundException e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
                 }
-                System.out.println(word);
+                
             }
         };
 
-        submit.setOnAction(addWordToDict);
+        EventHandler<ActionEvent> addWordToDictAlert = new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent e) {
+                
+            }
+        };
+
+        submit.setOnAction(addWordToDictAlert);
 
         back.setOnAction(showDefaultScreen);
 
@@ -341,13 +365,111 @@ public class Tools {
         
     }
 
+    private static void addWordToDict(Scene scene, Stage stage) {
+        ScrollPane addScroll = (ScrollPane) scene.lookup("#addScroll");
+        VBox addHousing = (VBox) addScroll.getContent().lookup("#addHousing");
+        TextField wordInput = (TextField) addScroll.getContent().lookup("#wordInput");
+        String word = wordInput.getText();
+        ObservableList<Node> arr = addHousing.getChildren();
+        boolean whitespace = false;
+        whitespace = word.matches("\\s*") ? true : false;
+        ArrayList<String> definitionStrings = new ArrayList<String>();
+        ArrayList<String> partOfSpeechStrings = new ArrayList<String>();
+        ArrayList<String> synonyms = new ArrayList<String>();
+        ArrayList<String> antonyms = new ArrayList<String>();
+        for (Node n : arr) {
+            if (n instanceof VBox && n.getId().equals("defSpeechPair")) {
+                VBox container = (VBox) n;
+                ObservableList<Node> array = container.getChildren();
+                for (int i = 0; i < array.size(); i++) {
+                    if (array.get(i) instanceof TextField && i % 2 == 0){
+                        TextField container2 = (TextField) array.get(i);
+                        String text = container2.getText();
+                        whitespace = text.contains(" ") || text.matches("\\s") ? true : false;
+                        definitionStrings.add(text);
+                    }else if (array.get(i) instanceof TextField && i % 2 == 1) {
+                        TextField container2 = (TextField) array.get(i);
+                        String text = container2.getText();
+                        whitespace = text.matches("\\s*") ? true : false;
+                        partOfSpeechStrings.add(text);
+                    }
+                }
+            }else if (n instanceof VBox && n.getId().equals("synonymInput")) {
+                VBox container = (VBox) n;
+                ObservableList<Node> array = container.getChildren();
+                for (int i = 0; i < array.size(); i++) {
+                    if (array.get(i) instanceof TextField) {
+                        TextField container2 = (TextField) array.get(i);
+                        String text = container2.getText();
+                        synonyms.add(text);
+                    }
+                }
+            }else if (n instanceof VBox && n.getId().equals("antonymInput")) {
+                VBox container = (VBox) n;
+                ObservableList<Node> array = container.getChildren();
+                for (int i = 0; i < array.size(); i++) {
+                    if (array.get(i) instanceof TextField) {
+                        TextField container2 = (TextField) array.get(i);
+                        String text = container2.getText();
+                        antonyms.add(text);
+                    }
+                }
+            }
+        }
+
+        if (whitespace) {
+            System.out.println("FOOL");
+            System.out.println("______");
+        }else {
+            Object[] definitions =  definitionStrings.toArray();
+            Object[] partOfSpeeches = partOfSpeechStrings.toArray();
+            Definitions[] defProper = new Definitions[definitions.length];
+            Object[] synonymArray = synonyms.toArray();
+            Object[] antonymArray = antonyms.toArray();
+            if (definitions.length == partOfSpeeches.length) {
+                for (int j = 0; j < definitions.length; j++)  {
+                    defProper[j] = new Definitions((String) definitions[j], (String) partOfSpeeches[j]);
+                }
+            }
+            if (synonymArray.length == 0) {
+                synonymArray = new String[0];
+            }
+            if (antonymArray.length == 0) {
+                antonymArray = new String[0];
+            }
+            Words newWord = new Words(word, defProper, Arrays.copyOf(synonymArray, synonymArray.length, String[].class), Arrays.copyOf(antonymArray, antonymArray.length, String[].class));
+            try {
+                Words[] innerWords = getWords();
+                innerWords = saveWordJson(innerWords, newWord);
+                updateWords(innerWords, scene);
+                leftColumnListeners(scene, innerWords, stage, 0);
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        }
+    }
+
+    private static void updateWords(Words[] words, Scene scene) {
+        words = sortWordsAscending(words, 0);
+        ListView<String> wordHousing = (ListView<String>) scene.lookup("#wordHousing");
+        List<String> wordStrings = new ArrayList<String>();
+        for (int i = 0; i < words.length; i++) {
+            wordStrings.add(words[i].getWord());
+        }
+        ObservableList<String> wordObserv = FXCollections.observableArrayList(wordStrings);
+        FilteredList<String> filteredWords = new FilteredList<String>(wordObserv, s -> true);
+        wordHousing.setItems(filteredWords);
+    }
+
     public static VBox createDefSpeechPairInput() {
         VBox defSpeechPair = new VBox();
         defSpeechPair.setSpacing(10);
         defSpeechPair.setId("defSpeechPair");
         TextField definition = new TextField();
         definition.setPromptText("Enter definition here.");
+        definition.getStyleClass().add("definitionInput");
         TextField partOfSpeech = new TextField();
+        partOfSpeech.getStyleClass().add("partOfSpeechInput");
         partOfSpeech.setPromptText("Enter part of speech here.");
 
         defSpeechPair.getChildren().addAll(definition, partOfSpeech);

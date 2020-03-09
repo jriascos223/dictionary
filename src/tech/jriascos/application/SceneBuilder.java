@@ -261,8 +261,10 @@ public class SceneBuilder {
         defSpeechPair.setId("defSpeechPair");
         TextField definition = new TextField();
         definition.setPromptText("Enter definition here.");
+        definition.getStyleClass().add("definition");
         TextField partOfSpeech = new TextField();
         partOfSpeech.setPromptText("Enter part of speech here.");
+        partOfSpeech.getStyleClass().add("partOfSpeechInput");
         //adding definition and part of speech input boxes into container
         defSpeechPair.getChildren().addAll(definition, partOfSpeech);
         //adding input boxes to right hand side of screen
