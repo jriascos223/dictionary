@@ -113,10 +113,6 @@
     -fx-border-width: 2px;
 }
 
-#addDSection {
-    -fx-border-color: black;
-    -fx-border-width: 2px;
-}
 
 #definitionScroll {
     -fx-background: #FCFCFC;

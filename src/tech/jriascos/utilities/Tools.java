@@ -24,12 +24,15 @@ import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.ColumnConstraints;
@@ -328,7 +331,14 @@ public class Tools {
 
         EventHandler<ActionEvent> addWordToDictAlert = new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
-                addWordToDict(scene, stage);
+                Alert alert = new Alert(AlertType.CONFIRMATION);
+                alert.setContentText("Are you sure you want to add this word?");
+                alert.showAndWait().ifPresent(response -> {
+                    if (response == ButtonType.OK) {
+                        addWordToDict(scene, stage);
+                    }
+                });
+                
             }
         };
 
@@ -391,7 +401,6 @@ public class Tools {
                 String text2 = container3.getText();
                 whitespace = text.matches("\\s*") ? true : false;
                 partOfSpeechStrings.add(text2);
-                System.out.printf("%s, %s", text, text2);
             }
         }
         ObservableList<Node> synArr = addSynSectionInternal.getChildren();
@@ -420,8 +429,9 @@ public class Tools {
         }
 
         if (whitespace) {
-            System.out.println("FOOL");
-            System.out.println("______");
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setContentText("Something was incorrect, please try again.");
+            alert.show();
         }else {
             Object[] definitions =  definitionStrings.toArray();
             Object[] partOfSpeeches = partOfSpeechStrings.toArray();
@@ -433,12 +443,13 @@ public class Tools {
                     defProper[j] = new Definitions((String) definitions[j], (String) partOfSpeeches[j]);
                 }
             }
-            if (synonymArray.length == 0) {
+            if (synonymArray[0].equals("")) {
                 synonymArray = new String[0];
             }
-            if (antonymArray.length == 0) {
+            if (antonymArray[0].equals("")) {
                 antonymArray = new String[0];
             }
+
             Words newWord = new Words(word, defProper, Arrays.copyOf(synonymArray, synonymArray.length, String[].class), Arrays.copyOf(antonymArray, antonymArray.length, String[].class));
             try {
                 Words[] innerWords = getWords();
