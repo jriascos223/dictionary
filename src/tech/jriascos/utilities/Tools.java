@@ -417,7 +417,6 @@ public class Tools {
 
     private static void deleteWords(Scene scene, Stage stage) throws IOException {
         Words[] words = getWords();
-        System.out.println(words.length);
         ListView<String> wordHousing = (ListView<String>) scene.lookup("#wordHousing");
         ObservableList<String> strings = wordHousing.getSelectionModel().getSelectedItems();
         for (int j = 0; j < strings.size(); j++) {
@@ -427,7 +426,6 @@ public class Tools {
                 }
             }
         }
-        System.out.println(words.length);
         Words[] outputWords = saveWordJson(words, null);
         updateWords(outputWords, scene);
     }
